@@ -2,7 +2,9 @@
 
     <div class="wrapper">
 
-        <a class="site-title" href="{{ '/' | relative_url}}">QWEQWE</a>
+        <a class="site-title" href="{{ '/' | relative_url}}">
+            <img src="{{site.url}}/assets/img/logo.png" />
+        </a>
 
         <nav class="site-nav">
             <span class="menu-icon">
@@ -22,3 +24,15 @@
     </div>
 
 </header>
+
+<div class="bread-crumbs">
+    <div class="wrapper">
+        <ul>
+            <li>Anasayfa</li>
+            <li>&#8250;</li>
+            <li>{% if page.layout == 'post' %} Yazılar {% endif %}</li>
+            <li>&#8250;</li>
+            <li>{{page.title}}</li>
+        </ul>
+    </div>
+</div>
