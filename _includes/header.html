@@ -29,8 +29,13 @@
     <div class="wrapper">
         <ul>
             <li>Anasayfa</li>
+            {% if page.layout == 'post' %}
             <li>&#8250;</li>
-            <li>{% if page.layout == 'post' %} Yazılar {% endif %}</li>
+            <li>Yazılar</li>
+            {% endif %} {% if page.layout == 'page' %}
+            <li>&#8250;</li>
+            <li>Sayfalar</li>
+            {% endif %}
             <li>&#8250;</li>
             <li>{{page.title}}</li>
         </ul>

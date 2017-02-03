@@ -10,11 +10,15 @@
     z-index: 99;
 }
 
+.header-home {
+    height: 280px;
+}
+
 .bread-crumbs {
-    height: 30px;
+    height: 35px;
     background: #fafafa;
     box-shadow: 0 0 4px rgba(0,0,0,0.2);
-    line-height: 30px;
+    line-height: 35px;
     font-size: 14px;
     color: #666;
 }
@@ -31,9 +35,83 @@
     margin: 0;
 }
 
+.bread-home {
+    height: auto;
+    text-align: center;
+}
+
+.bread-home .wrapper {
+    padding: 20px 0;
+    line-height: 1.7em;
+}
+
+.button {
+    padding: 8px 15px;
+    background: #4f829b;
+    font-size: 17px;
+    color: #fff;
+    display: block;
+    width: 200px;
+    margin: 20px auto 10px;
+    border-radius: 3px;
+    opacity: 1;
+    transition: 200ms all;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
 .site-header img {
     height: 60px;
     padding: 5px;
+}
+
+.site-header.header-home img {
+    max-width: 300px;
+    width: 100%;
+    display: block;
+    margin: auto;
+    padding: 20px 0;
+    height: auto;
+    opacity: 1;
+    position: relative;
+    top: 0;
+    animation-name: logo;
+    animation-duration: 1s;
+}
+@keyframes logo {
+    from {
+        opacity: 0;
+        top: -100px;
+    }
+
+    to {
+        opacity: 1;
+        top: 0;
+    }
+}
+
+.sub-text {
+    position: relative;
+    color: #eee;
+    font-size: 19px;
+    font-family: monospace;
+    top: 0;
+    text-align: center;
+    animation-name: sub;
+    animation-duration: 1s;
+}
+@keyframes sub {
+    from {
+        opacity: 0;
+        top: 30px;
+    }
+
+    to {
+        opacity: 1;
+        top: 0;
+    }
 }
 
 .site-nav {

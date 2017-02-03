@@ -1,25 +1,39 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: " en " }}">
 
-<div class="home">
+{% include head.html %}
 
-  <h1 class="page-heading">Posts</h1>
-  
-  {{ content }}
+<body>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    {% include header-home.html %}
 
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+    <main class="page-content" aria-label="Content">
+        <div class="wrapper">
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+            <div class="home">
 
-</div>
+                <h1 class="page-heading">Posts</h1> {{ content }}
+
+                <ul class="post-list">
+                    {% for post in site.posts %}
+                    <li>
+                        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+                        <h2>
+                  <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+                </h2>
+                    </li>
+                    {% endfor %}
+                </ul>
+
+                <p class="rss-subscribe">subscribe <a href="{{ " /feed.xml " | relative_url }}">via RSS</a></p>
+
+            </div>
+        </div>
+    </main>
+
+    {% include footer.html %}
+
+</body>
+
+</html>
