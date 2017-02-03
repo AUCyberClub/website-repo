@@ -2,6 +2,7 @@
 <html lang="{{ page.lang | default: site.lang | default: " en " }}">
 
 {% include head.html %}
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 <body>
 
@@ -9,7 +10,14 @@
 
     <main class="page-content" aria-label="Content">
         <div class="wrapper">
-
+            <div class="icon-nav">
+                <ul>
+                    <li><i class="material-icons">announcement</i> Duyurular</li>
+                    <li><i class="material-icons">chat</i> Toplantılar</li>
+                    <li><i class="material-icons">keyboard_hide</i> Blog Yazıları</li>
+                    <li><i class="material-icons">vpn_key</i> CTF Write-Up</li>
+                </ul>
+            </div>
             <div class="home">
 
                 <h1 class="page-heading">Posts</h1> {{ content }}
