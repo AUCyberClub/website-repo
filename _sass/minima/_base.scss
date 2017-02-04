@@ -82,8 +82,8 @@ ul {
 }
 
 li {
-     > ul,
-    > ol {
+     > ol,
+    > ul {
         margin-bottom: 0;
     }
 }
@@ -102,15 +102,15 @@ h6 {
  * Links
  */
 a {
-    color: $brand-color;
+    color: #4c7358;
     text-decoration: none !important;
 
     &:visited {
-        color: darken($brand-color, 15%);
+        color: #4c7358;
     }
 
     &:hover {
-        color: $text-color;
+        color: #4c7358;
         text-decoration: underline;
     }
 }
@@ -137,15 +137,20 @@ pre {
     font-size: 15px;
     border: 1px solid $grey-color-light;
     border-radius: 3px;
-    background-color: #eef;
+    background-color: #fafafa;
 }
 
 code {
     padding: 1px 5px;
 }
 
+p {
+    padding-bottom: 10px;
+}
+
 pre {
     padding: 8px 12px;
+    margin-bottom: 25px;
     overflow-x: auto;
 
     > code {

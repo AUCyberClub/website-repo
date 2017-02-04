@@ -47,7 +47,7 @@
 
 .button {
     padding: 8px 15px;
-    background: #4f829b;
+    background: #4c7358;
     font-size: 17px;
     color: #fff;
     display: block;
@@ -198,8 +198,47 @@
  * Site footer
  */
 .site-footer {
-    border-top: 1px solid $grey-color-light;
-    padding: $spacing-unit 0;
+    color: #eee;
+    font-size: 0.85em;
+    background: #333;
+}
+
+.site-footer .copyright {
+    border-top: 1px solid #444;
+    padding: 10px;
+    text-align: center;
+    color: #aaa;
+}
+
+.site-footer .copyright a {
+    color: #eee;
+}
+
+.site-footer .grids {
+    padding: 20px;
+}
+
+.site-footer .grid {
+    width: calc(100% / 4);
+    float: left;
+}
+
+.site-footer .grid ul {
+    padding: 0;
+    margin: 0;
+}
+
+.site-footer li {
+    list-style: none;
+}
+
+.site-footer .grid h3 {
+    text-transform: uppercase;
+    font-size: 1em;
+    line-height: 1em;
+    position: relative;
+    top: 5px;
+    color: #aaa;
 }
 
 .footer-heading {
