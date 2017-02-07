@@ -30,13 +30,13 @@
         <ul>
             <li>Anasayfa</li>
             {% if page.layout == 'post' %}
-            <li>&#8250;</li>
+            <li class="divider">&#8250;</li>
             <li>Yazılar</li>
             {% endif %} {% if page.layout == 'page' %}
-            <li>&#8250;</li>
+            <li class="divider">&#8250;</li>
             <li>Sayfalar</li>
             {% endif %}
-            <li>&#8250;</li>
+            <li class="divider">&#8250;</li>
             <li>{{page.title}}</li>
         </ul>
     </div>

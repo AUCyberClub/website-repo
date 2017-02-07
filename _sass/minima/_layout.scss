@@ -28,6 +28,10 @@
     margin: 0;
 }
 
+.bread-crumbs .divider {
+    opacity: 0.3;
+}
+
 .bread-crumbs li {
     list-style: none;
     float: left;
@@ -201,6 +205,10 @@
     color: #eee;
     font-size: 0.85em;
     background: #333;
+}
+
+.site-footer a {
+    color: #eee;
 }
 
 .site-footer .copyright {
