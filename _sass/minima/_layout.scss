@@ -223,7 +223,7 @@
 }
 
 .site-footer .grids {
-    padding: 20px;
+    padding: 30px 20px;
 }
 
 .site-footer .grid {
@@ -305,6 +305,12 @@
         width: -webkit-calc(100% - (#{$spacing-unit} / 2));
         width: calc(100% - (#{$spacing-unit} / 2));
     }
+}
+
+.post-cat {
+    width: calc(100% / 2 - 20px);
+    padding: 10px;
+    float: left;
 }
 /**
  * Page content
