@@ -39,11 +39,11 @@ categories: blog
 
   Bu komutu çalıştırdıktan sonra karşınıza çıkan soruları kendinize göre yanıtlayın.
 
-![]({{ www.aucyberclub.org }}/assets/img/pelicangithubblog1.png)
+![]({{ AUCyberClub.github.io }}/assets/img/pelicangithubblog1.png)
 
   "**$ pelican-quickstart**" komutundan sonra, dizininiz şu şekilde bi görünüme sahip olacaktır.
 
-![]({{ www.aucyberclub.org }}/assets/img/pelicangithubblog2.png)
+![]({{ AUCyberClub.github.io }}/assets/img/pelicangithubblog2.png)
 
   Burada bulunan dosyalardan bahsedecek olursak;  
   
@@ -71,18 +71,18 @@ categories: blog
 
   Benim oluşturduğum dosyanın adı deneme.md ve aşağıdaki gibi bir görünüme sahip :
 
-![]({{ www.aucyberclub.org }}/assets/img/pelicangithubblog3.png)
+![]({{ AUCyberClub.github.io }}/assets/img/pelicangithubblog3.png)
 
   Dosyanızın içinde sadece başlık, tarih ve kategori bilgilerinin bulunması yeterli. Bu bilgilerden sonra gelecek satırda da paylaşmak istediğiniz yazıyı eklemelisiniz. Bu yazının reStructuredText hali ise aşağıdaki gibi olacaktır :
 
-![]({{ www.aucyberclub.org }}/assets/img/pelicangithubblog4.png)
+![]({{ AUCyberClub.github.io }}/assets/img/pelicangithubblog4.png)
 
   Bu işlemlerden sonra projects dizini aşağıdaki gibi bir görünüme sahip olacaktır:
-![]({{ www.aucyberclub.org }}/assets/img/pelicangithubblog5.png)
+![]({{ AUCyberClub.github.io }}/assets/img/pelicangithubblog5.png)
 
   Şimdi projects dizininize geri dönüp, "**$ make devserver**" komutunu kullanarak development sunucusunu başlatın. Komutun çalışması tamamlandıktan sonra eklediğiniz yazıyı veya yazıları, tarayıcınızın URL kısmından "[http://localhost:8000](http://localhost:8000)" adresine giderek görebilirsiniz :
 
-![]({{ www.aucyberclub.org }}/assets/img/pelicangithubblog6.png)
+![]({{ AUCyberClub.github.io }}/assets/img/pelicangithubblog6.png)
 
   "**$ make stopserver**" komutuyla ise sunucunuzun çalışmasını durdurabilirsiniz.  
 
@@ -91,13 +91,13 @@ categories: blog
 
   Hesabınızı oluşturup , ona giriş yapınız.
 
-![]({{ www.aucyberclub.org }}/assets/img/pelicangithubblog7.png)
+![]({{ AUCyberClub.github.io }}/assets/img/pelicangithubblog7.png)
 
   Blogunuz için oluşturduğunuz dosyaları taşıyacak bir repository yani bir depo oluşturmadan önce , hesabınıza SSH (Secure Shell) anahtarı eklemelisiniz. SSH anahtarı, SSH protokolünde kimlik doğrulaması için kullanılan bir şifreleme anahtarıdır. SSH protokolü, güvenli ağ iletişiminin daha basit ve ucuz uygulanması için tasarlanmış bir protokoldür. SSH anahtarları ise, kullanıcı adı ve parola ikilisine benzer bir şekilde erişim izni almanızı sağlar. 
 
   Terminalinize "**ls -al ~/.ssh**" komutunu girerek elinizde bulunan SSH anahtarlarını görebilirsiniz:
 
-![]({{ www.aucyberclub.org }}/assets/img/pelicangithubblog8.png)
+![]({{ AUCyberClub.github.io }}/assets/img/pelicangithubblog8.png)
 
   Public anahtarların dosya isimleri, varsayılan olarak aşağıdakilerden biri olacaktır: 
   > id_dsa.pub  
@@ -132,24 +132,24 @@ categories: blog
   Şimdi de ssh anahtarını , github hesabınıza ekleyin:
   
   1. GitHub'da sağ üst köşede bulunan profil resminize tıklayıp, ayarlar (settings) seçeneğine gidin.
-  ![]({{ www.aucyberclub.org }}/assets/img/pelicangithubblog9.png)
+  ![]({{ AUCyberClub.github.io }}/assets/img/pelicangithubblog9.png)
   2. Sol tarafta çıkan kullanıcı ayarları çubuğunda "SSH ve GPG anahtarları (SSH and GPG Keys)" kısmını seçtikten sonra karşınıza çıkan sayfanın sağ üstünde bulunan "Yeni SSH Anahtarı (New SSH key)" seçeneğine tıklayın.
   3. Altta açılan bölümde "Başlık (Title)" kısmına bilgisayarınızı anlatacak bir bilgi girin. "Key (Anahtar)" kısmına ise public anahtarınızın bulunduğu dosyanın çıktısını kopyalayıp-yapıştırın ("**cat id_rsa.pub**"). Ve "SSH Anahtarını Ekle (Add SSH Key)" seçeneğine tıklayın.
-  ![]({{ www.aucyberclub.org }}/assets/img/pelicangithubblog10.png)
+  ![]({{ AUCyberClub.github.io }}/assets/img/pelicangithubblog10.png)
   
   
   SSH anahtarını hesabınıza eklediğinize göre bir depo (repository) açıp, blogunuz için oluşturduğunuz dosyaları bu depoya ekleyebilirsiniz. Git'te herhangi bir şey yapmak için bir Git deponuz olmalıdır. Kaydettiğiniz verilerin saklandığı yer burasıdır..
 GitHub'ın sayfasında , ekranın sağ üsttarafında bulunan profil resminizin solundaki "**+**" kısmından "**New repository**" seçeneğine tıklayın.
 
-![]({{ www.aucyberclub.org }}/assets/img/pelicangithubblog11.png)
+![]({{ AUCyberClub.github.io }}/assets/img/pelicangithubblog11.png)
 
   Karşınıza çıkan sayfada "Repository" kısmına blogunuza ulaşılmasını istediğiniz başlığı "github.io" eki ile birlikte yazınız.
 
-![]({{ www.aucyberclub.org }}/assets/img/pelicangithubblog12.png)
+![]({{ AUCyberClub.github.io }}/assets/img/pelicangithubblog12.png)
 
   Bir projede biriyle işbirliği yapmanız gerekiyorsa veya kodunuzu tekrar incelemek ve kullanmak istiyorsanız, URL'yi klonlamalısınız (burada klonlamaktan kasıt kopyalamaktır.) . Deponuzu oluşturduktan sonra karşınıza çıkan sayfadan aşağıdaki komut blokunu kopyalayıp terminal üzerinde çalıştırın. Komutun tamamlanması için kullanıcı adınızı ve parolanızı girmelisiniz.
 
-![]({{ www.aucyberclub.org }}/assets/img/pelicangithubblog13.png)
+![]({{ AUCyberClub.github.io }}/assets/img/pelicangithubblog13.png)
 
   Böylece deponuzu, dizininizde bulunan dosyaları eklemek için aktif hale getirmiş oldunuz. Son olarak yapmanız gereken şey "**output**" dizininizin içinde bulunan her şeyi bu depoya aktarmak. Bunun için ilk önce terminalden "**output**" dizininize geçiş yapın ve aşağıdaki komutları kullanarak bu dizinin içindekileri deponuza yerleştirin:
 
@@ -160,7 +160,7 @@ GitHub'ın sayfasında , ekranın sağ üsttarafında bulunan profil resminizin 
 
   Artık blogunuz başka kişiler tarafından görüntülenmeye açık hale getirilmiş oldu. Blogunuza, deponuzu oluştururken "Repository Name" kısmına yazdığınız adresinden ulaşabilirsiniz.
 
-![]({{ www.aucyberclub.org }}/assets/img/pelicangithubblog14.png)
+![]({{ AUCyberClub.github.io }}/assets/img/pelicangithubblog14.png)
 
 ---
 **[Elif İpek Uysal](https://twitter.com/elifipekuysal)**  
