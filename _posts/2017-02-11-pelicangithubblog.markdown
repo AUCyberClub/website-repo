@@ -164,5 +164,5 @@ GitHub'ın sayfasında , ekranın sağ üsttarafında bulunan profil resminizin 
 
 ---
 **[Elif İpek Uysal](https://twitter.com/elifipekuysal)**  
-*Yazıya [elifipekuysal.github.io](https://elifipekuysal.github.io/) adresinden de erişebilirsiniz.*
+*Yazıya [bu](https://elifipekuysal.github.io/pelican-ile-github-uzerinde-blog-olusturma.html) adresten de erişebilirsiniz.*
   
