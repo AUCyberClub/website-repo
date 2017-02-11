@@ -162,6 +162,7 @@ GitHub'ın sayfasında , ekranın sağ üsttarafında bulunan profil resminizin 
 
 ![]({{ www.aucyberclub.org }}/assets/img/pelicangithubblog14.png)
 
-Yazan:**Elif İpek Uysal**  
+---
+**[Elif İpek Uysal](https://twitter.com/elifipekuysal)**  
 *Yazıya [elifipekuysal.github.io](https://elifipekuysal.github.io/) adresinden de erişebilirsiniz.*
   
