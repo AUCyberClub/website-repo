@@ -4,8 +4,12 @@ title: Hakkında
 permalink: /hakkinda/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Ekim 2016'da Ankara Üniversitesi Bilgisayar Mühendisliği Bölümü'nde 12 kişi ile kurulan Ankara University Cyber Club; bilgi güvenliği farkındalığı oluşturmayı, hacker etiğini ve kültürünü yaşatmayı, katıldığı yurtiçi CTF yarışmalarında Ankara Üniversitesi'ni, yurtdışı CTF yarışmalarında ise ülkemizi temsil etmeyi hedeflemiş olup ortaya çıkaracağı projeler ile ülkemize katkıda bulunmayı misyon edinmiştir. Bilgi paylaştıkça çoğalır mottosu ile hareket eden AUCC, eğitim-öğretim dönemlerinde kısa süreli eğitimler ve meet-uplar yapmaktadır. 
 
-You can find the source code for the Jekyll new theme at: {% include icon-github.html username="jekyll" %} / [minima](https://github.com/jekyll/minima)
+Katılmış olduğumuz yurtdışı CTF'lere ve takım bilgilerimize aşağıdaki linkten ulaşabilirsiniz
+https://ctftime.org/team/32148
 
-You can find the source code for Jekyll at {% include icon-github.html username="jekyll" %} / [jekyll](https://github.com/jekyll/jekyll)
+Katılmış olduğumuz Yurtiçi CTF'ler
+SDUCTF'16 (2) - http://www.sductf.org/
+HACKINGWARS (11) - https://twitter.com/hackingwars
+Siberyıldız () - https://www.siberyildiz.com/
