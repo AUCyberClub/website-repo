@@ -9,7 +9,7 @@ Ekim 2016'da Ankara Üniversitesi Bilgisayar Mühendisliği Bölümü'nde 12 ki�
 Katılmış olduğumuz yurtdışı CTF'lere ve takım bilgilerimize aşağıdaki linkten ulaşabilirsiniz  
 [CTFTIME](https://ctftime.org/team/32148 "CTFTIME/AUCC")
 
-Katılmış olduğumuz Yurtiçi CTF'ler 
+Katılmış olduğumuz Yurtiçi CTF'ler  
 SDUCTF'16 (2) - [Website](http://www.sductf.org/)  
-HACKINGWARS (11) - [Twitter](https://twitter.com/hackingwars)  
-Siberyıldız () - [Website](https://www.siberyildiz.com/)  
+HACKINGWARS'16 (11) - [Twitter](https://twitter.com/hackingwars)  
+Siberyıldız'17 () - [Website](https://www.siberyildiz.com/)  
