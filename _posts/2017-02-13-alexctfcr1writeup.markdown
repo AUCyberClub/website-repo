@@ -9,7 +9,7 @@ categories: blog
 
 In this question,we have a text file full of ZEROs and ONEs. So firstly,I wrote a Java code to convert ZEROs and ONEs into 0s and 1s.
 
-```java
+```
 
 import java.io.*; import java.util.Scanner;
 
@@ -50,7 +50,8 @@ public static void main(String[] args) {
 
 And I printed results into output.txt file.
 
-output
+![output](https://cloud.githubusercontent.com/assets/17202745/22866438/a142bec4-f187-11e6-8f12-de68021e5574.png)
+
 
 And then I converted these binary numbers to text from www.binarytranslator.com/ site . I got a base64 code.
 
@@ -69,7 +70,7 @@ And the flag was ALEXCTF{TH15_1S_5UP3R_5ECR3T_TXT}
 -TURKISH-
 
 Bu soruda bize içi ZERO ve ONE'larla dolu bir dosya veriliyor. Ben de öncelikle verilen ZERO ve ONE'ları 0 ve 1'lere çevirmek için aşağıdaki Java kodunu yazdım.
-```java
+```
 
 import java.io.*; import java.util.Scanner;
 
@@ -109,7 +110,8 @@ public static void main(String[] args) {
 ```
 Sonuçları da output.txt dosyasına bastırdım.
 
-output
+![output](https://cloud.githubusercontent.com/assets/17202745/22866438/a142bec4-f187-11e6-8f12-de68021e5574.png)
+
 
 Daha sonra çıkan binary sayıları www.binarytranslator.com/ sitesinden text'e çevirdim.
 
