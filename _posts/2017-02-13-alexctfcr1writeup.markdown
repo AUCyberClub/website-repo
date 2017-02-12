@@ -46,7 +46,7 @@ public static void main(String[] args) {
      }
  }
 } }
-```java
+```
 
 And I printed results into output.txt file.
 
@@ -106,7 +106,7 @@ public static void main(String[] args) {
      }
  }
 } }
-```java
+```
 Sonuçları da output.txt dosyasına bastırdım.
 
 output
