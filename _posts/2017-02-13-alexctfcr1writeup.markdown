@@ -9,6 +9,8 @@ categories: blog
 
 In this question,we have a text file full of ZEROs and ONEs. So firstly,I wrote a Java code to convert ZEROs and ONEs into 0s and 1s.
 
+```java
+
 import java.io.*; import java.util.Scanner;
 
 public class Oku {
@@ -44,6 +46,7 @@ public static void main(String[] args) {
      }
  }
 } }
+```java
 
 And I printed results into output.txt file.
 
@@ -66,6 +69,7 @@ And the flag was ALEXCTF{TH15_1S_5UP3R_5ECR3T_TXT}
 -TURKISH-
 
 Bu soruda bize içi ZERO ve ONE'larla dolu bir dosya veriliyor. Ben de öncelikle verilen ZERO ve ONE'ları 0 ve 1'lere çevirmek için aşağıdaki Java kodunu yazdım.
+```java
 
 import java.io.*; import java.util.Scanner;
 
@@ -102,7 +106,7 @@ public static void main(String[] args) {
      }
  }
 } }
-
+```java
 Sonuçları da output.txt dosyasına bastırdım.
 
 output
