@@ -16,7 +16,7 @@
 title: Ankara University Cyber Club
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
-  Ankara University Cyber Club, Ekim 2016'da Ankara Üniversitesi Bilgisayar Mühendisliği Bölümü’nde kurulmuş olup bilgi güvenliği farkındalığı oluşturmayı, hacker etiğini ve kültürünü yayarak ileriye taşımayı amaç edinmiştir.  
+  Ankara University Cyber Club, Ekim 2016'da Ankara Üniversitesi Bilgisayar Mühendisliği Bölümü’nde kurulmuş olup hacker etiğini ve kültürünü benimseyerek bilgi güvenliği farkındalığı oluşturmayı, üretmeyi ve bilgisini paylaşmayı hedeflemektedir.  
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: _aucc
