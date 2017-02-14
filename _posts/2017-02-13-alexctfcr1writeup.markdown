@@ -52,12 +52,16 @@ And I printed results into output.txt file.
 ![output](https://cloud.githubusercontent.com/assets/17202745/22866438/a142bec4-f187-11e6-8f12-de68021e5574.png)
 
 
-And then I converted these binary numbers to text from www.binarytranslator.com/ site . I got a base64 code.
+And then I converted these binary numbers to text from www.binarytranslator.com/ site . I got a base64 code.  
 
+```
 Li0gLi0uLiAuIC0uLi0gLS4tLiAtIC4uLS4gLSAuLi4uIC4tLS0tIC4uLi4uIC0tLSAuLS0tLSAuLi4gLS0tIC4uLi4uIC4uLSAuLS0uIC4uLi0tIC4tLiAtLS0gLi4uLi4gLiAtLi0uIC4tLiAuLi4tLSAtIC0tLSAtIC0uLi0gLQ== 
+```
 I decoded this base64 from www.base64decode.org site .
 
+```
 .- .-.. . -..- -.-. - ..-. - .... .---- ..... --- .---- ... --- ..... ..- .--. ...-- .-. --- ..... . -.-. .-. ...-- - --- - -..- - 
+```
 I got this Morse code.Then I converted this Morse code from http://morsecode.scphillips.com/translator.html site.
 
 The result was ALEXCTFTH15O1SO5UP3RO5ECR3TOTXT .I tried ALEXCTF{TH15O1SO5UP3RO5ECR3TOTXT} as flag but it wasn't.So I replaced O's with _'s.
@@ -115,9 +119,15 @@ Sonuçları da output.txt dosyasına bastırdım.
 
 Daha sonra çıkan binary sayıları www.binarytranslator.com/ sitesinden text'e çevirdim.
 
-Li0gLi0uLiAuIC0uLi0gLS4tLiAtIC4uLS4gLSAuLi4uIC4tLS0tIC4uLi4uIC0tLSAuLS0tLSAuLi4gLS0tIC4uLi4uIC4uLSAuLS0uIC4uLi0tIC4tLiAtLS0gLi4uLi4gLiAtLi0uIC4tLiAuLi4tLSAtIC0tLSAtIC0uLi0gLQ== şeklinde bir base64 text çıktı.Bu base64'ü de www.base64decode.org sitesinden decode ettim.
+```
+Li0gLi0uLiAuIC0uLi0gLS4tLiAtIC4uLS4gLSAuLi4uIC4tLS0tIC4uLi4uIC0tLSAuLS0tLSAuLi4gLS0tIC4uLi4uIC4uLSAuLS0uIC4uLi0tIC4tLiAtLS0gLi4uLi4gLiAtLi0uIC4tLiAuLi4tLSAtIC0tLSAtIC0uLi0gLQ==  
+```
+şeklinde bir base64 text çıktı.Bu base64'ü de www.base64decode.org sitesinden decode ettim.
 
-.- .-.. . -..- -.-. - ..-. - .... .---- ..... --- .---- ... --- ..... ..- .--. ...-- .-. --- ..... . -.-. .-. ...-- - --- - -..- - şeklinde Morse kodu çıktı.Daha sonra bu Morse kodu http://morsecode.scphillips.com/translator.html sitesinden çevirdiğimde
+```
+.- .-.. . -..- -.-. - ..-. - .... .---- ..... --- .---- ... --- ..... ..- .--. ...-- .-. --- ..... . -.-. .-. ...-- - --- - -..- -
+```
+şeklinde Morse kodu çıktı.Daha sonra bu Morse kodu http://morsecode.scphillips.com/translator.html sitesinden çevirdiğimde
 
 ALEXCTFTH15O1SO5UP3RO5ECR3TOTXT gibi bir text çıktı.Bunu ALEXCTF{TH15O1SO5UP3RO5ECR3TOTXT} diye denedim ancak flag bu değildi.Daha sonra O'ları _ ile değiştirerek girdim.
 
