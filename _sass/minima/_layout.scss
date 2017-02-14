@@ -359,6 +359,11 @@
 
 .post-content {
     margin-bottom: $spacing-unit;
+   
+    pre {
+	    white-space: pre-wrap; 
+	    word-wrap: break-word;  /*Line break*/
+    }
 
     h2 {
         font-size: 32px;
