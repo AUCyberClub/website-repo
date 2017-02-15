@@ -40,7 +40,7 @@
                 <div class="post-cat">
                     <h1 class="page-heading">Blog Yazıları</h1> {{ content }}
                     <ul class="post-list">
-                        {% for post in site.categories.blog %}
+                        {% for post in site.categories.blog limit:3 %}
                         <li>
                             <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
