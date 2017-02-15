@@ -1,20 +1,22 @@
---- layout: default ---
+---
+layout: default
+---
 
-<link rel="icon" type="image/png" href="../faviconnew.png">
+<link rel="icon" type="image/png" href="../faviconnew.png" >
 
 <article class="post">
 
-    <h1 class="page-heading">Blog Yazıları</h1> {{ content }}
-    <ul class="post-list">
-        {% for post in site.categories.blog %}
-        <li>
-            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  <h1 class="page-heading">Blog Yazıları</h1> {{ content }}
+  <ul class="post-list">
+      {% for post in site.categories.blog %}
+      <li>
+          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-            <h2>
+          <h2>
         <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
       </h2>
-        </li>
-        {% endfor %}
-    </ul>
+      </li>
+      {% endfor %}
+  </ul>
 
 </article>
