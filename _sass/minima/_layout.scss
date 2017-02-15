@@ -32,6 +32,10 @@
     opacity: 0.3;
 }
 
+.bread-crumbs a {
+    color: #666;
+}
+
 .bread-crumbs li {
     list-style: none;
     float: left;
@@ -359,10 +363,11 @@
 
 .post-content {
     margin-bottom: $spacing-unit;
-   
+
     pre {
-	    white-space: pre-wrap; 
-	    word-wrap: break-word;  /*Line break*/
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        /*Line break*/
     }
 
     h2 {

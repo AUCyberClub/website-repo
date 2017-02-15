@@ -28,16 +28,24 @@
 <div class="bread-crumbs">
     <div class="wrapper">
         <ul>
-            <li>Anasayfa</li>
+            <a href="/">
+                <li>Anasayfa</li>
+            </a>
             {% if page.layout == 'post' %}
             <li class="divider">&#8250;</li>
-            <li>Yazılar</li>
+            <a href="/posts/">
+                <li>Yazılar</li>
+            </a>
             {% endif %} {% if page.layout == 'page' %}
             <li class="divider">&#8250;</li>
-            <li>Sayfalar</li>
+            <a href="/pages/">
+                <li>Sayfalar</li>
+            </a>
             {% endif %}
             <li class="divider">&#8250;</li>
-            <li>{{page.title}}</li>
+            <a href="{{ my_page.url | relative_url }}">
+                <li>{{page.title}}</li>
+            </a>
         </ul>
     </div>
 </div>
