@@ -25,8 +25,11 @@ github_username:  AUCyberClub
 # Build settings
 markdown: kramdown
 theme: minima
+paginate: 3
+paginate_path: "blog/Page:num"
 gems:
   - jekyll-feed
+  - jekyll-paginate
 exclude:
   - Gemfile
   - Gemfile.lock
