@@ -5,10 +5,7 @@ date: '2017-02-16 22:40:07 +0300'
 categories: blog
 ---
 
-Kriptoloji ,kriptografi ve kriptoanaliz olmak üzere ikiye ayrılır.
-Kriptografi haberleşmenin güvenliğini üçüncü , kötü niyetli taraflara karşı
-sağlamak için uygulama ve teknikleri içeren çalışmaların bütününü ifade eder.
-Kriptoanaliz ,kriptografik algoritmalarını analizlerini yapan bilim dalıdır.  
+Kriptoloji ,kriptografi ve kriptoanaliz olmak üzere ikiye ayrılır. Kriptografi haberleşmenin güvenliğini üçüncü , kötü niyetli taraflara karşı sağlamak için uygulama ve teknikleri içeren çalışmaların bütününü ifade eder. Kriptoanaliz ,kriptografik algoritmalarını analizlerini yapan bilim dalıdır.    
   
 Kriptolojinin temel amaçları:  
 1) Gizlilik  
@@ -30,8 +27,8 @@ olduğu garantisidir.
 İletilen mesajının inkar edilememesidir.  
   
   
- **Klasik Kriptoloma Yöntemleri**  
- ---  
+Klasik Kriptoloma Yöntemleri      
+---  
 0x00 - Sezar Kripto Algoritması  
 0x01 - Afin Kripto Algoritması  
 0x02 - Vigenere Kripto Algoritması  
@@ -149,8 +146,7 @@ Decrypted Data = c^d mod n
 89=1394^2011 mod 3127  
 8=H 9=I “HI”;   
   
-**Klasik Bilgisayarlarda Kullanılan Mantık Kapıları**
-  
+Klasik Bilgisayarlarda Kullanılan Mantık Kapıları  
 ---  
 **NOT**  
 Girişindeki mantıksal değeri tersine çevirir. Girişteki işaretin lojik 1 seviyesinde
@@ -301,7 +297,11 @@ inceleyecek olursak;
 Eğer dinleyici doğru bazı kullanırsa , alıcının kübite yüklediği bilgiyi doğru olarak
 öğrenecek ve bu doğru bilgiyi alıcıya da gönderecektir.Fakat bu
 imkansızdır.Binlerce kübitten oluşan bir anahtardaki tüm bitleri şans eseri doğru
-bazda ölçmek gerçekten imkansız bir durum gibi görünüyor .  
+bazda ölçmek gerçekten imkansız bir durum gibi görünüyor.  
+   
+---  
+**Kaan Ezder**  
+*Aynı konu ile ilgili daha önce yazmış olduğu yazıyı şuradan [https://canyoupwn.me/tr-quantum-cryptography/](https://canyoupwn.me/tr-quantum-cryptography/) okuyabilirsiniz.*
 
 
 
