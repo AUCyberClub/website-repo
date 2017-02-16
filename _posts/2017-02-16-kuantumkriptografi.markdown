@@ -41,7 +41,7 @@ adına cebirsel ifadelerden olabildiğince kaçınacağım.
 **0x00 - Sezar Kripto Algoritması (Ceasar Cipher)** 
 Kısaca yer değiştirme algoritmasıdır.
 
-![]({{ AUCyberClub.github.io }}/assets/img/kuantumkriptografi/1.png)  
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![]({{ AUCyberClub.github.io }}/assets/img/kuantumkriptografi/1.png)  
   
 Yukarıdaki şekilde de görüleceği üzere her harf, alfabede kendisinden 3 sonraki
 harf ile yer değiştirmektedir. Örnek olarak:  
@@ -122,12 +122,12 @@ Tam sayı için; 1<e< n e=3 olsun.
      
 P*Q=n → 53*59=31272  
   
-2. Adım - Private Key Oluşturma  
+1. Adım - Private Key Oluşturma  
 f(n)=(P-1)(Q-1)  
 f(n)=(53-1)(59-1)  
 f(n)=3016  
   
-Şimdi Private Key hesaplayalım =d  
+2. Adım - Şimdi Private Key hesaplayalım =d  
 d=2(f(n))+1/ e;  
 2011=(2*(3016)+1)/3;  
   
@@ -215,7 +215,7 @@ KUANTUM MANTIK KAPILARI
 Tek kübitin |0 > ve |1 > durumlarını dolanık hale getirmek için kullanır.  
   
 Hadamard kapısının matrisi :  
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![]({{ AUCyberClub.github.io }}/assets/img/kuantumkriptografi/4.png)  
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![]({{ AUCyberClub.github.io }}/assets/img/kuantumkriptografi/4.png)  
 
 **Pauli-X kapısı**  
 Klasik kapılardaki , değil kapısının kuantum halidir. Girişi tersine döndüren
@@ -242,7 +242,7 @@ Bu kapının özelliği ,0, 01 ve 10 için değişiklik yapmamak ama 11 durumu i
 |1> girdisinin ei Θ |1> girdisine dönüştürmesidir. Yani |1> için, Θ derece
 döndürme işlemi yapılmaktadır.  
   
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![]({{ AUCyberClub.github.io }}/assets/img/kuantumkriptografi/8.png)  
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![]({{ AUCyberClub.github.io }}/assets/img/kuantumkriptografi/8.png)  
   
 **Swap Kapısı**  
 İki kübitlik bir kapıdır. Giren iki kübitin değerlerini birbirleriyle değiştirir.  
