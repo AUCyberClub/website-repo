@@ -5,7 +5,7 @@ date: '2017-02-16 22:40:07 +0300'
 categories: blog
 ---
 
-Kriptoloji ,kriptografi ve kriptoanaliz olmak üzere ikiye ayrılır. Kriptografi haberleşmenin güvenliğini üçüncü , kötü niyetli taraflara karşı sağlamak için uygulama ve teknikleri içeren çalışmaların bütününü ifade eder. Kriptoanaliz ,kriptografik algoritmalarını analizlerini yapan bilim dalıdır.    
+Kriptoloji; kriptografi ve kripto analiz olmak üzere ikiye ayrılır. Kriptografi uygulamalarının ana amacı, gerçekleşen haberleşmenin gizliliğini ve güvenliğini üçüncü kişilere(saldırganlara) karşı korumaktır. Kripto analiz ise, kriptografik algoritmaların analizlerini yapan bilim dalıdır.  
   
 Kriptolojinin temel amaçları:  
 1) Gizlilik  
@@ -41,7 +41,7 @@ adına cebirsel ifadelerden olabildiğince kaçınacağım.
 **0x00 - Sezar Kripto Algoritması (Ceasar Cipher)** 
 Kısaca yer değiştirme algoritmasıdır.
 
-![]({{ AUCyberClub.github.io }}/assets/img/kuantumkriptografi1.png)  
+![]({{ AUCyberClub.github.io }}/assets/img/kuantumkriptografi/1.png)  
   
 Yukarıdaki şekilde de görüleceği üzere her harf, alfabede kendisinden 3 sonraki
 harf ile yer değiştirmektedir. Örnek olarak:  
@@ -54,7 +54,7 @@ değiştirdiğinde asıl metin tekrar elde edilebilir. Çift yönlü bir algorit
 **0x01 - Afin Kripto Algoritması (Affine Cipher)**  
 (Not : A hep 0 olarak kabul edilmektedir.)  
 
-![]({{ AUCyberClub.github.io }}/assets/img/kuantumkriptografi2.png)  
+![]({{ AUCyberClub.github.io }}/assets/img/kuantumkriptografi/2.png)  
   
 c=ap+b (mod m), 1<=a<=m, 1<=b>=m  
 p=a^-1(c-b)(mod m)  
@@ -69,7 +69,7 @@ burada a=5 b=7 di seçilmiştir.
 Bu şifreleme sisteminde bir tane şifrelenecek metinimiz ve şifreleme için
 kullanacağımız key olmalıdır.  
   
-![]({{ AUCyberClub.github.io }}/assets/img/kuantumkriptografi3.png)  
+![]({{ AUCyberClub.github.io }}/assets/img/kuantumkriptografi/3.png)  
   
 Burada yapılan işlem şifrelenmesi istenen metinimizdeki sırasıyla her harfin
 tablodaki sayısal değerinin üzerine, sırasıyla keydeki her harfin karşılığı olan
@@ -122,7 +122,7 @@ Tam sayı için; 1<e< n e=3 olsun.
      
 P*Q=n → 53*59=31272  
   
-2 Adım - Private Key Oluşturma  
+2. Adım - Private Key Oluşturma  
 f(n)=(P-1)(Q-1)  
 f(n)=(53-1)(59-1)  
 f(n)=3016  
@@ -131,13 +131,13 @@ f(n)=3016
 d=2(f(n))+1/ e;  
 2011=(2*(3016)+1)/3;  
   
-3 Adım - Public Keyimiz ile Şifremizi Çözelim  
+3. Adım - Public Keyimiz ile Şifremizi Çözelim  
 Bildiklerimiz : public için n,e,3127,3;  
 Private için d=2011;  
 c=89^e mod n  
 1394=89^3 mod 3127  
   
-4 Adım - Private Key ile Verimizi Çözelim  
+4. Adım - Private Key ile Verimizi Çözelim  
 c= encrypted data  
 d=private key  
 n=public key  
@@ -146,7 +146,7 @@ Decrypted Data = c^d mod n
 89=1394^2011 mod 3127  
 8=H 9=I “HI”;   
   
-Klasik Bilgisayarlarda Kullanılan Mantık Kapıları  
+Klasik Bilgisayarlarda Kullanılan Mantık Kapıları   
 ---  
 **NOT**  
 Girişindeki mantıksal değeri tersine çevirir. Girişteki işaretin lojik 1 seviyesinde
@@ -209,40 +209,40 @@ optik hat üzerinden iletilir. Bu sayede en gizli seviyedeki bilgiler kırılmas
 imkansız şekilde kriptolanarak rahatça her türlü iletişim hattından gönderilir.  
   
   
-**KUANTUM MANTIK KAPILARI**    
-
+KUANTUM MANTIK KAPILARI    
+---
 **Hadamard kapısı**  
 Tek kübitin |0 > ve |1 > durumlarını dolanık hale getirmek için kullanır.  
   
 Hadamard kapısının matrisi :  
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![]({{ AUCyberClub.github.io }}/assets/img/kuantumkriptografi4.png)  
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![]({{ AUCyberClub.github.io }}/assets/img/kuantumkriptografi/4.png)  
 
 **Pauli-X kapısı**  
 Klasik kapılardaki , değil kapısının kuantum halidir. Girişi tersine döndüren
 kapıdır.  
   
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![]({{ AUCyberClub.github.io }}/assets/img/kuantumkriptografi5.png)  
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![]({{ AUCyberClub.github.io }}/assets/img/kuantumkriptografi/5.png)  
 
 **Pauli-Y kapısı**  
 Tek kübitlik bir kapıdır.Gösterimi Y ‘dir. Y ekseni üzerinde döndürme işlemi yapılır.  
   
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |0 >→ i|1 > |1 >→ −i|0 >  
   
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![]({{ AUCyberClub.github.io }}/assets/img/kuantumkriptografi6.png)  
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![]({{ AUCyberClub.github.io }}/assets/img/kuantumkriptografi/6.png)  
 
 **Pauli-Z kapısı**  
 Tek kübitlik kapıdır. Gösterimi Z’dir. Z ekseni üzerinde döndürme işlemi
 yapar.  
   
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |0 >→ |0 > |1 >→ −|1 >  
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![]({{ AUCyberClub.github.io }}/assets/img/kuantumkriptografi7.png)  
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![]({{ AUCyberClub.github.io }}/assets/img/kuantumkriptografi/7.png)  
   
 **Faz Kaydırma Kapısı**  
 Bu kapının özelliği ,0, 01 ve 10 için değişiklik yapmamak ama 11 durumu için
 |1> girdisinin ei Θ |1> girdisine dönüştürmesidir. Yani |1> için, Θ derece
 döndürme işlemi yapılmaktadır.  
   
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![]({{ AUCyberClub.github.io }}/assets/img/kuantumkriptografi8.png)  
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![]({{ AUCyberClub.github.io }}/assets/img/kuantumkriptografi/8.png)  
   
 **Swap Kapısı**  
 İki kübitlik bir kapıdır. Giren iki kübitin değerlerini birbirleriyle değiştirir.  
@@ -251,7 +251,7 @@ döndürme işlemi yapılmaktadır.
 2 ,3 kübitlik kapılardır. Kendi aralarında alt dallara ayrılırlar.  
 (CNOT,CSWAP ,CCNOT gibi ) Her birinin farklı işleyişi vardır.  
   
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![]({{ AUCyberClub.github.io }}/assets/img/kuantumkriptografi9.png)  
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![]({{ AUCyberClub.github.io }}/assets/img/kuantumkriptografi/9.png)  
   
 **Asimetrik Sistem**   
 Göndericinin ve alıcının farklı anahtarlar kullandığı kriptosistemlere, asimetrik
@@ -269,15 +269,15 @@ sahiptir.BB84 protokol un un mantığını spini ( 1/2) olan parçacıklar ile
 örneklendirebiliriz.Spin ya +(1/2) ya da -(1/2) olacaktır.Bu protokolü uygularken
 farklı iki yön yani bize dört farklı kubit durumu verir.  
   
-![]({{ AUCyberClub.github.io }}/assets/img/kuantumkriptografi10.png)  
+![]({{ AUCyberClub.github.io }}/assets/img/kuantumkriptografi/10.png)  
 
-1-![]({{ AUCyberClub.github.io }}/assets/img/kuantumkriptografi11.png)  
+1-![]({{ AUCyberClub.github.io }}/assets/img/kuantumkriptografi/11.png)  
    
-2-![]({{ AUCyberClub.github.io }}/assets/img/kuantumkriptografi12.png)  
+2-![]({{ AUCyberClub.github.io }}/assets/img/kuantumkriptografi/12.png)  
   
-3-![]({{ AUCyberClub.github.io }}/assets/img/kuantumkriptografi13.png)  
+3-![]({{ AUCyberClub.github.io }}/assets/img/kuantumkriptografi/13.png)  
   
-4-![]({{ AUCyberClub.github.io }}/assets/img/kuantumkriptografi14.png)   
+4-![]({{ AUCyberClub.github.io }}/assets/img/kuantumkriptografi/14.png)   
   
 ai ve bi ,a ve b nin i numaralı bitleridir.  
   
@@ -290,7 +290,7 @@ bazlardan birini seçer ve ölçüm yapar. Eğer aynı bazı kullanırlarsa alı
 gönderici sonuçlar uyumlu olacaktır. Farklı bazları kullanmışlarsa veriler
 silinecektir.  
 
-**Sonuc olarak**  
+**Sonuç olarak**  
 Gizli bilgileri ele geçirmeye çalışan birisinin önce araya giriği daha sonra alıcıya
 elde ettiği sonuçlara uygun bilgiler gönderdiği durumda neler olabileceğini
 inceleyecek olursak;  
@@ -300,8 +300,8 @@ imkansızdır.Binlerce kübitten oluşan bir anahtardaki tüm bitleri şans eser
 bazda ölçmek gerçekten imkansız bir durum gibi görünüyor.  
    
 ---  
-**Kaan Ezder**  
-*Aynı konu ile ilgili daha önce yazmış olduğu yazıyı şuradan [https://canyoupwn.me/tr-quantum-cryptography/](https://canyoupwn.me/tr-quantum-cryptography/) okuyabilirsiniz.*
+**[Kaan Ezder](https://github.com/kezder)**  
+*Aynı konu ile ilgili daha önce yazmış olduğu yazıyı [şuradan](https://canyoupwn.me/tr-quantum-cryptography/) okuyabilirsiniz.*
 
 
 
