@@ -9,7 +9,7 @@ Selam,
 
 Soruları kategorileri dahilinde düşük puandan yüksek puana gidecek şekilde sıraladık. 
 
-Keyifli okumalar.
+Keyifli okumalar.  
 [AUCC](https://twitter.com/_aucc)
 
 ![]({{ AUCyberClub.github.io }}/assets/img/cypmctfcozumler/tablo.png)  
