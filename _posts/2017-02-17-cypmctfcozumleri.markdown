@@ -5,7 +5,7 @@ date: '2017-02-17 16:30:00 +0300'
 categories: blog
 ---
 Selam,  
-17 ocak tarihinde ilk girişimizi yapıp, vakit bulabildikçe soruları çözmeye vakit ayırdığımız [CanYouPwnMe CTF](https://ctf.canyoupwn.me)'de çözüp puan alabildiğimiz tüm soruların olabildiğince ayrıntılı çözümlerini paylaşmak istiyoruz. Toplamda 57 soru çözmüş olup 7540 puanla sıralamada birinciliğimizi sürdürmekteyiz (17 Şubat 2017). Çözümleri hatırlanamayan 2 soru haricinde 55 sorunun cevabını aşağıdaki bulabilirsiniz. CanYouPwnMe ekibine düzenlemiş oldukları CTF için teşekkür ederiz.   
+17 ocak tarihinde ilk girişimizi yapıp, vakit bulabildikçe soruları çözmeye çalıştığımız [CanYouPwnMe CTF](https://ctf.canyoupwn.me)'de çözüp puan alabildiğimiz tüm soruların olabildiğince ayrıntılı çözümlerini paylaşmak istiyoruz. Toplamda 57 soru çözmüş olup 7540 puanla sıralamada birinciliğimizi sürdürmekteyiz (17 Şubat 2017). Çözümleri hatırlanamayan 2 soru haricinde 55 sorunun cevabını aşağıdaki bulabilirsiniz. CanYouPwnMe ekibine düzenlemiş oldukları CTF için teşekkür ederiz.   
   
 Soruları kategorileri dahilinde düşük puandan yüksek puana gidecek şekilde sıraladık. 
   
