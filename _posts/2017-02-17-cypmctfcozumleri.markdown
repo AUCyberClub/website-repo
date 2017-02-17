@@ -521,27 +521,27 @@ SDUCTF’te sorulmuş olan bir soruydu. Çözen olmamıştı o zamanlar. Açık�
 
 Teknik olayları tamamen eledik. Saatlerimiz gitti çünkü. Tamamen sürreel düşüncelere kapılmaya başladık. Ve şu konuşmanın çok benzeri kendi aramızda döndü. 
 
-S: yeşil erik nedir?
-C: meyvedir
-S: tamam onu sormak istemedim, nasıl bir meyvedir yani?
-C: yeşil?
-S: başka?
-C: ekşidir
-S: heh dur orda. Ekşi ne var?
-C: meyveler içecekler bla bla bla, anlamıyorum nereye varacaksın ????
-S: yok yok bırak meyveyi sebzeyi ekşi diyince aklına gelen şeylerden birini söyler misin
-C: sözlük var. Eksisozluk.com
-S: tamam çok güzel. Soruda bir string daha verilmiş. bubirsecret. Arama kutucuğunda bir aratır mısın onu
-C:   
+S: yeşil erik nedir?  
+C: meyvedir  
+S: tamam onu sormak istemedim, nasıl bir meyvedir yani?  
+C: yeşil?  
+S: başka?  
+C: ekşidir  
+S: heh dur orda. Ekşi ne var?  
+C: meyveler içecekler bla bla bla, anlamıyorum nereye varacaksın ????  
+S: yok yok bırak meyveyi sebzeyi ekşi diyince aklına gelen şeylerden birini söyler misin  
+C: sözlük var. Eksisozluk.com  
+S: tamam çok güzel. Soruda bir string daha verilmiş. bubirsecret. Arama kutucuğunda bir aratır mısın onu  
+C:     
 ![]({{ AUCyberClub.github.io }}/assets/img/cypmctfcozumler/37.png)
-Haydaa.. Erikle başladık nereye geldik. (buraya geldik: [https://eksisozluk.com/entry/64566724](https://eksisozluk.com/entry/64566724))
-S: Neye benziyor bu?
-C: base64? Rot? Hash mi yoksa?
-S: soru kalıpları benzer hep. Yine 2 string verilmiş. Vigenere dene bakalım ne gelecek. Ama dikkat et soruda hata var key değeri sözlükteki entryde yazan “sır” değil “sir” olacak :)) 
-C:
-![]({{ AUCyberClub.github.io }}/assets/img/cypmctfcozumler/38.png)
+Haydaa.. Erikle başladık nereye geldik. (buraya geldik: [https://eksisozluk.com/entry/64566724](https://eksisozluk.com/entry/64566724))  
+S: Neye benziyor bu?  
+C: base64? Rot? Hash mi yoksa?  
+S: soru kalıpları benzer hep. Yine 2 string verilmiş. Vigenere dene bakalım ne gelecek. Ama dikkat et soruda hata var key değeri sözlükteki entryde yazan “sır” değil “sir” olacak :))   
+C:  
+![]({{ AUCyberClub.github.io }}/assets/img/cypmctfcozumler/38.png)  
 
-Evet.. 400 points.. evet..
+Evet.. 400 points.. evet..  
 
 Flag:	cypwn_{duysesimikriptoloji}
 
