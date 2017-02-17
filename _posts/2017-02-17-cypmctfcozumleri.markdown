@@ -170,36 +170,36 @@ Bu link ziyaret edildiğinde aşağıdaki jpg dosyası elde edilecekti.
 Exiftool aracı ile sempatik teyzemizi analiz ettiğimizde Title alanının karşısında hash benzeri bir değer bulunmaktaydı.  
 ```
 ➜ exiftool nefret.jpg  
-ExifTool Version Number 		: 10.40  
-File Name 						: nefret.jpg  
-Directory 						: .  
-File Size 						: 16 kB  
-File Modification Date/Time 	: 2017:02:16 02:46:52+03:00  
-File Access Date/Time 			: 2017:02:16 02:49:56+03:00  
-File Inode Change Date/Time 	: 2017:02:16 02:46:56+03:00  
-File Permissions				: rw-r--r--  
-File Type 						: JPEG  
-File Type Extension				: jpg  
-MIME Type 						: image/jpeg  
-JFIF Version 					: 1.01  
-Resolution Unit 				: inches  
-X Resolution 					: 96  
-Y Resolution 					: 96  
-Exif Byte Order 				: Big-endian (Motorola, MM)  
-Image Description 				: 718f17b43473d15b74201d9c9e537be6  
-XP Title 						: 718f17b43473d15b74201d9c9e537be6  
-Padding 						: (Binary data 2060 bytes, use -b option to extract)  
-About 							: uuid:faf5bdd5-ba3d-11da-ad31-d33d75182f1b  
-Title 							: 718f17b43473d15b74201d9c9e537be6  
-Description 					: 718f17b43473d15b74201d9c9e537be6  
-Image Width 					: 225  
-Image Height 					: 225   
-Encoding Process 				: Baseline DCT, Huffman coding  
-Bits Per Sample 				: 8  
-Color Components 				: 3  
-Y Cb Cr Sub Sampling 			: YCbCr4:2:0 (2 2)  
-Image Size 						: 225x225  
-Megapixels 						: 0.051  
+ExifTool Version Number         : 10.40  
+File Name                       : nefret.jpg  
+Directory                       : .  
+File Size                       : 16 kB  
+File Modification Date/Time     : 2017:02:16 02:46:52+03:00  
+File Access Date/Time           : 2017:02:16 02:49:56+03:00  
+File Inode Change Date/Time     : 2017:02:16 02:46:56+03:00  
+File Permissions                : rw-r--r--  
+File Type                       : JPEG  
+File Type Extension             : jpg  
+MIME Type                       : image/jpeg  
+JFIF Version                    : 1.01  
+Resolution Unit                 : inches  
+X Resolution                    : 96  
+Y Resolution                    : 96  
+Exif Byte Order                 : Big-endian (Motorola, MM)  
+Image Description               : 718f17b43473d15b74201d9c9e537be6  
+XP Title                        : 718f17b43473d15b74201d9c9e537be6  
+Padding                         : (Binary data 2060 bytes, use -b option to extract)  
+About                           : uuid:faf5bdd5-ba3d-11da-ad31-d33d75182f1b  
+Title                           : 718f17b43473d15b74201d9c9e537be6  
+Description                     : 718f17b43473d15b74201d9c9e537be6  
+Image Width                     : 225  
+Image Height                    : 225   
+Encoding Process                : Baseline DCT, Huffman coding  
+Bits Per Sample                 : 8  
+Color Components                : 3  
+Y Cb Cr Sub Sampling            : YCbCr4:2:0 (2 2)  
+Image Size                      : 225x225  
+Megapixels                      : 0.051   
 ```
   
 *718f17b43473d15b74201d9c9e537be6* bu değer google arama motorunda  aratıldığında daha önceden kırılmış bir hash değeri olduğu gelen sonuçlardan
