@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Geçmişten Geleceğe Kriptografi ve Kuantum Kriptografiye Giriş
+title: Genel Hatlarıyla Kriptografi ve Kuantum Kriptografiye Giriş
 date: '2017-02-16 22:40:07 +0300'
 categories: blog
 ---
