@@ -277,23 +277,24 @@ Sonuç olarak bir şey elde edemedik. 500 puanlık sorunun böylesine kolay
 çözülmesini de beklemiyorduk açıkçası. Hidden container olma ihtimalini
 düşünerek yeni bir kaba kuvvet saldırısına başladık. Bu defa tek sonuçta
 durmamasını sağladık ve 2 parola elde ettik.  
-  
+```  
 --> john true --show  
 dogrusifreleme:789456:normal::::dogrusifreleme  
 dogrusifreleme:123123123:hidden::::dogrusifreleme  
   
 2 password hashes cracked, 4 left  
-  
+```  
 Hidden container 123123123 parolası ile açıldı. Fakat içinden flag.rar dosyası
 çıktı. Sırasıyla hash değerini çekip kaba kuvvet saldırısı yapıldı.  
-  
+```  
 rar2john rarismi.rar > rarhashi.txt  
-  
+```
+```
 john rarhashi.txt --wordlist=rock.txt  
-  
+```  
 Rar dosyasının içinden md5 özeti elde edildi  
   
-c38bcb34ca957809c9a815dbc875d2cf  
+*c38bcb34ca957809c9a815dbc875d2cf*
   
 Online servislerde sorup soruşturulduğunda elde edilen sonuç  
 ![]({{ AUCyberClub.github.io }}/assets/img/cypmctfcozumler/18.png)  
