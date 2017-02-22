@@ -1,6 +1,6 @@
 ---
 layout: post
-title: GnuPG
+title: Elektronik İmza Olarak GPG
 date: '2017-02-23 00:28:37 +0300'
 categories: blog
 ---
@@ -10,7 +10,7 @@ Merhaba!
 Bu yazıda GnuPG ya da daha çok bilinen adıyla GPG(Gnu Privacy Guard) nedir, ne için kullanılır ve GPG komutları ne işe yarar onu yazacağım. Fakat; GPG' nin  daha iyi anlaşılması için
 gelin önce birkaç konuya göz atalım. 
 
-#Elektronik İmza:
+**Elektronik İmza:**
 
   Günümüzün hızla gelişen internet imkanlarıyla beraber riskler de artıyor. Artık bize ulaşan bir verinin güvenilirliği, eksikliği ya da fazlalığı ve gerçekten kim tarafından gönderildiği gibi konularda bazı soru işaretlerine
 sahibiz. İşte; elektronik imza bu soru işaretlerini tamamen silmese de bir nebze azaltan bir elektronik veridir. Peki, terim olarak nedir bu **elektronik imza**? "E-imza" olarak da nitelendirilen elektronik imza; kısaca elektronik ortamlarda imza yerine kullabilen, 
@@ -22,7 +22,7 @@ bu nedenle de tıpkı günlük hayattaki kullanımı gibi kimlik doğrulamasın�
 
   Gönderici- alıcı arasındaki kimlik dığrulamasını yapan ve veri bütünlüğünü koruyan bu imza günümüzde de e-posta, telif hakları ve e-devlet uygulamaları gibi bir çok alanda kullanılmaktadır.
 
-#Açık Anahtarlı Şifreleme:
+**Açık Anahtarlı Şifreleme:**
 
   Asimetrik şifreleme de denir. Bunun sebebi; anahtarların oluşturulurken asimetrik şifreleme algoritması kullanmalarıdır.
 
@@ -37,7 +37,7 @@ olanak sağlar. Eğer yanlışlıkla ya da kasten başka kişilerin eline geçer
 benzemezler ama birbirlerini tamamlarlar.
 
 
-#PGP( Pretty Good Privacy ):
+**PGP( Pretty Good Privacy ):**
 
   PGP; dosya imzalamak; metin, e-posta, hard disk ve dizin şifrelemek ya da bunlarını şifresini çözmek gibi işlemleri yaparak veri güvenliğinin
 yanı sıra kişisel güvenliği de sağlayan bir programdır. Hibrid bir kripto sistem olan PGP, şifreleme için klasik ve asimetrik şifreleme yöntemlerini kullanır. O zaman bakalım PGP, bu şifreleme ve şifre çözme işlemlerini nasıl gerçekleştiriyor.
@@ -57,7 +57,7 @@ GPG başlığını daha iyi anlamak için gerekli bilgileri verdiğimize göre �
 geri dönebiliriz.
 
 
-#GPG( GNU Privacy Guard ):
+**GPG( GNU Privacy Guard ):**
 
   GPG; OpenPGP standartıyla uyumlu olan özgür bir yazılımdır. Bu programı PGP' nin **GPL( GNU General Public License )** lisanslı ve 
 daha gelişmiş hali olarak düşünebiliriz. Yani; GPG, verilerin gizliliğini şifreleme yöntemiyle sağlarken 
@@ -237,5 +237,6 @@ Kullanıcı adı belirtilen kişinin, URL' i belirtilen anahtar sunucusundaki an
 Ayrıca kişinin iptal edilmiş anahtarlarını da belirterek aradığınızı ve 
 kullanılması gereken genel anahtarı ayırt etmenizi sağlar.
 
-![search] (https://raw.githubusercontent.com/AUCyberClub/website-repo/master/assets/img/gpg.jpg)
+![]({{ AUCyberClub.github.io }}/assets/img/gpg.jpg)
+
 
