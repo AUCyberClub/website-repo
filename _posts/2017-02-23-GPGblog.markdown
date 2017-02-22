@@ -215,7 +215,7 @@ sağlayan bir sunucudur. Kullanıcılar anahtar sunucusunda genel anahtarların�
 ya da ihtiyaç duyduklarında alıcının genel anahtarını buradan çekerek şifreleme/ 
 deşifreleme işlemlerini kolaylaştırırlar.
 
--> [pgp.mit.edu] (https://pgp.mit.edu/), [pool.sks-keyservers.net] (http://pool.sks-keyservers.net/), [keys.gnupg.net] (http://keys.gnupg.net/)\ en sık 
+ [pgp.mit.edu] (https://pgp.mit.edu/), [pool.sks-keyservers.net] (http://pool.sks-keyservers.net/), [keys.gnupg.net] (http://keys.gnupg.net/)\ > en sık 
 kullanılan anahtar sunucularıdır.
 
 
