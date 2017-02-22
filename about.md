@@ -13,3 +13,4 @@ Katılmış olduğumuz Yurtiçi CTF'ler
 SDUCTF'16 (2) - [Website](http://www.sductf.org/)  
 HACKINGWARS'16 (11) - [Twitter](https://twitter.com/hackingwars)  
 Siberyıldız'17 () - [Website](https://www.siberyildiz.com/)  
+GameofPwners'17 (10) - [Website](http://gameofpwners.com/)  
