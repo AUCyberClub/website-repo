@@ -175,7 +175,7 @@ bir çıktı elde edilir.
 şifreli ve imzalı bir çıktı elde edilir.
 
 >**NOT:** Gönderen e- posta adresi belirtmek şart değildir. Birden fazla özel 
-anahtarınızın olduğu durumda; ön tanımlı olan hagisiyse şifreleme işleminde o kullanılır.
+anahtarınızın olduğu durumda; ön tanımlı olan hangisiyse şifreleme işleminde o kullanılır.
 
 *****
     gpg -d dosya_adi.gpg
@@ -220,7 +220,7 @@ kullanılan anahtar sunucularıdır.
 
     gpg --keyserver sunucu_url --send-keys anahtar_id
 
-Id' sibelirtilen anahtarı URL' i belirtilen anahtar sunucusuna gönderir. Anahtar üzerinde 
+Id' si belirtilen anahtarı URL' i belirtilen anahtar sunucusuna gönderir. Anahtar üzerinde 
 herhangi bir değişiklik yapıldıktan sonra bunu sunucularda da görmek için 
 bu komut herhangi bir değişiklikten sonra kullanılmalıdır !
 
