@@ -213,9 +213,7 @@ yazarak bu komutu sonlandırabilirsiniz.
 >Anahtar sunucusu; şifreli anahtarları tutan ve gerektiğinde bunları diğer kullanıcılara 
 sağlayan bir sunucudur. Kullanıcılar anahtar sunucusunda genel anahtarlarını paylaşarak 
 ya da ihtiyaç duyduklarında alıcının genel anahtarını buradan çekerek şifreleme/ 
-deşifreleme işlemlerini kolaylaştırırlar.
-
- [pgp.mit.edu] (https://pgp.mit.edu/), [pool.sks-keyservers.net] (http://pool.sks-keyservers.net/), [keys.gnupg.net] (http://keys.gnupg.net/)\ > en sık 
+deşifreleme işlemlerini kolaylaştırırlar.** [pgp.mit.edu] (https://pgp.mit.edu/) **, ** [pool.sks-keyservers.net] (http://pool.sks-keyservers.net/) **, ** [keys.gnupg.net] (http://keys.gnupg.net/) ** en sık 
 kullanılan anahtar sunucularıdır.
 
 
