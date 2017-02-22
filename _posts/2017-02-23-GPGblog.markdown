@@ -240,4 +240,7 @@ kullanılması gereken genel anahtarı ayırt etmenizi sağlar.
 
 ![]({{ AUCyberClub.github.io }}/assets/img/gpg.jpg)
 
+----------------
+
+[Ezgi Aydoğan](https://twitter.com/ezgiaydogan96)
 
