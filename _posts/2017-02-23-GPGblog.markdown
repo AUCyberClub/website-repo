@@ -45,10 +45,10 @@ yanı sıra kişisel güvenliği de sağlayan bir programdır. Hibrid bir kripto
   **PGP ile Şifreleme ve Deşifreleme Nasıl Gerçekleşir? :** Aslında bu işleyişi 3 adımda özetleyebiliriz.  
 
  1. Şifrelenecek olan metin sıkıştırılır. Böylece; küçük boyutlu bir veride şifre analiz yöntemi yapılması zorlaştırılır.
- 2. Sıkıştırılmış olan metin, oturum anahtarı *( session key )* ile şifreler.
+ 2. Sıkıştırılmış olan metin, oturum anahtarı *( session key )* ile şifrelenir.
  3. Oturum anahtarı alıcının genel anahtarı ile şifrelenir ve metne eklenir.
 
-    Alıcıya şifreli halde gelen veri, ancak alıcının özel anahtarı ile açılabilir. PGP' nin sunduğu güvenlik de burdan sağlanmış olunur. Açılan veriden oturum anahtarı
+    Alıcıya şifreli halde gelen veri, ancak alıcının özel anahtarı ile açılabilir. PGP' nin sunduğu güvenlik de buradan sağlanmış olunur. Açılan veriden oturum anahtarı
     elde edildikten sonra metin bu anahtar ile deşifre edilerek orjinal metne ulaşılmış olunur. Bu şekilde sadece gönderen- alıcı arasında şifreli veri transferini sağlayan PGP ile kişisel 
     güvenliğinizi hem sağlamış hem de kişisel güvenlik vaad etmiş olursunuz.
 
@@ -80,14 +80,14 @@ olduğundan GPG ile yapılacak olan işlemleri bakalım hangi komutlarla gerçek
 
 **Anahtar Yönetimi:**
 
-    gpg--list-secret-keys
+    gpg --list-secret-keys
 
 Kayıtlı özel anahtarları ve bu anahtarlara ait id, geçerlilik bitiş ve oluşturulma 
 tarihi, e-posta adresi..vb. gibi ayrıntıları listeler.
 
 ********************
 
-    gpg--list-keys
+    gpg --list-keys
 
  Kayıtlı genel anahtarları ve bu anahtara ait id, geçerlilik bitiş ve oluşturulma 
 tarihi, e-posta adresi..vb. gibi ayrıntıları listeler.
@@ -114,7 +114,7 @@ Id' si belirtilen genel anahtarı siler.
 
     gpg -ao dosya_adi.asc --export-secret-keys anahtar_id
 
-Id' si belirtilen özel anahtarı ASCII zırhlı halde dışa aktarark *"dosya_adi.asc"* 
+Id' si belirtilen özel anahtarı ASCII zırhlı halde dışa aktararak *"dosya_adi.asc"* 
 adlı bir dosyaya yazar. Bu dışarı aktarma işlemi; özel anahtarınızı örneğin USB gibi
 bir harici depolama aygıtıyla başka bilgisayarlarda da kendi hesabınızla gpg kullanımını sağlar.
 
@@ -122,7 +122,7 @@ bir harici depolama aygıtıyla başka bilgisayarlarda da kendi hesabınızla gp
 
     gpg -ao dosya_adi.asc --export key_id
 
-Id' si belirtilen genel anahtarı ASCII zırhlı halde dışa aktarark *"dosya_adi.asc"* 
+Id' si belirtilen genel anahtarı ASCII zırhlı halde dışa aktararak *"dosya_adi.asc"* 
 adlı bir dosyaya yazar.
 
 ********
@@ -228,7 +228,7 @@ bu komut herhangi bir değişiklikten sonra kullanılmalıdır !
 
     gpg --keyserver sunucu_url --recv-keys anahtar_id
 
-Id' si belirtilen anahtarı URL' i belirtilen anahtar sunucundan çeker.
+Id' si belirtilen anahtarı URL' i belirtilen anahtar sunucusundan çeker.
 
 ********
 
