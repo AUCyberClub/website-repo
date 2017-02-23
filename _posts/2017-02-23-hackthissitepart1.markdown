@@ -8,7 +8,7 @@ categories: blog
  Merhabalar 
  
  Bu ilk walkthrough yazımda oldukça eski olan fakat benim daha geçenlerde keşfettiğim
- “hackthis.co.uk” sitesindeki bazi soruları inceleyecegiz.
+ [hackthis.co.uk](https://www.hackthis.co.uk/) sitesindeki bazi soruları inceleyecegiz.
  Soru zorluklarının kademeli olarak arttığı bu site yeni başlayanlar, bir temel oluşturmak ve pratik
  yapmak isteyenler için gayet ideal.
 
