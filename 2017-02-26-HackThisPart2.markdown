@@ -1,6 +1,6 @@
 ---
 layout: post
-title: HackThis Walkthrough Part 2
+title: HackThis Web Walkthrough Part 2
 date: '2017-02-26 20:09:42 +0300'
 categories: blog
 ---
