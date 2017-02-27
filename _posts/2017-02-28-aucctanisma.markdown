@@ -12,5 +12,5 @@ Ek olarak AUCC GELENEK uygulaması bahar dönemi itibari ile başlatıldı. Topl
 
 Yapılan sunum dosyasına [buradan](https://github.com/AUCyberClub/slides/blob/master/auccBaharDonemi.pdf) erişebilirsiniz.
 
-Saygılarımızla,
+Saygılarımızla,  
 [AUCC](https://twitter.com/_aucc)
