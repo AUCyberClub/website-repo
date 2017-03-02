@@ -4,6 +4,9 @@ title: Web For Pentester 1 - XSS Çözümleri
 date: '2017-03-02 15:35:00 +0300'
 categories: blog
 ---
+Selam,
+Web uygulama güvenliği üzerine kendini geliştirmek isteyen insanların karşısına çıkan deneme ortamlarından biridir (Web For Pentester-I)[https://www.pentesterlab.com/exercises/web_for_pentester] . Kendi sitesinden ISO imajını indirerek sanal bir makina olarak kendi ağınızda çalıştırabilirsiniz. Bu yazıda Web For Pentester-I içindeki XSS sorularının çözümlerini inceleyeceğiz.
+
 
 __Example 1__
 ------
