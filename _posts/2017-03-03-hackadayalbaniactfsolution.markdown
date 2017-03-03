@@ -20,7 +20,9 @@ __VM çözümü__
 
 İlk önce kendi sistemimizin nasıl bir ağ yapılandırması ile çalıştığını öğrenmek için  
 
-```ifconfig```  
+```
+ifconfig
+```  
 
 komutu ile kendi IP adresimizi ve Subnet Mask'ımızı öğrenip(192.168.1.0/24 ağında bulunuyorum)   
 
