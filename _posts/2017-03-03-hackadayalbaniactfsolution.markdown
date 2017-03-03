@@ -215,7 +215,7 @@ FLAG:
 
     (arnavutça "tebrikler, şimdi rapor başlıyor!" yazıyor ve flagi veriyor)
  ```  
-    **d5ed38fdbf28bc4e58be142cf5a17cf5** 
+    d5ed38fdbf28bc4e58be142cf5a17cf5
     
     
       
