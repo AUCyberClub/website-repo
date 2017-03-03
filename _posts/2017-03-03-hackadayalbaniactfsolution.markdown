@@ -5,7 +5,7 @@ date: '2017-03-03 16:10:00 +0300'
 categories: blog
 ---
 
-Selam,
+Selam,  
 Hack A Day Albania CTF sanal makinasının tam çözümünü yaptık, sizlerle paylaşmak istedik. Keyifli okumalar.  
   
     
