@@ -11,14 +11,14 @@ Hack A Day Albania CTF sanal makinasının tam çözümünü yaptık, sizlerle p
     
 __Hackaday Albania CTF__
 
-indirme linkleri:
+VM hakkında ayrıntılı bilgi alabileceğiniz ve indirme bağlantısını bulabileceğiniz link aşağıdadır  
 
-[Mega.nz](https://mega.nz/#!Gk502Tob!Octl2yiiryjBXNLyzK8QsCtVm6gqw72rKQvEebGvMmk)
-
-[Torrent](https://download.vulnhub.com/hackday/HackDay-Albania.ova.torrent)
+[VulnHub](https://www.vulnhub.com/entry/hackday-albania,167/)
 
 
 __VM çözümü__  
+
+  
 ```ifconfig ```  
 
 komutu ile kendi IP adresimizi ve Subnet Mask'ımızı öğrenip(192.168.1.0/24 ağında bulunuyorum)   
@@ -206,14 +206,15 @@ yazıyoruz ve içerdeyiz. Son olarak flagi **/root** dizininde bulup
 
 ile flag'i bastırıp flag'i gördüğümüze göre sanal makinemizde işimizi bitiriyoruz.
 
-```FLAG:
+```
+FLAG:
 
     Urime,
 
     Tani nis raportin!
 
     (arnavutça "tebrikler, şimdi rapor başlıyor!" yazıyor ve flagi veriyor)
-    ```  
+ ```  
     **d5ed38fdbf28bc4e58be142cf5a17cf5** 
     
     
