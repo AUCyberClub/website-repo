@@ -1,6 +1,6 @@
 ---
 layout: post
-title: HackDay: Albania VM Walktrough
+title: HackDay Albania Walktrough
 date: '2017-03-03 16:10:00 +0300'
 categories: blog
 ---
