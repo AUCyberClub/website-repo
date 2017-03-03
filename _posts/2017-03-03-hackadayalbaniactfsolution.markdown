@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Hack A Day Albania Walktrough
+title: HackDay: Albania VM Walktrough
 date: '2017-03-03 16:10:00 +0300'
 categories: blog
 ---
 
 Selam,  
-Hack A Day Albania CTF sanal makinasının tam çözümünü yaptık, sizlerle paylaşmak istedik. Keyifli okumalar.  
+HackDay Albania CTF 2016'da kullanılan sanal makinanın tam çözümünü yaptık, sizlerle paylaşmak istedik. Keyifli okumalar.  
   
     
-__Hackaday Albania CTF__
+__HackDay Albania CTF__
 
 VM hakkında ayrıntılı bilgi alabileceğiniz ve indirme bağlantısını bulabileceğiniz link aşağıdadır  
 
