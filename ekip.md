@@ -6,8 +6,8 @@ permalink: /ekip/
 
 Şubat 2017'de resmiyetini alan Ankara University Cyber Security topluluğunun kurucu ekip üyelerinin isimleri aşağıdadır. Ayrıca belirtmemiz gerekir ki topluluğumuzda yapılan her iş, harcanan her emek karşılığını almaktadır ve emek veren kişinin adı o işle birlikte anılmaktadır. Bugüne kadar emeği geçmiş ve daha sonra da destekte bulunacak olan tüm üyelerimizin isimlerini ilgili işlerinde görebilirsiniz.  
     
-[Mücahit Karadağ](https://www.linkedin.com/in/mucahitkaradag/) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Kurucu Başkan &nbsp; &nbsp; &nbsp; &nbsp; [@m3karadag](https://twitter.com/m3karadag?s=09)                          
-[Uygar Demircioğlu](https://www.linkedin.com/in/uygardemircioglu/) &nbsp; &nbsp; &nbsp; Başkan Yardımcısı &nbsp; &nbsp; &nbsp; &nbsp; [@UygarDemirciolu](https://twitter.com/UygarDemirciolu?s=09)               
+[Mücahit Karadağ](https://www.linkedin.com/in/mucahitkaradag/) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Kurucu Başkan &nbsp; &nbsp; &nbsp; &nbsp; [@m3karadag](https://twitter.com/m3karadag?s=09)                          
+[Uygar Demircioğlu](https://www.linkedin.com/in/uygardemircioglu/) &nbsp; &nbsp; &nbsp; &nbsp; Başkan Yardımcısı &nbsp; &nbsp; &nbsp; &nbsp; [@UygarDemirciolu](https://twitter.com/UygarDemirciolu?s=09)               
 [Burak Tokak](https://www.linkedin.com/in/burak-tokak-a9724496/) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Başkan Yardımcısı &nbsp; &nbsp; &nbsp; &nbsp; [@BurakTokak](https://twitter.com/BurakTokak?s=09)                        
 pr3d4tor &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Başkan Yardımcısı       
 Dora Uzunsoy &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [@Dora_Uzunsoy](https://twitter.com/Dora_Uzunsoy?s=09)                  
