@@ -8,7 +8,7 @@ permalink: /ekip/
 
 [Mücahit Karadağ](https://www.linkedin.com/in/mucahitkaradag/)([@m3karadag](https://twitter.com/m3karadag?s=09))                          
 [Uygar Demircioğlu](https://www.linkedin.com/in/uygardemircioglu/)([@UygarDemirciolu](https://twitter.com/UygarDemirciolu?s=09))               
-[Burak Tokak](https://www.linkedin.com/in/burak-tokak-a9724496/)([@BurakTokak](https://twitter.com/BurakTokak?s=09))                        
+[Burak Tokak](https://github.com/btk)([@BurakTokak](https://twitter.com/BurakTokak?s=09))                        
 Kaan Ezder         
 Dora Uzunsoy([@Dora_Uzunsoy](https://twitter.com/Dora_Uzunsoy?s=09))                  
 [İlayda Gündoğdu](https://www.linkedin.com/in/ilaydagundogdu/)([@compleng_i](https://twitter.com/compleng_i?s=09))                    
@@ -16,4 +16,4 @@ Dora Uzunsoy([@Dora_Uzunsoy](https://twitter.com/Dora_Uzunsoy?s=09))
 Aytuna Kandemir([@arafilament](https://twitter.com/arafilament?s=09))                     
 [İrem Çağla Yıldırım](https://www.linkedin.com/in/irem-%C3%A7a%C4%9Fla-y%C4%B1ld%C4%B1r%C4%B1m-590085b6/)   
 [Zeliha Bektaş](https://www.linkedin.com/in/zeliha-bekta%C5%9F-99bbb8ba/)                                
-[Sümeyye Kutlu](https://www.linkedin.com/in/s%C3%BCmeyye-kutlu-6b6265122/)([@sumsuenos](https://twitter.com/sumsuenos?s=09))                         
+Sümeyye Kutlu([@sumsuenos](https://twitter.com/sumsuenos?s=09))                         
