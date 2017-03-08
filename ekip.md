@@ -4,6 +4,7 @@ title: Ekip
 permalink: /ekip/
 ---
 
+![]({{ AUCyberClub.github.io }}/assets/img/Transparan-Siyah.png){:height="200px" width="200px"}{:center}
 
 Ankara University Cyber Club topluluk üyelerinin afbabetik sıra ile isimlerini ve aldıkları görevleri ya da ortaya çıkarttıkları somut çalışmaları listelediğimiz sayfadır.
 
