@@ -89,7 +89,7 @@ Kaan Ezder
 [Nesibe Elif Önder](https://www.linkedin.com/in/nesibe-elif-%C3%B6nder-2192a0132/)
  - [Whatsapp ve Arka Kapının İlişkisi çevirisi](https://www.aucyberclub.org/blog/2017/02/15/whatsapparkakapiiliskisi.html) 
 
-Sema Örnek
+[Sema Örnek](https://twitter.com/semarnek)
  - [Avustralya'nın Siber Güvenlik Stratejisi](https://www.aucyberclub.org/blog/2017/02/15/avustralyasiberguvenlikstratejisi.html) 
 
 [Sena Kudu](https://twitter.com/SenaKudu)
