@@ -98,7 +98,7 @@ Sümeyye Kutlu
  - **Kurucu Üye**
  - [Rusya, Birleşik Devletler Ve Siber Diplomasi, Kapılar Açılıyor çevirisi](https://www.aucyberclub.org/blog/2017/03/06/rusya_usa_siber_diplomasi.html) 
 
-Tevfik Süha Dorgut
+[Tevfik Süha Dorgut](https://twitter.com/tsdorgut)
  - [Rusya, Birleşik Devletler Ve Siber Diplomasi, Kapılar Açılıyor çevirisi](https://www.aucyberclub.org/blog/2017/03/06/rusya_usa_siber_diplomasi.html) 
 
 [Uygar Demircioğlu](https://twitter.com/UygarDemirciolu)
