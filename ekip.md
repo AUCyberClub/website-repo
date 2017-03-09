@@ -9,8 +9,8 @@ permalink: /ekip/
 Ankara University Cyber Club topluluk üyelerinin afbabetik sıra ile isimlerini ve aldıkları görevleri ya da ortaya çıkarttıkları somut çalışmaları listelediğimiz sayfadır.
 
 
----
-
+---  
+  
 [Ahmet Muhammet Kocabıyık](https://twitter.com/KcbykAhmet) 
  - [Rusya, Birleşik Devletler Ve Siber Diplomasi, Kapılar Açılıyor çevirisi](https://www.aucyberclub.org/blog/2017/03/06/rusya_usa_siber_diplomasi.html)
 
