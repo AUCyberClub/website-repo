@@ -19,19 +19,20 @@ __Web__<br>
 [Google Dev. Web Fundamentals](https://developers.google.com/web/fundamentals/)<br>
 [Freecodecamp - Medium](https://medium.freecodecamp.com/)
 
-__Python__
+__Python__  
 [Python Official](https://docs.python.org/3/tutorial/)   
 [Tutorials Point](https://www.tutorialspoint.com/python3/)  
 [Python-Course](http://www.python-course.eu/python3_course.php)  
 [Learn Python](https://www.learnpython.org/)  
 [İstihza](http://belgeler.istihza.com/py3/)  
 
-__Kriptografi__
+__Kriptografi__  
 [Tutorials Point](https://www.tutorialspoint.com/cryptography/index.htm)  
 [Cybrary](https://www.cybrary.it/course/cryptography/#)  
 [Enki-Village](http://www.enki-village.com/types-of-codes.html)  
 
 __Offline CTF__<br>
 [guenni.gizmore.org](http://guenni.gizmore.org/)<br>
-[overthewire.org/wargames](http://overthewire.org/wargames/)
+[overthewire.org/wargames](http://overthewire.org/wargames/)  
+[WeChall](https://www.wechall.net/)  
 
