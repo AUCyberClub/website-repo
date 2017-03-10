@@ -3,8 +3,8 @@ layout: post
 title: Wallaby's: Nightmare (v1.0.2) Walktrough
 date: '2017-03-10 16:10:42 +0300'
 categories: blog
----
-
+---    
+  
 Selam,
 Wallaby's: Nightmare (v1.0.2) sanal makinesinin tam çözümünü yaptık, sizlerle paylaşmak istedik. Keyifli okumalar.
 
@@ -16,25 +16,25 @@ VM hakkında ayrıntılı bilgi alabileceğiniz ve indirme bağlantısını bula
 
 __VM çözümü__
 
-İşe herzamanki gibi maksimum özgüvenle hedef tespiti ve port tarama ile başlıyoruz.
+İşe her zamanki gibi maksimum özgüvenle, hedef tespiti ve port tarama ile başlıyoruz.
 
 
 ![]({{ AUCyberClub.github.io }}/assets/img/wallaby_v1/01.png)
 
 
-ve hedef sistemimizin **192.168.1.22** IP adresinde ve **ssh(22) , http(80) TCP** portlarının açık ve **irc(6667)** portununda filtreli bir şekilde hizmet verdiğini görüyoruz. **IRC** ile uğraşmak bana göre bir dert olduğu için hiç denemeden **http**ye yöneliyoruz. Default portunda hizmet verdiği için port belirtmeden, doğrudan ip adresini yazarak bağlanabiliyoruz ve bir kullanıcı adı ile üye oluyoruz (**aucc**). Bizi, başımıza geliceklerden haberdar eden şu ekran karşılıyor.
+ve hedef sistemimizin **192.168.1.22** IP adresinde ve **SSH(22) , HTTP(80) TCP** portlarının açık ve **IRC(6667)** portununda filtreli bir şekilde hizmet verdiğini görüyoruz. **IRC** ile uğraşmak bana göre bir dert olduğu için hiç denemeden **HTTP**ye yöneliyoruz. Default portunda hizmet verdiği için port belirtmeden, doğrudan IP adresini tarayıcımıza yazarak bağlanabiliyoruz ve bir kullanıcı adı ile üye oluyoruz (**aucc**). Bizi, başımıza geleceklerden haberdar eden şu ekran karşılıyor.
 
 
 ![]({{ AUCyberClub.github.io }}/assets/img/wallaby_v1/02.png)
 
 
-*Start the CTF!* diyerek insanlık için küçük akıl sağlığımız için büyük bir adım atıyoruz.
+**Start the CTF!** diyerek insanlık için küçük, akıl sağlığımız için büyük bir adım atıyoruz.
 
 
 ![]({{ AUCyberClub.github.io }}/assets/img/wallaby_v1/03.png)
 
 
-gelen sayfa gözümüzü korkutmuyor bile yukardaki **?page=** i farkedince "Hadi canım!" diyip **passwd** dosyasını görmeye çalışıyoruz.
+gelen sayfa gözümüzü korkutmuyor bile, yukarıdaki **?page=** i farkedince "Hadi canım!" diyip **passwd** dosyasını görmeye çalışıyoruz.
 
 
 ![]({{ AUCyberClub.github.io }}/assets/img/wallaby_v1/04.png)
@@ -70,25 +70,25 @@ gibi bir sitemle tarayıcımıza tekrar dönüyoruz.
 ![]({{ AUCyberClub.github.io }}/assets/img/wallaby_v1/08.png)
 
 
-Sayfamız değişmiş ama sorgu hala çalışıyormu diye denememizle "bumuydu güvenlik" dememiz bir oluyor.
+Sayfamız değişmiş ama sorgu hala çalışıyor mu diye denememizle "bu muydu güvenlik" dememiz bir oluyor.
 
 
 ![]({{ AUCyberClub.github.io }}/assets/img/wallaby_v1/09.png)
 
 
-ilk sayfada neden **"Fuzzing is your friend."** dediğiyle ilgili kafamızda şimşekler çakıp,
+ilk sayfada neden **Fuzzing is your friend.** dediğiyle ilgili kafamızda şimşekler çakıp,
 
 ```
 dirb http://192.168.1.22:60080/?page= /usr/share/dirb/wordlists/common.txt
 ```
 
-ile sayfaya hazır bir wordlist ile dictionary attack başlatıyoruz
+ile sayfaya hazır bir wordlist ile dictionary based attack başlatıyoruz
 
 
 ![]({{ AUCyberClub.github.io }}/assets/img/wallaby_v1/10.png)
 
 
-bu çıkan adresleri denediğimizde **?page=index**te ilk kayıt olduğumuz sayfayı, **?page=home**da da varsayılan olarak açılan sayfayı görüyoruz. **?page=.git/HEAD**'den birşey çıkıcak diye ümitlensekde bu ümidimiz çok sürmüyor. **?page=contact**'ta önemli birşeyler bulamayıp **?page=mailer** da ipucunu alıyoruz.
+bu çıkan adresleri denediğimizde **?page=index**te ilk kayıt olduğumuz sayfayı, **?page=home**da da varsayılan olarak açılan sayfayı görüyoruz. **?page=.git/HEAD**'den bir şey çıkacak diye ümitlensek de bu ümidimiz çok sürmüyor. **?page=contact**'ta önemli bir şeyler bulamayıp **?page=mailer** da ipucunu alıyoruz.
 
 
 ![]({{ AUCyberClub.github.io }}/assets/img/wallaby_v1/11.png)
@@ -109,19 +109,19 @@ hatta bir ara abartıp:
 ![]({{ AUCyberClub.github.io }}/assets/img/wallaby_v1/14.png)
 
 
-kendimize güldürtüp, demek başkalarıda deniyormuşki bunu yazmışlar diyerek teselli bulmaya çalışıyoruz. O depresyonla ircye razı olsak bile **Irssi** 'den
+kendimize güldürtüp, demek başkalarıda deniyormuş ki bunu yazmışlar diyerek teselli bulmaya çalışıyoruz. O depresyonla IRC'ye razı olsak bile **Irssi** 'den
 
 ```
 irssi -c 192.168.1.22 -p 6667
 ```
 
-ile bağlanmayı denediğimizde **Connection Timed Out** hatasıyla o bize razı olmuyor. Damarımıza bastıklarından olsa gerek [pentestmonkey](http://pentestmonkey.net/)'den reverse shell beğenip python'ı görünce
+ile bağlanmayı denediğimizde **Connection Timed Out** hatasıyla o bize razı olmuyor. Damarımıza bastıklarından olsa gerek [pentestmonkey](http://pentestmonkey.net/)'den reverse shell beğenip python'u görünce
 
 
 ![]({{ AUCyberClub.github.io }}/assets/img/wallaby_v1/15.png)
 
 
-kaliden
+Kali Linux'tan
 
 ```
 nc -lvp 1234
@@ -225,7 +225,7 @@ ile vim editörü üzerinden **bash** 'e **sh** 'a kısacası yeniden shelle ç�
 ![]({{ AUCyberClub.github.io }}/assets/img/wallaby_v1/24.png)
 
 
-ve şuan waldonun nasıl olupta irc kanalına bağlı olduğunu öğrenmek için
+ve şuan waldonun nasıl olup da IRC kanalına bağlı olduğunu öğrenmek için
 
 ```
 who
@@ -249,7 +249,7 @@ ile de waldo hesabında bulunduğumuz için bu çalışan *tmux* işlemini durdu
 /nick waldo
 ```
 
-ile nickname'imizi waldo yapıp **.run** 'ı çalıştırmaya çalıştığımızda beklediğimiz cevabı alıyoruz. Sürekli .run yazmamak için yine bir **reverse shell** ile mide bulandırarak bağlantımı busefer **1996** portundan sağlıyorum.
+ile nickname'imizi waldo yapıp **.run** 'ı çalıştırmaya çalıştığımızda beklediğimiz cevabı alıyoruz. Sürekli .run yazmamak için yine bir **reverse shell** ile mide bulandırarak bağlantımı bu sefer **1996** portundan sağlıyorum.
 
 
 ![]({{ AUCyberClub.github.io }}/assets/img/wallaby_v1/26.png)
