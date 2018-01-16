@@ -7,13 +7,13 @@ categories: cozumler
 
 
 Merhabalar,  
-İlk yazım olan Lazysysadmin makinesinin çözümünü sizlerle paylaşacağım. Bu makinedeki amaç root dizini altında ki proof.txt dosyasına erişmek.  
+İlk yazım olan Lazysysadmin makinesinin çözümünü sizlerle paylaşacağım. Bu makinedeki amaç root dizini altındaki proof.txt dosyasına erişmek.  
 Makineye şuradan erişebilirsiniz: 
 
 [Vulnhub](https://www.vulnhub.com/entry/lazysysadmin-1,205/)
 
 
-Nmap atarak işlemlerime başladım: 
+Nmap taraması yaparak işlemlerime başladım: 
 
 ```
 nmap -n -p1-655535 -sV 192.168.24.1/24
@@ -28,7 +28,7 @@ Tarayıcım ile  hedefin 80 numaralı (http) portuna bağlandığımda beni şö
 
 ![]({{ AUCyberClub.github.io }}/assets/img/lazysysadmin/2.jpg)
 
-Sayfa üzerinde ne kadar debelendiysem debeleneyim manuel olarak bir şey bulamadım, belki işime yarayacak bir kaç ayrıntı bilgiye ulaşabilirim ümidiyle **nikto** aracını kullanmaya karar verdim.
+Sayfa üzerinde ne kadar debelendiysem debeleneyim manuel olarak bir şey bulamadım, belki işime yarayacak birkaç ayrıntı bilgiye ulaşabilirim ümidiyle **nikto** aracını kullanmaya karar verdim.
 
 ```
 nikto -h 192.168.24.128
@@ -37,7 +37,7 @@ nikto -h 192.168.24.128
 ![]({{ AUCyberClub.github.io }}/assets/img/lazysysadmin/3.jpg)
 
 Sonuçta ilk gözüme çarpan detaylar, **robots.txt**, **wordpress**, ve **phpmyadmin** dosya ve dizinleri oldu.
-Belki bir kaç ipucu çıkartırım heyecanıyla hemen robots.txt dosyasını kontrol ettim.
+Belki birkaç ipucu çıkartırım heyecanıyla hemen robots.txt dosyasını kontrol ettim.
 
 ![]({{ AUCyberClub.github.io }}/assets/img/lazysysadmin/4.jpg)
 
@@ -46,7 +46,7 @@ Fakat içinden çıkan hangi dizine gittiysem gideyim işime yarayabilecek hiçb
 ![]({{ AUCyberClub.github.io }}/assets/img/lazysysadmin/5.jpg)
 
 Yaklaşık 100 tane alt alta yazan ***My name is togie*** yazısından yola çıkarak odaklanmam gereken kullanıcının **togie** olduğu kanısına vardım.  
-Belki bu kullanıcıya ait basit bir parola bulabilmek amacıyla varsayılan wordpress giriş sayfasını kontrol ettim **(/wp-login.php)**. Evet default giriş sayfası vardı fakat ne kadar brute-force yaptıysam yapayım ne giriş sayfası üzerinde nede **phpmyadmin** üzerinde herhangi bir geçerli giriş bilgisi elde edemedim. Web üzerinde umutsuzca biraz daha vakit geçirdikten sonra **nmap** taramasında çıkan **SMB(139,445)** servisi aklıma geldi. Web üzerinde ki umutlarımın tükenmesininde etkisiyle SMB servisine yöneldim ve **enum4linux** aracı ile bilgi toplamaya başladım.
+Belki bu kullanıcıya ait basit bir parola bulabilmek amacıyla varsayılan wordpress giriş sayfasını kontrol ettim **(/wp-login.php)**. Evet default giriş sayfası vardı fakat ne kadar brute-force yaptıysam yapayım ne giriş sayfası üzerinde ne de **phpmyadmin** üzerinde herhangi bir geçerli giriş bilgisi elde edemedim. Web üzerinde umutsuzca biraz daha vakit geçirdikten sonra **nmap** taramasında çıkan **SMB(139,445)** servisi aklıma geldi. Web üzerinde ki umutlarımın tükenmesininde etkisiyle SMB servisine yöneldim ve **enum4linux** aracı ile bilgi toplamaya başladım.
 
 ```
 enum4linux 192.168.24.128
