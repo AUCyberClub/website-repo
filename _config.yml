@@ -1,0 +1,34 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Ankara University Cyber Club
+email: your-email@domain.com
+description: > # this means to ignore newlines until "baseurl:"
+  Ankara University Cyber Club, Ekim 2016'da Ankara Üniversitesi Bilgisayar Mühendisliği Bölümü’nde kurulmuş olup hacker etiğini ve kültürünü benimseyerek bilgi güvenliği farkındalığı oluşturmayı, üretmeyi ve bilgisini paylaşmayı hedeflemektedir.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: https://www.aucyberclub.org   # with the https protocol
+enforce_ssl: www.aucyberclub.org   # without any protocol
+twitter_username: _aucc
+github_username:  AUCyberClub
+
+# Build settings
+markdown: kramdown
+theme: minima
+gems:
+  - jekyll-feed
+  - jekyll-paginate
+exclude:
+  - Gemfile
+  - Gemfile.lock

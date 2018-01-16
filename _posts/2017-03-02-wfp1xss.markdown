@@ -1,0 +1,139 @@
+---
+layout: post
+title: Web For Pentester 1 - XSS Çözümleri
+date: '2017-03-02 15:35:00 +0300'
+categories: blog
+---
+Selam,  
+Web uygulama güvenliği üzerine kendini geliştirmek isteyen insanların karşısına çıkan deneme ortamlarından biridir [Web For Pentester-I](https://www.pentesterlab.com/exercises/web_for_pentester) . Kendi sitesinden ISO imajını indirerek sanal bir makina olarak kendi ağınızda çalıştırabilirsiniz. Bu yazıda Web For Pentester-I içindeki XSS sorularının çözümlerini inceleyeceğiz.
+
+
+__Example 1__
+------
+
+![]({{ AUCyberClub.github.io }}/assets/img/wfp1/xss1-1.png)
+
+İlk aşamada karşımızda resimdeki gibi bir sayfa bulunmaktadır. Daha derinden incelemek amacıyla sayfanın kaynak kodunu incelediğimizde karşımızda
+
+![]({{ AUCyberClub.github.io }}/assets/img/wfp1/xss1-2.png)
+
+bulunmaktadır. Yani burada bizden URL parametresi olarak aldığı **__hacker__** değeri direkt olarak sayfanın kaynak koduna eklemekte olduğunu görmekteyiz. Bu parametre üzerinden XSS için zararlı kodumuzu gönderdiğimizde gerekli çıktıyı elde etmekteyiz. 
+
+```/xss/example1.php?name=<script>alert("AUCC");</script>```
+
+![]({{ AUCyberClub.github.io }}/assets/img/wfp1/xss1-3.png)
+
+
+__Example 2__
+------
+
+Bu aşamada aynı şekilde girdiğimiz değeri kaynak koda göndermektedir fakat <script> ve </script> içerdiğinde bunları girdiden kaldırmaktadır. 
+
+![]({{ AUCyberClub.github.io }}/assets/img/wfp1/xss2-1.png)
+
+Bu korumayı aşmak için "script" etiketlerimizde ufak bir değişiklik yapmamız gerekmektedir. Bu değişikliği de birer harfini büyülterek sağladık ve bu aşamayı tamamladık.
+
+```<sCript>alert("AUCC");</scriPt>```
+
+![]({{ AUCyberClub.github.io }}/assets/img/wfp1/xss2-2.png)
+
+
+__Example 3__
+------
+
+Bu aşamada ise koruma olarak herhangi bir **__script__** etiketi gördüğü anda onu kaldırmaktaydı ama bunu sadece bir kere yapmaktaydı. Bu korumayı aşmak için iç içe şekilde iki kere **__script__** etiketi verdiğimizde aşamayı tamamlamaktayız. 
+
+```<sc<script>ript>alert("AUCC");</sc</script>ript>```
+
+Burada içerde bir bütün olarak görülen **__script__** etiketlerini siliyor fakat dışarısında yarım olarak kalanları algılayamayıp silmiyor ve iç kısımdakiler silindiğinde kaynak koda gidecek tekrar bir **__script__** etiketimiz bulunuyor. 
+
+![]({{ AUCyberClub.github.io }}/assets/img/wfp1/xss3-1.png)
+
+
+__Example 4__
+------
+
+Bu aşamada **__script__** etiketinin kullanımı tamamıyla engellenmiş durumdadır. Hiç bir şekilde kabul etmeyip hata mesajı vermektedir.
+
+![]({{ AUCyberClub.github.io }}/assets/img/wfp1/xss4-1.png)
+
+Fakat XSS'i sadece "script" etiketleri içersinde yollamak zorunda değiliz. Bunu sağlamak için farklı etiketlerimizde bulunmaktadır. Bunlardan bir tanesi "body" etiketidir. Bu etiket içersinde "onload" özelliğiyle de bir fonksiyon çağırarak bu aşamayı tamamlayabiliriz. 
+
+```<body onload=alert("AUCC");>```
+
+![]({{ AUCyberClub.github.io }}/assets/img/wfp1/xss4-2.png)
+
+
+__Example 5__
+------
+
+Bu sorumuzda bir önceki sorumuzun aksine tamamen **__script__** etiketini engellemek yerine **__alert__** fonksiyonunu çalıştırırken hata vermektedir.
+
+![]({{ AUCyberClub.github.io }}/assets/img/wfp1/xss5-2.png)
+
+Ve kaynak kodunu incelediğimizde **__script__** etiketlerini barındığını görmekteyiz. Bu yüzden bizim script etiketi dahilinde çalıştırabileceğimiz farklı bir fonksiyonun işimizi göreceğini düşünerekten, **__prompt__** fonksiyonunu kullanarak bu aşamamızı da tamamlıyoruz.
+
+```<script>window.prompt("AUCC");</script>```
+
+![]({{ AUCyberClub.github.io }}/assets/img/wfp1/xss5-2.png)
+
+
+__Example 6__
+------
+
+Bu aşamamızda sayfayı ilk açtığımız şeklinde direk kaynak kodunu incelediğimizde karşımıza resimdeki gibi bir içerik çıkmaktadır. 
+
+![]({{ AUCyberClub.github.io }}/assets/img/wfp1/xss6-1.png)
+
+Burada bizim URL'de parametre olarak verdiğimiz değeri **__script__** etiketleri içerisinde bir değişkene yazmaktadır, direkt olarak bize script etiketinin içine yazma imkanı tanınmıştır ve bu aşamayı tamamlamak için yeterlidir. 
+
+```";alert("AUCC");"```
+
+![]({{ AUCyberClub.github.io }}/assets/img/wfp1/xss6-2.png)
+
+![]({{ AUCyberClub.github.io }}/assets/img/wfp1/xss6-3.png)
+
+
+__Example 7__
+------
+
+Aynı şekilde 6. aşamadaki gibi bize **__script__** etiketinin içine yazma imkanı tanınmış fakat farklılık olarak bu sefer __"__ yerine __'__ kullanılmıştır değişkene atanırken. Bir önceki aşamadaki girdiğimiz zararlı kod parçasında ufak bir değişik ile bu aşamayı da tamamlıyoruz.
+
+```';alert('AUCC');'```
+
+![]({{ AUCyberClub.github.io }}/assets/img/wfp1/xss7-1.png)
+
+![]({{ AUCyberClub.github.io }}/assets/img/wfp1/xss7-2.png)
+
+
+__Example 8__
+------
+
+![]({{ AUCyberClub.github.io }}/assets/img/wfp1/xss8-1.png)
+
+Bu aşamada durum biraz farklılaşıyor. Direkt olarak kullanıcıdan URL üzerinden parametreyi almak yerine bir form aracılığıyla alıp sayfaya döndürmektedir ve aldığı girdiyi de bir güzel encode etmektedir. 
+
+![]({{ AUCyberClub.github.io }}/assets/img/wfp1/xss8-2.png)
+
+![]({{ AUCyberClub.github.io }}/assets/img/wfp1/xss8-3.png)
+
+Fakat ek olarak bir şey dikkatimizi çekmektedir ki buda girdi aldıktan sonra formun tekrar kullanıcıya döndürülmesi ve bu da __PHP_SELF__ fonksiyonu ile sağlanmıştır. PHP_SELF fonksiyonu o an çalıştırılan kodun URL'den yolunun alınıp tekrar kaynak kod içersinde yazılmasını sağlamaktadır. Bunun bize sağladığı imkandan yararlanarak zararlı kodumuzu URL üzerinden sayfamıza gönderip bu aşamayı tamamlıyoruz.
+
+```/xss/example8.php/"><script>alert("AUCC");</script>```
+
+![]({{ AUCyberClub.github.io }}/assets/img/wfp1/xss8-4.png)
+
+
+__Example 9__
+------
+
+![]({{ AUCyberClub.github.io }}/assets/img/wfp1/xss9-1.png)
+
+Burada karşımızda DOM XSS bulunmaktadır. URL'de gördüğümüz # sembolden sonrası html dosyasındaki bir objede değişiklik yapmamıza imkan tanımaktadır. 
+
+```/xss/example9.php#<script>alert("AUCC");</script>```
+
+![]({{ AUCyberClub.github.io }}/assets/img/wfp1/xss9-2.png)
+
+---
+**[Uygar Demircioğlu](https://twitter.com/UygarDemirciolu)**

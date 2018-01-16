@@ -1,0 +1,78 @@
+---
+layout: post
+title: 6 Days Lab Walkthrough
+date: '2017-07-18 19:25:00 +0300'
+categories: cozumler
+---
+
+
+Merhabalar !
+
+Bu yazıda [Robin Dimyanoğlu](https://twitter.com/1ce7ea) tarafından CanYouPwnMe adına geliştirilip [VulnHub](https://www.vulnhub.com)'da yayınlanmış olan **6days lab** isimli zafiyetli sanal makinenin tam çözümünü inceleyeceğiz.
+Makineyi [şuradan](https://www.vulnhub.com/entry/6days-lab-11,156/) indirebilirsiniz.
+
+__NMAP TARAMASI SONUCU__
+
+![]({{ AUCyberClub.github.io }}/assets/img/6dayslab/1.png)
+
+
+Tarama sonucundan yola çıkarak, internet sitesini kontrol ettim.
+Beni aşağıda ki sayfa karşıladı;
+
+![]({{ AUCyberClub.github.io }}/assets/img/6dayslab/2.png)
+
+Sayfada post isteği gönderebileceğim bir buton vardı. Daha önce "billub0x" sanal makinesinde kapıldığım gaflete kapılıp çılgınlar gibi sql payload'ı denemeden önce, **burpsuite** ile gönderdiğim isteklere bir göz atmaya karar verdim.
+
+![]({{ AUCyberClub.github.io }}/assets/img/6dayslab/3.1.png)
+
+Sayfayı yenilediğim anda sitede ki resmi görüntülemek için bir **GET** isteği gönderildiğini fark ettim. Fakat bu istek sadece bir kaç saniye boyunca görünüyordu. Sitede ki post isteği kısmını es geçerek, burdan başlamamın daha mantıklı olacağına karar verdim. Birkaç sql payloadı denedim ama sonuç alamadım ve bir lfi payload'ı denediğimde;
+
+![]({{ AUCyberClub.github.io }}/assets/img/6dayslab/3.png)
+
+Bingo ! Içeriyi bir süre kurcaladıktan sonra, işime yarayabilecek bir **config.php** dosyası buldum.
+
+![]({{ AUCyberClub.github.io }}/assets/img/6dayslab/4.png)
+
+Bir sql injection çıkmasını beklemiyordum fakat, bana dönen bilgiyi incelediğimde bir database ismi ve localhost bilgisi vardı. Bu bilgiden ve ilk nmap taramasında ki 8080 portundan  yola çıkarak, proxy üzerinden sql payloadları denemeye başladım.
+
+
+![]({{ AUCyberClub.github.io }}/assets/img/6dayslab/5.png)
+
+Uzun bir süre ne denersem deneyeyim **Malicious request blocked!** sonucu aldıktan sonra, son çare olarak double-url encode tekniği ile payload denediğimde;
+
+![]({{ AUCyberClub.github.io }}/assets/img/6dayslab/6.png)
+
+Bu sefer dönen sonuç farklıydı.
+
+
+SSH portunun açık olmasından yola çıkarak, bu databaseden bir username password bilgi elde etmem gerektiği açıkça ortadaydı. Bende double-url encode tekniğini kullanarak kendime bu bilgiyi çekmek için bir payload oluşturdum;
+
+![]({{ AUCyberClub.github.io }}/assets/img/6dayslab/7.png)
+
+
+andrea user'ı ile ssh bağlantısı yaptığımda ise bana çok kısıtlı bir shell verdi.
+
+
+![]({{ AUCyberClub.github.io }}/assets/img/6dayslab/8.png)
+
+Kısıtlardan kurtulmak için, pentestlerin favori tek satır komutlarından biri olan **nc -e /bin/bash** komutuyla kendime yeni bir shell elde ettim.
+
+![]({{ AUCyberClub.github.io }}/assets/img/6dayslab/9.png)
+
+Elde ettiğim yeni shellde **uname** komutunu çalıştırdığımda;
+
+![]({{ AUCyberClub.github.io }}/assets/img/6dayslab/10.png)
+
+Öğrendiğim kernel bilgisi sonun yaklaştığının habercisiydi. Googleda kerneli arattığımda, bir adet hak yükseltme exploiti buldum.
+
+![]({{ AUCyberClub.github.io }}/assets/img/6dayslab/11.png)
+
+Exploiti hedef sisteme atıp çalıştırdıktan sonra root yetkilerine yükseldim ve kök dizinde ki flag'ı çalıştırdım.
+
+![]({{ AUCyberClub.github.io }}/assets/img/6dayslab/12.png)
+
+![]({{ AUCyberClub.github.io }}/assets/img/6dayslab/13.png)
+
+--- 
+
+ **[Engin Demirbilek](https://twitter.com/hyal0id)**
