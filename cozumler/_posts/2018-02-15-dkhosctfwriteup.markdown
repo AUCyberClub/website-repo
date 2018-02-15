@@ -33,11 +33,9 @@ categories: blog
 
 Ekte baya uzun bir video vardı ve neredeyse tamamı siyah framelerden oluşuyordu. Exiftool ile .mp4 dosyasına baktığımızda :
 
-``` 
-  > IngredientsToPart = time:3984383208960000f254016000000d10160640000f254016000000
-  > IngredientsFilePath = flag.jpg
-  > IngredientsMaskMarkers = None
-```
+> IngredientsToPart = time:3984383208960000f254016000000d10160640000f254016000000
+> IngredientsFilePath = flag.jpg
+> IngredientsMaskMarkers = None
 
 şeklinde bir çıktı geliyordu. Muhtemelen videonun kısacık bir yerinde flag görünüyordu. OpenCv ve Python kullanarak video’yu frameler şeklinde bir değişkene atayan ve ardından o değişkenin (150,150). pikselini kontrol eden bir kod yardımı ile siyah renkten başka bir renk piksele sahip olan her frame’i dışarı başka bir .jpg dosyası olarak kaydettik.
 
