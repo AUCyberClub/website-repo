@@ -7,27 +7,25 @@ categories: blog
 
 # DKHOS CTF Çözümleri
 
-> Merhabalar,
-> 
-> Ankara Üniversitesi Siber Güvenlik Topluluğu adına *AUCC* takım ismi ile 4 kişi katıldığımız DKHOS CTF'te şuanda nihai olmayan tabloya göre 9. tamamladık.
+Merhabalar,
+ 
+Ankara Üniversitesi Siber Güvenlik Topluluğu adına *AUCC* takım ismi ile 4 kişi katıldığımız DKHOS CTF'te şuanda nihai olmayan tabloya göre 9. tamamladık.
 
 ![]({{ AUCyberClub.github.io }}/assets/img/dkhosctfcozumler/unofficialscoreboard.png)
 
-> 35 Sorunun büyük bir yüzdesinde ilerleme kaydetmiş olsak da 16'sında nihayete ulaşabildik.
-> 
-> Yarışma genel anlamda sorunsuz geçti. ([Sistem](https://twitter.com/ctfturkey/status/962444185403035648) çok üst düzey de olsa  bazı ufak aksaklıklar *-[bkz.](https://twitter.com/ctfturkey/status/962456946166165504) tuzluk-* yüzünden anlık krizler geçirmedik değil)
-> 
-> Biraz sadece zor olsun amaçlı gelse de eğlenerek çözdüğümüz yerler bir hayli fazlaydı. Buyüzden arkaplandaki ekibe teşekkür ederiz.
+35 Sorunun büyük bir yüzdesinde ilerleme kaydetmiş olsak da 16'sında nihayete ulaşabildik.
+
+Yarışma genel anlamda sorunsuz geçti. ([Sistem](https://twitter.com/ctfturkey/status/962444185403035648) çok üst düzey de olsa  bazı ufak aksaklıklar *-[bkz.](https://twitter.com/ctfturkey/status/962456946166165504) tuzluk-* yüzünden anlık krizler geçirmedik değil)
 
 ![]({{ AUCyberClub.github.io }}/assets/img/dkhosctfcozumler/prodaft.png)
 
->Çoh iyi oldu çoh da güzel iyi oldu taammı. Şimdi mesela ctf olayını çok karıştırdılar. Aralarında bir fark galdı, o farkda çok güzel oldu. herkesin çözüşüne kimse garışamaz. ha nasıl garışamaz ben bu şekil çözerim, bu bayan şu şekil çözer. şu şekil çözer... amma hiçkimse kimseye garışmaya bi hakkı yok. özgürlüğü bidir. aa ctf kurban olduuum protdafttan gelebilir amma lakin ki öyle değildir. benim yorumlamam bu kadar. hadi hayrılı işler.
+Çoh iyi oldu çoh da güzel iyi oldu taammı. Şimdi mesela ctf olayını çok karıştırdılar. Aralarında bir fark galdı, o farkda çok güzel oldu. herkesin çözüşüne kimse garışamaz. ha nasıl garışamaz ben bu şekil çözerim, bu bayan şu şekil çözer. şu şekil çözer... amma hiçkimse kimseye garışmaya bi hakkı yok. özgürlüğü bidir. aa ctf kurban olduuum protdafttan gelebilir amma lakin ki öyle değildir. benim yorumlamam bu kadar. hadi hayrılı işler.
 
-> Ciddi anlamda kız tarafını benimsemiş olucaz ki aheste aheste çözdük soruları. Pelinsu dedik Mahmut'u hor gördük, şimdi el içine çıkamaz olduk...
+Ciddi anlamda kız tarafını benimsemiş olucaz ki aheste aheste çözdük soruları. Pelinsu dedik Mahmut'u hor gördük, şimdi el içine çıkamaz olduk...
 
 ## Forensics
 ### Karanlıkta Arayış Başlar
-##### 100 (+ 10) Points
+#### 100 (+ 10) Points
 
 > Pelinsu'nun kaybolmasının ardından Mahmut'un hayatı kararmıştı. Hiç zaman kaybetmeden düştüğü bu çaresiz durumda kendine gelmeli ve araştırmalarına başlamalıydı. Kaybedecek tek bir saniyesi yoktu ... 
 
@@ -60,7 +58,7 @@ cap.release()
 > **DKHOS{f1krim1n_1nc3_gulu}**
 
 ### Bildiğim bütün küarlar... Paramparça !
-##### 200 (+ 20) Points
+#### 200 (+ 20) Points
 
 > Pelinsu'nun uğradığı birçok lokasyonda kod parçaları bulunmaktaydı. İpucu neydi ?
 
@@ -79,9 +77,10 @@ Tabii bu aydınlanma ile bir sapıtma durumu oldu ama toparladık ve **pn-uı-bk
 ![]({{ AUCyberClub.github.io }}/assets/img/dkhosctfcozumler/quar.jpg)
 
 > **DKHOS{Bunl4r_h3p_M0ntaj}**
-> 
+
 ### Hadi hoppala vede cuppala
-##### 300 (+ 30) Points
+#### 300 (+ 30) Points
+
 >Mahmut Pelinsu'nun eski bozuk harddisklerinden birine analiz çalışması yapar. Disk'in belirli bölümünden elde ettiği veriyi anlamlandırmaya çalışacaktır.
 
 >**Hint:** Acaba disk ile beraber verinin header ve footer'ı da bozulmuş olabilir mi?
@@ -95,7 +94,7 @@ Bu kadar nezaket yeter diyerek vurduk ağzına. [Şu repo](https://bitbucket.org
 > **DKHOS_{4l_G1rd1n_g1rd1n}**
 
 ### Hafıza kaybı
-##### 400 (+ 40) Points
+#### 400 (+ 40) Points
 
 >Pelinsu'nun odasında kilitli dolabı açan Mahmut sonunda Pelinsu'nun makinasına erişmiştir. Makina açıkken aldığı imaj üzerinde yeni ipuçları bulmak için çalışmaya koyulacaktır.
 
@@ -138,7 +137,7 @@ $ volatility -f for400.img --profile=Win7SP1x86 procdump -p 2420 -D .
 > **DKHOS{its_N0t_A_BuG_it_is_a_feature}**
 
 ### Son parça
-##### 500 (+ 50) Point
+#### 500 (+ 50) Point
 
 >İşte bellek işte fidye.
 >
@@ -190,7 +189,7 @@ Böylece forensicste "son parça"yı da yerine koymuş olduk. Sorularda böyle g
 
 ## Reversing
 ### Tamirci Pala Remzi
-##### 100 (+ 10) Points 
+#### 100 (+ 10) Points 
 
 > Pelinsu'nun eski ipad'ini uzun uğraşlar sonucunda telefon tamircisinden geri alan mahmut cihazı yeniden başlatır. 
 >
@@ -202,7 +201,8 @@ Böylece forensicste "son parça"yı da yerine koymuş olduk. Sorularda böyle g
 
 Linkteki videodan zaten manchesterlı bi şey olduğu netti, yorumlara bakmak gereği bile duymadık ancak manchester codingi biraz geç bulduk(soruların üzerinden 4-5 kere geçtikten sonra) ve dururmuyuz yapıştırdık cevabı çılgınlar gibi (şuraya)[https://www.dcode.fr/manchester-code]
 
-> 00101010010111110011111101001110011010010101001101101001010011010101111101110010011010010101101001100001010010000101111101110010011011110111100101101001011011000101001101100001010000100101111100101010
+>0010101001011111001111110100111001101001010100110110100101001101010111110111001001101001010110100110
+>0001010010000101111101110010011011110111100101101001011011000101001101100001010000100101111100101010
 
 iddiaya göre decode edilmiş haliydi.
 
@@ -223,7 +223,7 @@ $ echo -n "*_?NiSiM_riZaH_royilSaB_*" | rev
 Sıra Türkiye'de genelde en sevilmeyen/zorlanılan kategoride.
 
 ### Sevgili günlük
-##### 100 (+ 10) Points
+#### 100 (+ 10) Points
 
 > Mahmut Pelinsu'nun gizli mesajlarını içeren günlüğünü elde etmişti. İlk sayfalarda Pelinsu'nun amatörce kullandığı şifreleme algoritmaları hemen dikkatini çekti. İşe koyulmuştu.
 
@@ -273,25 +273,26 @@ $ openssl rsautl -decrypt -inkey key.pem -in flag.txt.enc
 
 ## Trivia
 ### Seç bakalım, şimdi sayı söyle
-##### 100 (+ 10) Points
+#### 100 (+ 10) Points
 
 >Mahmut ile Pelin küçükken hep bu oyunu oynarlardı...
 
 ![]({{ AUCyberClub.github.io }}/assets/img/dkhosctfcozumler/tuzluk.png)
 
-kategori trivia olunca resmi [googleladık](images.google.com) ama o bize *мобильные телефоны сертификат соответствия* bunu verdi. 
+kategori trivia olunca resmi [googleladık](images.google.com) ama o bize *мобильные телефоны сертификат соответствия*'yı verdi.
 
 ![]({{ AUCyberClub.github.io }}/assets/img/dkhosctfcozumler/nigga.gif)
 
 durum öyle olunca ne varsa normal Google'da var diyerek bir iki sorguyla tuzluk oyununu bulduk. Hiç de yabancı değilmişiz meğer:
 
 ![]({{ AUCyberClub.github.io }}/assets/img/dkhosctfcozumler/kara.jpg)
+
 ![]({{ AUCyberClub.github.io }}/assets/img/dkhosctfcozumler/mela.jpg)
 
 > **KARAMELA**
 
 ### Geçmişe yolculuk
-##### 200 (+ 20) Points
+#### 200 (+ 20) Points
 
 > Camın üzeri buğuluydu. Şimdilik resmini çekerim, sonra daha detaylı incelerim diye düşünmüştü Mahmut. Pelinsu'nun izlerini geçmişte de birileri aynı yöntemlerle araştırmış olabilir miydi.
 
@@ -306,7 +307,7 @@ Bazı çabalarımızdan sonra (exiftool, binwalk), resim üzerinde oynamalar yap
 > **DKHOS{UNSTOPPABLE}**
 
 ### Bana olasılıkları asla söyleme
-##### 300 (+ 30) Points
+#### 300 (+ 30) Points
 
 >Pelinsu Mahmut'a kaybolmadan önce bu traş bıçağını gönderdi. Kargo paketinin içindeki ufak bir notta ise; "bunukullananadamınyanınagidiyorumbenioradabul" yazmaktaydı. Mahmut bu kargonun gerçekten Pelinsu'dan geldiğinden emin olamasa bile araştırmaya koyuldu ... Ayrıca Pelinsu'nun yazdığı yazının boşluksuz, arada çizgi olmadan ve hepsi küçük harf olması da bir anlam ifade etmekteydi...
 
@@ -319,7 +320,7 @@ Bazı çabalarımızdan sonra (exiftool, binwalk), resim üzerinde oynamalar yap
 > **DKHOS{quigonjinn}**
 
 ### Kişi faizi
-##### 400 (+ 40) Points
+#### 400 (+ 40) Points
 
 >  Pelinsu son aramalarında amcası ile uzun uzun konuşmuştu. Pelinsu'nun amcası Frank Stephens'ın öldüğünü bildiren belgenin tarihi Mahmut için önemli olabilirdi. 
 
@@ -331,14 +332,18 @@ Soruya bakar bakmaz hemen bunun Person Of Interest adlı dizinin birinci sezon �
 .
 .
 .
-soru başlığındaki Türkçe katliamı bizi çok işkillendirdi. Öyle ki ilk gün daha ipin ucu falan ortalarda yokken translate üzerinden İngilizce'ye çevirmeyi denedik ama translate'in azizliğine (individual interest!!!) uğradığımız için çözemedik bi süre. İpucunun ardından parlak(bunu da çevirin) bir arkadaşımız kastın **Person of Interest** olduğunu anladı. Şükür ki bir diğerimiz de diziyi izlemiş, -kendisi çok öneriyor bu arada-. Birkaç [aşamadan](http://personofinterest.wikia.com/wiki/Stacey_Miles) sonra 
+soru başlığındaki Türkçe katliamı bizi çok işkillendirdi. Öyle ki ilk gün daha ipin ucu falan ortalarda yokken translate üzerinden İngilizce'ye çevirmeyi denedik ama translate'in azizliğine (individual interest!!!) uğradığımız için çözemedik bi süre. İpucunun ardından parlak(bunu da çevirin) bir arkadaşımız kastın **Person of Interest** olduğunu anladı.
 
-![]({{ AUCyberClub.github.io }}/assets/img/dkhosctfcozumler/kişifaizi.jpg)
+![]({{ AUCyberClub.github.io }}/assets/img/dkhosctfcozumler/kisi.png)
+
+Şükür ki bir diğerimiz de diziyi izlemiş, -kendisi çok öneriyor bu arada-. Birkaç [aşamadan](http://personofinterest.wikia.com/wiki/Stacey_Miles) sonra 
+
+![]({{ AUCyberClub.github.io }}/assets/img/dkhosctfcozumler/kisifaizi.jpg)
 
 > **DKHOS{2006MAY30}**
 
 ### Av mevsimi
-#####  500 (+ 50) Points 
+####  500 (+ 50) Points 
 
 >  Pelinsu'nun kamerasını inceleyen Mahmut en son bu video'ya ulaştı. Defalarca izledi ancak ne anlama geldiğini çözememişti... 
 
@@ -348,7 +353,7 @@ soru başlığındaki Türkçe katliamı bizi çok işkillendirdi. Öyle ki ilk 
 
 Önceki ctf tecrübelerimizden de bildiğimiz gibi saçma sapan pek çok alfabe var, bunun da onlardan biri olduğuna hepimiz yemin edecek düzeydeydik. Başta bu alfabeyi yüzüklerin efendisinden sanıp yorumlamaya çalışsak da
 
-![]({{ AUCyberClub.github.io }}/assets/img/dkhosctfcozumler/yüzük.jpg)
+![]({{ AUCyberClub.github.io }}/assets/img/dkhosctfcozumler/yuzuk.jpg)
 
 Burada kitlenip kaldık sonra ipucunun(görselin)
 
@@ -364,7 +369,7 @@ Yautja isimli saçma alfabeyle
 
 ## Mobile
 ### Ayrılığın hediyesi
-#####  100 (+ 10) Points 
+####  100 (+ 10) Points 
 
 > Pelinsu'nun uzun zamandır kullandığı bir cep telefonunu en yakın arkadaşlarından biri Cansu'ya vermişti. Pelinsu'nun kaybolduğunu öğrenen Cansu ise telefonu hızlıca Mahmut'a ulaştırmış ve analiz etmesini istemişti. Yakın zamanda bir adresten gelen eposta içerisindeki bir .apk Mahmut'un dikkatini çekmişti. 
 
@@ -399,7 +404,7 @@ gelen çıktının en üst kısmında şekil bir font bizi karşıladı
 Bu sorulardan sonra nerde Hollanda dense sizi hatırlıycaz. Gitmeden sokaklarında süründük ne de olsa
 
 ### Sokaklarda ne ararsın beni kimden sorarsın
-#####  200 (+ 20) Points 
+####  200 (+ 20) Points 
 
 > Mahmut ulaştığı kayıtları incelediğinde Pelinsu'nun lokasyonunun çocuğun çantasında gizli olduğunu düşünmekteydi. 
 
@@ -412,7 +417,7 @@ Elimizde bir adet resim ve bir adet video mevcuttu. Video’da, yerde "maak je f
 > **DKHOS{dakine}**
 
 ### Naber?
-#####  300 (+ 30) Points 
+####  300 (+ 30) Points 
 
 >  Pelinsu zamanında en yakın arkadaşı hipster_koder ile görüşmekteydi. Mahmut hipster_koder'ın Pelinsu'ya platonik aşık olduğunu bilmekteydi. Her ihtimalde Pelinsu hakkında yeni bilgilere ulaşmak için araştırması gerekecekti. 
 
@@ -432,13 +437,17 @@ sorunun başlığı her ne kadar *Whatsapp??* diye bağırsa da "Heykır adam Wh
 > **DKHOS{b3nims1n_p3lin5u}**
 
 ### Arap saçına döndüm, çöz beni arap saçı
-#####  400 (+ 40) Points 
+####  400 (+ 40) Points 
 
 >Pelinsu acaba Hollanda'dan kalkıp savaş bölgesine doğru gitmiş olabilir miydi ? Buraları iyi bilen birilerini araştırmak gerekecek ...
 >
 >joinchat/AAAAAESbwxmZjRyggLlfqA
 
-önceki sorudan sonra bu ilaç gibi geldi. Telegram kanalına dahil olduk, bu noktada insan kendini ejan moduna sokuyor aman sakin. Orada gerekli talimatlar verilmişti. İpucu ile [liveuamap](https://isis.liveuamap.com) üzerinden belirtilen konuma gittik ama orada bi mevzu yoktu. Kanala tekrar dönüp Hicri/Miladî dönüşümü ile tarihi filtre olarak ekleyince habere ulaştık. Haberin kaynağını bile incelesek de o an çözemedik çünkü sitede dil olarak Türkçe set edilmişti bizim için. Dolayısıyla hiç yorum yapılmamış görünüyordu. Sonradan ingilizce yaptığımızda doğru yerde olduğumuzu anladık. Bizimle ilgili olabilecek yorumları/kişileri inceleyerek aşağı indik. **Abdüddar** flag bende diye haykırıyordu.
+önceki sorudan sonra bu ilaç gibi geldi. Telegram kanalına dahil olduk, bu noktada insan kendini ejan moduna sokuyor aman sakin. Orada gerekli talimatlar verilmişti.
+
+![]({{ AUCyberClub.github.io }}/assets/img/dkhosctfcozumler/arap.png)
+
+İpucu ile [liveuamap](https://isis.liveuamap.com) üzerinden belirtilen konuma gittik ama orada bi mevzu yoktu. Kanala tekrar dönüp Hicri/Miladî dönüşümü ile tarihi filtre olarak ekleyince habere ulaştık. Haberin kaynağını bile incelesek de o an çözemedik çünkü sitede dil olarak Türkçe set edilmişti bizim için. Dolayısıyla hiç yorum yapılmamış görünüyordu. Sonradan ingilizce yaptığımızda doğru yerde olduğumuzu anladık. Bizimle ilgili olabilecek yorumları/kişileri inceleyerek aşağı indik. **Abdüddar** flag bende diye haykırıyordu.
 
 > ***not:** Bu ismin de diğer her şey gibi özellikle seçildiğini düşünüyoruz, atmosferi güzel sorulardan birisiydi.*
 
