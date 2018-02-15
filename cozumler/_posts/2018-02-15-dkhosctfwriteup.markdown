@@ -9,7 +9,7 @@ categories: blog
 
 Merhabalar,
  
-Ankara Üniversitesi Siber Güvenlik Topluluğu adına *AUCC* takım ismi ile 4 kişi katıldığımız DKHOS CTF'te şuanda nihai olmayan tabloya göre 9. tamamladık.
+Ankara Üniversitesi Siber Güvenlik Topluluğu adına *AUCC* takım ismi ile 4 kişi katıldığımız [**DKHOS CTF**](https://www.dkhos.com)'te şuanda nihai olmayan tabloya göre 9. tamamladık.
 
 ![]({{ AUCyberClub.github.io }}/assets/img/dkhosctfcozumler/unofficialscoreboard.png)
 
