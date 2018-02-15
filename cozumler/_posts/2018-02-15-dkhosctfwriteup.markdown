@@ -1,7 +1,7 @@
 ---
 layout: post
 title: DKHOS CTF Çözümleri
-date: '2018-02-15 09:00:00 +0300'
+date: '2018-02-15 20:10:00 +0300'
 categories: blog
 ---
 
