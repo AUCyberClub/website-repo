@@ -81,9 +81,9 @@ Tabii bu aydınlanma ile bir sapıtma durumu oldu ama toparladık ve **pn-uı-bk
 ### Hadi hoppala vede cuppala
 #### 300 (+ 30) Points
 
->Mahmut Pelinsu'nun eski bozuk harddisklerinden birine analiz çalışması yapar. Disk'in belirli bölümünden elde ettiği veriyi anlamlandırmaya çalışacaktır.
+> Mahmut Pelinsu'nun eski bozuk harddisklerinden birine analiz çalışması yapar. Disk'in belirli bölümünden elde ettiği veriyi anlamlandırmaya çalışacaktır.
 
->**Hint:** Acaba disk ile beraber verinin header ve footer'ı da bozulmuş olabilir mi?
+> **Hint:** Acaba disk ile beraber verinin header ve footer'ı da bozulmuş olabilir mi?
 
 Nedense başlarda "diskin bozuk olması" ibaresine dikkat etmeyip verinin XOR'a uğramış olma ihtimali üzerinde durduk. Ancak ipucu ile beraber alet edevatı toplayıp onarıma giriştik. Öncelikle **hexinator** ile hazır **grammer** deneyerek dosyanın tipini anlamaya çalıştık ve hatta **gz** formatına çok benzer olması bizi yanlış yönlendirdi. Ama bir türlü düzelmeyince başka arşiv formatlarına döndük. Sonunda bozuk **header** bizi [buraya](http://www.7-zip.org/recover.html) getirdi. Bağlantı hakkında bir dipnot düşmek gerekirse bir binary dosya onarımı hakkında en kapsamlı anlatımlardan birisi diyebiliriz. 
 
@@ -96,7 +96,7 @@ Bu kadar nezaket yeter diyerek vurduk ağzına. [Şu repo](https://bitbucket.org
 ### Hafıza kaybı
 #### 400 (+ 40) Points
 
->Pelinsu'nun odasında kilitli dolabı açan Mahmut sonunda Pelinsu'nun makinasına erişmiştir. Makina açıkken aldığı imaj üzerinde yeni ipuçları bulmak için çalışmaya koyulacaktır.
+> Pelinsu'nun odasında kilitli dolabı açan Mahmut sonunda Pelinsu'nun makinasına erişmiştir. Makina açıkken aldığı imaj üzerinde yeni ipuçları bulmak için çalışmaya koyulacaktır.
 
 ***mobilden bağlanan yürek yemiş arkadaşın isyanı:** Eyy ctf yönetimi mega.nz üyelik müyelik dedi 2GB'ımı yedi hala sinirliyim.*
 
@@ -139,13 +139,13 @@ $ volatility -f for400.img --profile=Win7SP1x86 procdump -p 2420 -D .
 ### Son parça
 #### 500 (+ 50) Point
 
->İşte bellek işte fidye.
+> İşte bellek işte fidye.
 >
->Ya atarsın ya çözersin.
+> Ya atarsın ya çözersin.
 >
->Baktın olmaz vazgeçersin.
+> Baktın olmaz vazgeçersin.
 >
->Zordur almak bizden kızı.
+> Zordur almak bizden kızı.
 
 elimizde bariz şekilde bir şifreli dosya, bir de muhtemelen fidye yazılımı bulaşmış olan imaj dosyası vardı. 
 
@@ -193,16 +193,16 @@ Böylece forensicste "son parça"yı da yerine koymuş olduk. Sorularda böyle g
 
 > Pelinsu'nun eski ipad'ini uzun uğraşlar sonucunda telefon tamircisinden geri alan mahmut cihazı yeniden başlatır. 
 >
->Ekran açılır. Youtube'dan video oynamaya başlar. https://www.youtube.com/watch?v=o_TKIM1vUEs
+> Ekran açılır. Youtube'dan video oynamaya başlar. https://www.youtube.com/watch?v=o_TKIM1vUEs
 >
->Acaba Pelinsu burada olabilir mi ? diye düşünür Mahmuıt.
+> Acaba Pelinsu burada olabilir mi ? diye düşünür Mahmuıt.
 >
->Video sonunda bir anda Mahmut'un önünden sayılar akıp gitmeye başlar.
+> Video sonunda bir anda Mahmut'un önünden sayılar akıp gitmeye başlar.
 
 Linkteki videodan zaten manchesterlı bi şey olduğu netti, yorumlara bakmak gereği bile duymadık ancak manchester codingi biraz geç bulduk(soruların üzerinden 4-5 kere geçtikten sonra) ve dururmuyuz yapıştırdık cevabı çılgınlar gibi (şuraya)[https://www.dcode.fr/manchester-code]
 
->0010101001011111001111110100111001101001010100110110100101001101010111110111001001101001010110100110
->0001010010000101111101110010011011110111100101101001011011000101001101100001010000100101111100101010
+> 0010101001011111001111110100111001101001010100110110100101001101010111110111001001101001010110100110
+> 0001010010000101111101110010011011110111100101101001011011000101001101100001010000100101111100101010
 
 iddiaya göre decode edilmiş haliydi.
 
@@ -235,9 +235,9 @@ $ openssl rsa -text -pubin -modulus -in public.key
 
 yaptık ama olmadı. Dosya içeriğine baktığımızda normalde var olması gereken şu blokların kaldırıldığını farkettik:
 
->-----BEGIN PUBLIC KEY-----
->
->-----END PUBLIC KEY-----
+> -----BEGIN PUBLIC KEY-----
+> 
+> -----END PUBLIC KEY-----
 
 tekrar deneyince
 
@@ -249,7 +249,8 @@ tekrar deneyince
 $ python -c "Modulus='C9BC6E819D316A23A75EA29AA7428634617C09A6E77A25C8884CD405DFB7CAA3705D8FD5C7DBD1930EADB3FB4D4601E330ADD121F4F7CC515253B101D310D9DBB3A72ECA36A1DE62A6F4D573F5FB71CADB017579DCE149E9'; print int(Modulus, 16)"
 ```
 
-> 66322443632192415393425177414261404350913380472123214028807223528537948118330798905714138824197153765247379054455347435534039717825091371646535671796379604222638975797104335872803093974396756169372117357815745001
+> 6632244363219241539342517741426140435091338047212321402880722352853794811833079890571413882419715376524737
+> 9054455347435534039717825091371646535671796379604222638975797104335872803093974396756169372117357815745001
 
 sonra bunun hangi **p** ve **q** değerleri ile elde edilebileceğini bulmak için [factordb](http://factordb.com/) üzerinden sorguluyoruz:
 
@@ -309,7 +310,8 @@ Bazı çabalarımızdan sonra (exiftool, binwalk), resim üzerinde oynamalar yap
 ### Bana olasılıkları asla söyleme
 #### 300 (+ 30) Points
 
->Pelinsu Mahmut'a kaybolmadan önce bu traş bıçağını gönderdi. Kargo paketinin içindeki ufak bir notta ise; "bunukullananadamınyanınagidiyorumbenioradabul" yazmaktaydı. Mahmut bu kargonun gerçekten Pelinsu'dan geldiğinden emin olamasa bile araştırmaya koyuldu ... Ayrıca Pelinsu'nun yazdığı yazının boşluksuz, arada çizgi olmadan ve hepsi küçük harf olması da bir anlam ifade etmekteydi...
+> Pelinsu Mahmut'a kaybolmadan önce bu traş bıçağını gönderdi. Kargo paketinin içindeki ufak bir notta ise; "bunukullananadamınyanınagidiyorumbenioradabul" yazmaktaydı.
+> Mahmut bu kargonun gerçekten Pelinsu'dan geldiğinden emin olamasa bile araştırmaya koyuldu ... Ayrıca Pelinsu'nun yazdığı yazının boşluksuz, arada çizgi olmadan ve hepsi küçük harf olması da bir anlam ifade etmekteydi...
 
 ![]({{ AUCyberClub.github.io }}/assets/img/dkhosctfcozumler/gilette.jpg)
 
@@ -371,7 +373,8 @@ Yautja isimli saçma alfabeyle
 ### Ayrılığın hediyesi
 ####  100 (+ 10) Points 
 
-> Pelinsu'nun uzun zamandır kullandığı bir cep telefonunu en yakın arkadaşlarından biri Cansu'ya vermişti. Pelinsu'nun kaybolduğunu öğrenen Cansu ise telefonu hızlıca Mahmut'a ulaştırmış ve analiz etmesini istemişti. Yakın zamanda bir adresten gelen eposta içerisindeki bir .apk Mahmut'un dikkatini çekmişti. 
+> Pelinsu'nun uzun zamandır kullandığı bir cep telefonunu en yakın arkadaşlarından biri Cansu'ya vermişti. Pelinsu'nun kaybolduğunu öğrenen Cansu ise telefonu hızlıca 
+> Mahmut'a ulaştırmış ve analiz etmesini istemişti. Yakın zamanda bir adresten gelen eposta içerisindeki bir .apk Mahmut'un dikkatini çekmişti. 
 
 Verilen apk dosyası üzerinde klasik işlemlerden sonra (bkz.strings,emulator) dosyayı extract ettik(bu klasik değil gibi). Velhasılıkelam, Androguard'ın kapısını çaldık:
 
@@ -419,7 +422,7 @@ Elimizde bir adet resim ve bir adet video mevcuttu. Video’da, yerde "maak je f
 ### Naber?
 ####  300 (+ 30) Points 
 
->  Pelinsu zamanında en yakın arkadaşı hipster_koder ile görüşmekteydi. Mahmut hipster_koder'ın Pelinsu'ya platonik aşık olduğunu bilmekteydi. Her ihtimalde Pelinsu hakkında yeni bilgilere ulaşmak için araştırması gerekecekti. 
+> Pelinsu zamanında en yakın arkadaşı hipster_koder ile görüşmekteydi. Mahmut hipster_koder'ın Pelinsu'ya platonik aşık olduğunu bilmekteydi. Her ihtimalde Pelinsu hakkında yeni bilgilere ulaşmak için araştırması gerekecekti. 
 
 hipster_koder denen arkadaşı sosyal medyayı tararken Instagram'da [bulduk.](https://www.instagram.com/hipster_koder/) Ekran kasmak doğamızda olduğu için GitHub hesabı gözden kaçmadı tabii. *Çok büyük proje'nin* geçmişine göz gezdirirken ilginç bir commit ile iki satırın kaldırıldığını gördük. 
 
@@ -439,9 +442,9 @@ sorunun başlığı her ne kadar *Whatsapp??* diye bağırsa da "Heykır adam Wh
 ### Arap saçına döndüm, çöz beni arap saçı
 ####  400 (+ 40) Points 
 
->Pelinsu acaba Hollanda'dan kalkıp savaş bölgesine doğru gitmiş olabilir miydi ? Buraları iyi bilen birilerini araştırmak gerekecek ...
->
->joinchat/AAAAAESbwxmZjRyggLlfqA
+> Pelinsu acaba Hollanda'dan kalkıp savaş bölgesine doğru gitmiş olabilir miydi ? Buraları iyi bilen birilerini araştırmak gerekecek ...
+> 
+> joinchat/AAAAAESbwxmZjRyggLlfqA
 
 önceki sorudan sonra bu ilaç gibi geldi. Telegram kanalına dahil olduk, bu noktada insan kendini ejan moduna sokuyor aman sakin. Orada gerekli talimatlar verilmişti.
 
