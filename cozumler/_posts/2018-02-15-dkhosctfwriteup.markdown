@@ -23,6 +23,8 @@ Yarışma genel anlamda sorunsuz geçti. ([Sistem](https://twitter.com/ctfturkey
 
 Ciddi anlamda kız tarafını benimsemiş olucaz ki aheste aheste çözdük soruları. Pelinsu dedik Mahmut'u hor gördük, şimdi el içine çıkamaz olduk...
 
+---
+
 ## Forensics
 ### Karanlıkta Arayış Başlar
 #### 100 (+ 10) Points
@@ -187,6 +189,8 @@ gibi bir Google dorku kullansak da çıkıyor muydu la yoksa dedik... neyse heps
 
 Böylece forensicste "son parça"yı da yerine koymuş olduk. Sorularda böyle gerçekçi senaryolar işlenmesini ayrıca takdir ediyoruz.
 
+---
+
 ## Reversing
 ### Tamirci Pala Remzi
 #### 100 (+ 10) Points 
@@ -217,6 +221,8 @@ $ echo -n "*_?NiSiM_riZaH_royilSaB_*" | rev
 ```
 
 > **DKHOS{\*_BaSliyor_HaZir_MiSiN?_\*}**
+
+---
 
 ## Crypto
 
@@ -271,6 +277,8 @@ $ openssl rsautl -decrypt -inkey key.pem -in flag.txt.enc
 > **DKHOS_{b4by_h3ll0_w0rld_crypt0_b4by}**
 
 > ***not:** Kripto çözdük diye sevinecektik de flag metni gerçeği yüzümüze vurdu, sal da sevinelim ya*
+
+---
 
 ## Trivia
 ### Seç bakalım, şimdi sayı söyle
@@ -369,6 +377,8 @@ Yautja isimli saçma alfabeyle
 
 > **DKHOS{AZTEC}**
 
+---
+
 ## Mobile
 ### Ayrılığın hediyesi
 ####  100 (+ 10) Points 
@@ -401,6 +411,8 @@ gelen çıktının en üst kısmında şekil bir font bizi karşıladı
 > ***not:** fontun adını bilen varsa şaaparsa mesud eder bizi*
 
 > **DKHOS{IMDAT}**
+
+---
 
 ## Cyber Intelligence
 
