@@ -6,8 +6,7 @@ categories: blog
 ---
 
 # DKHOS CTF Çözümleri
-
-## **UPDATE**
+## UPDATE
 
 ![]({{ AUCyberClub.github.io }}/assets/img/dkhosctfcozumler/update.png)
 
