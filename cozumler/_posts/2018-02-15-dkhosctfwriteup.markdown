@@ -18,7 +18,7 @@ Kopya tespitlerinden sonra nihai sonuca göre 4 takım öne geçerek **5.** ve *
 
 Merhabalar,
  
-Ankara Üniversitesi Siber Güvenlik Topluluğu adına ***AUCC*** takım ismi ile 4 kişi katıldığımız [**DKHOS CTF**](https://www.dkhos.com)'te şuanda nihai olmayan tabloya göre 9. tamamladık.
+Ankara Üniversitesi Siber Güvenlik Topluluğu adına ***AUCC*** takım ismi ile 4 kişi katıldığımız [**DKHOS CTF**](https://www.dkhos.com)'te şuanda nihai olmayan tabloya göre 9.(**Son duruma göre 5.**) tamamladık.
 
 ![]({{ AUCyberClub.github.io }}/assets/img/dkhosctfcozumler/unofficialscoreboard.png)
 
