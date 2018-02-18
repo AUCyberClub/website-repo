@@ -15,7 +15,6 @@ Kopya tespitlerinden sonra nihai sonuca göre 4 takım öne geçerek **5.** ve *
 
 ---
 
-# 
 
 Merhabalar,
  
