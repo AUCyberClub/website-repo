@@ -5,14 +5,13 @@ date: '2018-02-15 20:10:00 +0300'
 categories: blog
 ---
 
-# DKHOS CTF Çözümleri
 ## UPDATE
 
 ![]({{ AUCyberClub.github.io }}/assets/img/dkhosctfcozumler/update.png)
 
 Kopya tespitlerinden sonra nihai sonuca göre 4 takım öne geçerek **5.** ve **katılım sağlayan üniversite takımları arasında 1.** olduk.
 
-İlgili tweetler: [*AUCC*](https://twitter.com/_aucc/status/965337478541533185) | [*DKHOS*](https://twitter.com/ctfturkey/status/965335027029594112)
+İlgili tweetler: *[AUCC](https://twitter.com/_aucc/status/965337478541533185)* | *[DKHOS](https://twitter.com/ctfturkey/status/965335027029594112)*
 
 ---
 
