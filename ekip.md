@@ -101,6 +101,7 @@ Kaan Ezder
 
 [Sema Örnek](https://twitter.com/semarnek)
  - [Avustralya'nın Siber Güvenlik Stratejisi](https://www.aucyberclub.org/blog/2017/02/15/avustralyasiberguvenlikstratejisi.html) 
+ - [Lazysysadmin Walkthrough](https://www.aucyberclub.org/cozumler/2018/01/16/lazysysadmin.html)
 
 [Sena Kudu](https://twitter.com/SenaKudu)
  - [Whatsapp ve Arka Kapının İlişkisi çevirisi](https://www.aucyberclub.org/blog/2017/02/15/whatsapparkakapiiliskisi.html) 
