@@ -79,6 +79,10 @@ Ankara University Cyber Club topluluk üyelerinin alfabetik sıra ile isimlerini
  - [ABD Seçimlerindeki Rus Faaliyetleri ve Amaçları çevirisi](https://www.aucyberclub.org/blog/2017/02/15/abdsecimlerindekirusfaaliyetleri.html) 
  - [Çin Halk Cumhuriyeti Siber Güvenlik Bildirgesi çevirisi](https://www.aucyberclub.org/blog/2017/02/15/cinsiberguvenlikbildirgesi.html) 
 
+Kaan Ezder
+ - **Kurucu Üye**	
+ - [Genel Hatlarıyla Kriptografi ve Kuantum Kriptografiye Giriş](https://www.aucyberclub.org/blog/2017/02/16/kuantumkriptografi.html) 
+
 [Mahmut Sami Karaca](https://twitter.com/msamikaraca_)
 -  [Padding-Oracle Walkthrough](https://www.aucyberclub.org/cozumler/2017/11/26/Padding-Oracle.html)
 
