@@ -19,6 +19,9 @@ Ankara University Cyber Club topluluk üyelerinin alfabetik sıra ile isimlerini
 
 [Aytuna Kandemir](https://twitter.com/arafilament)
  - **Kurucu Üye**
+ 
+[Behçet Şentürk](https://github.com/bhctsntrk)
+ - [D0Not5top Walkthrough](https://www.aucyberclub.org/cozumler/2017/08/23/D0Not5top.html)
 
 [Burak Tokak](https://github.com/btk)
  - **Kurucu Üye**
@@ -44,7 +47,8 @@ Ankara University Cyber Club topluluk üyelerinin alfabetik sıra ile isimlerini
  - [SQL Injection to Shell Web Walkthrough](https://www.aucyberclub.org/blog/2017/03/06/sqlitoshell.html) 
  - [HackThis Web Walkthrough Part 1](https://www.aucyberclub.org/blog/2017/02/23/hackthissitepart1.html) 
  - [HackThis Web Walkthrough Part 2](https://www.aucyberclub.org/blog/2017/02/26/hackthissitepart2.html) 
- - [The Necromancer:1 Walkthrough](https://www.aucyberclub.org/blog/2017/03/14/necromancer.html)  
+ - [The Necromancer:1 Walkthrough](https://www.aucyberclub.org/blog/2017/03/14/necromancer.html)
+ - [6 Days Lab Walkthrough](https://www.aucyberclub.org/cozumler/2017/07/18/6dayslab.html)
 
 [Ezgi Aydoğan](https://twitter.com/ezgiaydogan96)
  - [Elektronik İmza Olarak GPG blog yazısı](https://www.aucyberclub.org/blog/2017/02/22/GPGblog.html) 
@@ -56,6 +60,7 @@ Ankara University Cyber Club topluluk üyelerinin alfabetik sıra ile isimlerini
 [Hüseyin Erdem](https://twitter.com/rootofarch)
  - [HackDay Albania Walktrough](https://www.aucyberclub.org/blog/2017/03/03/hackadayalbaniactfsolution.html) 
  - [Wallaby's Nightmare Walkthrough](https://www.aucyberclub.org/blog/2017/03/10/wallabys.html)  
+ - [DonkeyDocker Walkthrough](https://www.aucyberclub.org/cozumler/2017/07/03/Donkey-Docker.html)
 
 [İhsan Adaş](https://twitter.com/i_adas)
  - **Kurucu Üye**
@@ -74,9 +79,8 @@ Ankara University Cyber Club topluluk üyelerinin alfabetik sıra ile isimlerini
  - [ABD Seçimlerindeki Rus Faaliyetleri ve Amaçları çevirisi](https://www.aucyberclub.org/blog/2017/02/15/abdsecimlerindekirusfaaliyetleri.html) 
  - [Çin Halk Cumhuriyeti Siber Güvenlik Bildirgesi çevirisi](https://www.aucyberclub.org/blog/2017/02/15/cinsiberguvenlikbildirgesi.html) 
 
-Kaan Ezder
- - **Kurucu Üye**	
- - [Genel Hatlarıyla Kriptografi ve Kuantum Kriptografiye Giriş](https://www.aucyberclub.org/blog/2017/02/16/kuantumkriptografi.html) 
+[Mahmut Sami Karaca](https://twitter.com/msamikaraca_)
+-  [Padding-Oracle Walkthrough](https://www.aucyberclub.org/cozumler/2017/11/26/Padding-Oracle.html)
 
 [Mücahid Ceylan](https://twitter.com/m3o_cey)
  - [En Basit Hali ile HTTP Api Oluşturmak (PHP)](https://www.aucyberclub.org/blog/2017/02/26/enbasithaliilehttpapi.html) 
