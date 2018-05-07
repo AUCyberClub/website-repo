@@ -17,4 +17,4 @@ Twitter:  	https://twitter.com/_aucc
 Github:    	https://github.com/aucyberclub
 ```
 
-(AUCC)[https://twitter.com/_aucc]
+[AUCC](https://twitter.com/_aucc)
