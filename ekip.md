@@ -44,6 +44,7 @@ Ankara University Cyber Club topluluk üyelerinin alfabetik sıra ile isimlerini
  - [Pelican ile GitHub Üzerinde Blog Oluşturma blog yazısı](https://www.aucyberclub.org/blog/2017/02/11/pelicangithubblog.html) 
 
 [Engin Demirbilek](https://twitter.com/Hyal0id)
+- **Güncel Başkan**
  - [SQL Injection to Shell Web Walkthrough](https://www.aucyberclub.org/blog/2017/03/06/sqlitoshell.html) 
  - [HackThis Web Walkthrough Part 1](https://www.aucyberclub.org/blog/2017/02/23/hackthissitepart1.html) 
  - [HackThis Web Walkthrough Part 2](https://www.aucyberclub.org/blog/2017/02/26/hackthissitepart2.html) 
