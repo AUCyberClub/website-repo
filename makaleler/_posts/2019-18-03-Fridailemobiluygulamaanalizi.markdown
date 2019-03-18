@@ -63,7 +63,7 @@ Bu fonksiyon da "sg.vantagepoint.uncrackable1.a" classında bulunan başka bir "
 
 ![]({{ AUCyberClub.github.io }}/assets/img/frida101/7.png)
 
-<p>Bu fonksiyonu da incelediğimizde, "sg.vantagepoint.a.a" class'ında bulunan başka bir "a" fonksiyonuna input'a yazdığımız değeri gönderip bir sonuç aldığını ve karşılaştırmayı da bu sonuçla yaptığını görüyoruz. İşimize yarayacak olan değer bu sonuçtan geliyor gibi görünüyor. Fonksiyonu hooklayıp return edilen değeri okumamız gerekiyor. Ancak return edilen değer ayrıca byte data olarak geldiği için bir de string'e çevirmemiz gerekiyor.</p>
+Bu fonksiyonu da incelediğimizde, "sg.vantagepoint.a.a" class'ında bulunan başka bir "a" fonksiyonuna input'a yazdığımız değeri gönderip bir sonuç aldığını ve karşılaştırmayı da bu sonuçla yaptığını görüyoruz. İşimize yarayacak olan değer bu sonuçtan geliyor gibi görünüyor. Fonksiyonu hooklayıp return edilen değeri okumamız gerekiyor. Ancak return edilen değer ayrıca byte data olarak geldiği için bir de string'e çevirmemiz gerekiyor.
 
 ```
 	Java.perform(function() {
