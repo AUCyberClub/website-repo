@@ -9,7 +9,7 @@ Merhaba, bu yazıda çoğu platformda kullanılabilen reverse engineering aracı
 hakkında konuşacağız.
 
 ### Peki Neye Yarar Frida?
-Frida IOS, Android, Windows, Linux vs çoğu platformda çalıştırılabiliyor olsa da bu yazıda daha çok **Android** ile ilgileceğiz. Frida ile uygulamada bulunan herhangi bir fonksiyonu hooklayıp istediğimiz şekilde manipüle edebiliyoruz. Fonksiyona parametre olarak gönderilen veya fonksiyondan döndürülen değeri okuyabiliyoruz, hatta etkisiz hale bile getirebiliyoruz.
+Frida IOS, Android, Windows, Linux vs çoğu platformda çalıştırılabiliyor olsa da bu yazıda daha çok **Android** ile ilgileneceğiz. Frida ile uygulamada bulunan herhangi bir fonksiyonu hooklayıp istediğimiz şekilde manipüle edebiliyoruz. Fonksiyona parametre olarak gönderilen veya fonksiyondan döndürülen değeri okuyabiliyoruz, hatta etkisiz hale bile getirebiliyoruz.
 
 ### Dynamic Binary Instrumentation nedir?
 **DBI** (Dinamik İkili Enstrümantasyon) çalışan işlemleri analiz etmek için kullanılan bir tekniktir. Kod enjeksiyonu ve modül yükleme de dahil olmak üzere birçok farklı yöntem kullanır ve oldukça başarılı olduğu kanıtlanmıştır.
