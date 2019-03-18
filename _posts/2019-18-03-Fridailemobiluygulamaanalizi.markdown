@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Frida ile Android Reversing
+title: Frida ile Mobil Uygulama Analizi
 date: '2019-03-18 15:50:00 +0300'
 categories: blog
 ---
@@ -29,7 +29,7 @@ Daha ayrıntılı kurulum için https://www.frida.re/docs/quickstart/ adresini z
 ### Başlayalım?
 <p>Frida, uygulamadaki fonksiyonları hooklayabilmeniz için bir **JavaScript API** sunuyor. Yazılan JS kodları da frida-server tarafından runtime'da çalışan process'e enjekte ediliyor. Yani apk'yı decompile ettikten sonra, hooklamak istediğiniz fonksiyonu oluşturduğunuz JS dosyasında belirtiyorsunuz. Daha iyi anlatabilmek için, <a href="https://github.com/OWASP/owasp-mstg/tree/master/Crackmes/Android/Level_01">OWASP'ın Uncrackable1</a> **reverse engineering** sorusu üzerinden örnek göstereceğim. Soru bizden uygulama içerisine hashlenip gizlenmiş bir string'i ortaya çıkarmamızı istiyor.</p>
 
-![]({{ AUCyberClub.github.io }}/assets/img/frida101/2.png | height=300)
+![]({{ AUCyberClub.github.io }}/assets/img/frida101/2.png)
 
 Uygulamayı başlattığımız anda bir sorunla karşılaşıyoruz. Cihazımız **root** erişimine sahip olduğu için uyarı şeklinde bir dialog gösteriliyor. Dialog'u onayladığımızda ise, uygulamadan tamamen çıkıyor. APK dosyasını indirip jadx ile decompile ettiğimizde, MainActivity.java dosyasının OnCreate metodu içinde root erişimini tespit eden 3 farklı fonksiyon kullanılmış olduğunu görüyoruz. Fonksiyonun içeriği bizi pek de ilgilendirmiyor aslında. Ne döndürürlerse, ne olur bilsek yeterli.	
 
