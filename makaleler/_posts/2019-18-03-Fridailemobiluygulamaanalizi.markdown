@@ -27,7 +27,7 @@ Ardından da "pip install frida-tools frida" ile frida client'ını çalıştı�
 Daha ayrıntılı kurulum için https://www.frida.re/docs/quickstart/ adresini ziyaret edebilirsiniz.
 
 ### Başlayalım?
-<p>Frida, uygulamadaki fonksiyonları hooklayabilmeniz için bir **JavaScript API** sunuyor. Yazılan JS kodları da frida-server tarafından runtime'da çalışan process'e enjekte ediliyor. Yani apk'yı decompile ettikten sonra, hooklamak istediğiniz fonksiyonu oluşturduğunuz JS dosyasında belirtiyorsunuz. Daha iyi anlatabilmek için, <a href="https://github.com/OWASP/owasp-mstg/tree/master/Crackmes/Android/Level_01">OWASP'ın Uncrackable1</a> **reverse engineering** sorusu üzerinden örnek göstereceğim. Soru bizden uygulama içerisine hashlenip gizlenmiş bir string'i ortaya çıkarmamızı istiyor.</p>
+Frida, uygulamadaki fonksiyonları hooklayabilmeniz için bir **JavaScript API** sunuyor. Yazılan JS kodları da frida-server tarafından runtime'da çalışan process'e enjekte ediliyor. Yani apk'yı decompile ettikten sonra, hooklamak istediğiniz fonksiyonu oluşturduğunuz JS dosyasında belirtiyorsunuz. Daha iyi anlatabilmek için, <a href="https://github.com/OWASP/owasp-mstg/tree/master/Crackmes/Android/Level_01">OWASP'ın Uncrackable1</a> **reverse engineering** sorusu üzerinden örnek göstereceğim. Soru bizden uygulama içerisine hashlenip gizlenmiş bir string'i ortaya çıkarmamızı istiyor.
 
 ![]({{ AUCyberClub.github.io }}/assets/img/frida101/2.png)
 
@@ -35,7 +35,7 @@ Uygulamayı başlattığımız anda bir sorunla karşılaşıyoruz. Cihazımız 
 
 ![]({{ AUCyberClub.github.io }}/assets/img/frida101/3.png)
 
-Burada karşımıza birden fazla seçenek geliyor. Root'u tespit eden fonksiyonları hooklayıp hepsinin direkt olarak false değer döndürmesini sağlayabiliriz, veya uygulamadan çıkmak için kullanılan System.exit() fonksiyonunu hooklayıp etkisiz hale getirebiliriz. İkinci seneçek daha az zahmetli görünüyor.
+Burada karşımıza birden fazla seçenek geliyor. Root'u tespit eden fonksiyonları hooklayıp hepsinin direkt olarak false değer döndürmesini sağlayabiliriz, veya uygulamadan çıkmak için kullanılan **System.exit()** fonksiyonunu hooklayıp etkisiz hale getirebiliriz. İkinci seneçek daha az zahmetli görünüyor.
 
 ```
 	Java.perform(function() {
@@ -59,11 +59,11 @@ Bu aşamayı geçtik. Peki gizli string'e nasıl ulaşacağız? MainActivity.cla
 
 ![]({{ AUCyberClub.github.io }}/assets/img/frida101/6.png)
 
-Bu fonksiyon da "sg.vantagepoint.uncrackable1.a" classında bulunan başka bir "a" fonksiyon ile kontrol yapıp bir sonuç döndürüyor.
+Bu fonksiyon da **sg.vantagepoint.uncrackable1.a** classında bulunan başka bir **a** fonksiyon ile kontrol yapıp bir sonuç döndürüyor.
 
 ![]({{ AUCyberClub.github.io }}/assets/img/frida101/7.png)
 
-Bu fonksiyonu da incelediğimizde, "sg.vantagepoint.a.a" class'ında bulunan başka bir "a" fonksiyonuna input'a yazdığımız değeri gönderip bir sonuç aldığını ve karşılaştırmayı da bu sonuçla yaptığını görüyoruz. İşimize yarayacak olan değer bu sonuçtan geliyor gibi görünüyor. Fonksiyonu hooklayıp return edilen değeri okumamız gerekiyor. Ancak return edilen değer ayrıca byte data olarak geldiği için bir de string'e çevirmemiz gerekiyor.
+Bu fonksiyonu da incelediğimizde, **sg.vantagepoint.a.a** class'ında bulunan başka bir **a** fonksiyonuna input'a yazdığımız değeri gönderip bir sonuç aldığını ve karşılaştırmayı da bu sonuçla yaptığını görüyoruz. İşimize yarayacak olan değer bu sonuçtan geliyor gibi görünüyor. Fonksiyonu hooklayıp return edilen değeri okumamız gerekiyor. Ancak return edilen değer ayrıca byte data olarak geldiği için bir de string'e çevirmemiz gerekiyor.
 
 ```
 	Java.perform(function() {
