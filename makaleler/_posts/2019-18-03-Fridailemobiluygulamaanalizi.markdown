@@ -50,7 +50,7 @@ Burada karşımıza birden fazla seçenek geliyor. Root'u tespit eden fonksiyonl
 ```
 
 Kullanacağımız JS kodları bu şekilde. Kodda Java.perform ile runtime'ı çağırdık ve callback fonksiyonu içerisinde hooklamak istediğimiz fonksiyonun bulunduğu class'ı hookladık. Artık uygulama içerisinde herhangi bir yerden System.exit() fonksiyonu çağırıldığında, orijinali yerine JS dosyamızda yazdığımız implementasyon çalıştırılacak.
-Ardından "frida -U -l script.js owasp.mstg.uncrackable1" komutunu çalıştırıp işlemi başlatıyoruz.
+Ardından ```frida -U -l script.js owasp.mstg.uncrackable1``` komutunu çalıştırıp işlemi başlatıyoruz.
 
 ![]({{ AUCyberClub.github.io }}/assets/img/frida101/4.png)
 ![]({{ AUCyberClub.github.io }}/assets/img/frida101/5.png | height=300)
