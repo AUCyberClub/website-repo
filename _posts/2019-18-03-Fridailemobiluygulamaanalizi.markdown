@@ -2,7 +2,7 @@
 layout: post
 title: Frida ile Mobil Uygulama Analizi
 date: '2019-03-18 15:50:00 +0300'
-categories: makaleler
+categories: blog
 ---
 
 Merhaba, bu yazıda çoğu platformda kullanılabilen reverse engineering aracı *"Dynamic instrumentation toolkit"* **Frida**
