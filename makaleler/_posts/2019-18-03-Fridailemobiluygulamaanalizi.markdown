@@ -98,3 +98,6 @@ Bu fonksiyonu da incelediğimizde, ```sg.vantagepoint.a.a``` class'ında bulunan
 
 ### Kapanış
 Genel olarak Frida'nın JS API ve Android ile kullanımı en basit hali ile bu şekilde, ancak Frida çok güçlü bir tool ve ben de henüz gücünü keşfetme aşamasındayım. Eğer Frida ile daha fazla deneyim kazanmak isterseniz, OWASP'ın Android ve IOS için 2'şer sorusu daha bulunuyor, onlara da <a href="https://github.com/OWASP/owasp-mstg/tree/master/Crackmes">https://github.com/OWASP/owasp-mstg/tree/master/Crackmes</a> şuradan ulaşıp çözmeye çalışabilirsiniz.
+
+----------------
+[İbrahim Süren](https://twitter.com/ibrahimsn98) | [GitHub](https://github.com/ibrahimsn98)
