@@ -9,7 +9,7 @@ Merhaba, bu yazıda çoğu platformda kullanılabilen reverse engineering aracı
 hakkında konuşacağız.
 
 ### Peki Neye Yarar Frida?
-Frida IOS, Android, Windows, Linux vs çoğu platformda çalıştırılabiliyor olsa da bu yazıda daha çok **Android** ile ilgileceğiz. Frida ile, uygulamada bulunan herhangi bir fonksiyonu hooklayıp istediğimiz şekilde manipüle edebiliyoruz. Fonksiyona parametre olarak gönderilen veya fonksiyondan döndürülen değeri okuyabiliyoruz, hatta etkisiz hale bile getirebiliyoruz.
+Frida IOS, Android, Windows, Linux vs çoğu platformda çalıştırılabiliyor olsa da bu yazıda daha çok **Android** ile ilgileceğiz. Frida ile uygulamada bulunan herhangi bir fonksiyonu hooklayıp istediğimiz şekilde manipüle edebiliyoruz. Fonksiyona parametre olarak gönderilen veya fonksiyondan döndürülen değeri okuyabiliyoruz, hatta etkisiz hale bile getirebiliyoruz.
 
 ### Dynamic Binary Instrumentation nedir?
 **DBI** (Dinamik İkili Enstrümantasyon) çalışan işlemleri analiz etmek için kullanılan bir tekniktir. Kod enjeksiyonu ve modül yükleme de dahil olmak üzere birçok farklı yöntem kullanır ve oldukça başarılı olduğu kanıtlanmıştır.
@@ -18,7 +18,7 @@ Her ne kadar DBI işlevselliğinin çoğu geleneksel bir hata ayıklayıcı ile 
 
 ### Kurulum
 Bilgisayarınızda python, **adb** ve **jadx** kurulu olduğunu varsayarak kuruluma geçiyorum.
-Öncelikle fridayı kullanabilmeniz için Android cihazınızda **frida-server** çalışıyor olması gerekiyor. <a href="https://github.com/frida/frida/releases">Şuradan</a> android için olan en güncel frida-server'ı indirebilirsiniz. Eğer **Android emulator** veya **Genymotion** üzerinde çalışacaksanız, x86 sürümünü indirmeniz gerekiyor. Sonra da ```adb push frida /data/local/tmp``` ile cihaza aktarıyoruz. Server'a execute iznini verdikten sonra, ```/data/local/tmp/frida &``` diyerek frida-server'ı arkaplanda başlatıyoruz.
+Öncelikle fridayı kullanabilmeniz için Android cihazınızda **frida-server** çalışıyor olması gerekiyor. <a href="https://github.com/frida/frida/releases">Şuradan</a> android için olan en güncel frida-server'ı indirebilirsiniz. Eğer **Android emulator** veya **Genymotion** üzerinde çalışacaksanız x86 sürümünü indirmeniz gerekiyor. Sonra da ```adb push frida /data/local/tmp``` ile cihaza aktarıyoruz. Server'a execute iznini verdikten sonra ```/data/local/tmp/frida &``` diyerek frida-server'ı arkaplanda başlatıyoruz.
 
 ![]({{ AUCyberClub.github.io }}/assets/img/frida101/1.png)
 
@@ -31,7 +31,7 @@ Frida, uygulamadaki fonksiyonları hooklayabilmeniz için bir **JavaScript API**
 
 ![]({{ AUCyberClub.github.io }}/assets/img/frida101/2.png)
 
-Uygulamayı başlattığımız anda bir sorunla karşılaşıyoruz. Cihazımız **root** erişimine sahip olduğu için uyarı şeklinde bir dialog gösteriliyor. Dialog'u onayladığımızda ise, uygulamadan tamamen çıkıyor. APK dosyasını indirip jadx ile decompile ettiğimizde, ```MainActivity.java``` dosyasının ``OnCreate`` metodu içinde root erişimini tespit eden 3 farklı fonksiyon kullanılmış olduğunu görüyoruz. Fonksiyonun içeriği bizi pek de ilgilendirmiyor aslında. Ne döndürürlerse, ne olur bilsek yeterli.	
+Uygulamayı başlattığımız anda bir sorunla karşılaşıyoruz. Cihazımız **root** erişimine sahip olduğu için uyarı şeklinde bir dialog gösteriliyor. Dialog'u onayladığımızda ise uygulamadan tamamen çıkıyor. APK dosyasını indirip jadx ile decompile ettiğimizde, ```MainActivity.java``` dosyasının ``OnCreate`` metodu içinde root erişimini tespit eden 3 farklı fonksiyon kullanılmış olduğunu görüyoruz. Fonksiyonun içeriği bizi pek de ilgilendirmiyor aslında. Ne döndürürlerse, ne olur bilsek yeterli.	
 
 ![]({{ AUCyberClub.github.io }}/assets/img/frida101/3.png)
 
