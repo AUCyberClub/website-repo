@@ -31,7 +31,7 @@ Frida, uygulamadaki fonksiyonları hooklayabilmeniz için bir **JavaScript API**
 
 ![]({{ AUCyberClub.github.io }}/assets/img/frida101/2.png)
 
-Uygulamayı başlattığımız anda bir sorunla karşılaşıyoruz. Cihazımız **root** erişimine sahip olduğu için uyarı şeklinde bir dialog gösteriliyor. Dialog'u onayladığımızda ise uygulamadan tamamen çıkıyor. APK dosyasını indirip jadx ile decompile ettiğimizde, ```MainActivity.java``` dosyasının ``OnCreate`` metodu içinde root erişimini tespit eden 3 farklı fonksiyon kullanılmış olduğunu görüyoruz. Fonksiyonun içeriği bizi pek de ilgilendirmiyor aslında. Ne döndürürlerse, ne olur bilsek yeterli.	
+Uygulamayı başlattığımız anda bir sorunla karşılaşıyoruz. Cihazımız **root** erişimine sahip olduğu için uyarı şeklinde bir dialog gösteriliyor. Dialog'u onayladığımızda ise uygulamadan tamamen çıkıyor. APK dosyasını indirip jadx ile decompile ettiğimizde, ```MainActivity.java``` dosyasının ``OnCreate`` metodu içinde root erişimini tespit eden 3 farklı fonksiyon kullanılmış olduğunu görüyoruz. Fonksiyonun içeriği bizi pek de ilgilendirmiyor aslında. Ne döndürürlerse ne olur bilsek yeterli.	
 
 ![]({{ AUCyberClub.github.io }}/assets/img/frida101/3.png)
 
