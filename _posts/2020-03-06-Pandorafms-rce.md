@@ -48,7 +48,7 @@ IDE üzerinde tüm projede bulunan php dosyalarında yukarıda belirttiğim fonk
 
 ![]({{ AUCyberClub.github.io }}/assets/img/pandorafms/pandorafms-finding-point.png)
 
-Hem **exec()** fonksiyonu kullanılıyor hemde henüz nerenden geldiği belli olmayan ama ben kullanıcıdan geliyorum diye bağıran bir değişkeni içeriyordu. Fazla Kemal Sunal izlemenin etkisinden olacak "Şimdi istanbul hapı yuttu" diye aklımdan geçirerek **$command** değişkeninin nereden geldiğini kurculamaya başladım.
+Hem **exec()** fonksiyonu kullanılıyor hemde henüz nereden geldiği belli olmayan ama ben kullanıcıdan geliyorum diye bağıran bir değişkeni içeriyordu. Fazla Kemal Sunal izlemenin etkisinden olacak "Şimdi istanbul hapı yuttu" diye aklımdan geçirerek **$command** değişkeninin nereden geldiğini kurcalamaya başladım.
 
 ![]({{ AUCyberClub.github.io }}/assets/img/pandorafms/pandorafms-command.png)
 
@@ -68,7 +68,7 @@ Fonksiyon bir sürü farklı girdiyi(ipsrc, ipdst, srcport, dstport) herhangi bi
 
 ![]({{ AUCyberClub.github.io }}/assets/img/pandorafms/pandorafms-google.png)
 
-Buradan dökümanları okumanın ne kadar önemli olduğunu tekrar alıyoruz. Site üzerinde biraz gezindikten sonra, heyecanımı tekrar kazandıran bir ekran görüntüsüne denk geldim
+Buradan dökümanları okumanın ne kadar önemli olduğunu tekrar anlıyoruz. Site üzerinde biraz gezindikten sonra, heyecanımı tekrar kazandıran bir ekran görüntüsüne denk geldim
 
 ![]({{ AUCyberClub.github.io }}/assets/img/pandorafms/pandorafms-google-netflow-dokuman.png)
 
