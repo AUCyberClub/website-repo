@@ -405,7 +405,7 @@ When we reboot the camera following the path `configration->maintenance->reboot`
 
 ![]({{ AUCyberClub.github.io }}/assets/img/syskronctf/Thursday/exposed-webcam_3.png)
 
-directing us to the [error page](https://www.senork.de/camtest/front/cam1/setup/bvKPRB9QvHR6v64HoJqfzbRrZpwQD9.html .
+directing us to the [error page](https://www.senork.de/camtest/front/cam1/setup/bvKPRB9QvHR6v64HoJqfzbRrZpwQD9.html) .
 
 ![]({{ AUCyberClub.github.io }}/assets/img/syskronctf/Thursday/exposed-webcam_4.png)
 
