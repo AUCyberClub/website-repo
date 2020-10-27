@@ -11,7 +11,7 @@ We finished the competition with 3420 points as 23rd.
 
 Below you can find the questions we solved in the competition.
 
-[AUCC](https://twitter.com/_aucc)
+[AUCC](https://twitter.com/_aucc) [@EbubekirTurker](https://twitter.com/EbubekirTurker)
 
 
 # Welcome 
