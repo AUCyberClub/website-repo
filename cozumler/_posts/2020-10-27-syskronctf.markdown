@@ -13,7 +13,7 @@ Yarışmayı `3420` puanla `23.` olarak tamamladık.
 Aşağıda yarışma dahilinde çözdüğümüz soruları bulabilirsiniz.
   
 Keyifli okumalar.  
-[AUCC](https://twitter.com/_aucc)
+[AUCC](https://twitter.com/_aucc) [@EbubekirTurker](https://twitter.com/EbubekirTurker)
 
 
 # Welcome 
