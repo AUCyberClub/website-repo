@@ -21,6 +21,7 @@
                 <a class="page-link" href="/kaynak/">Kaynaklar</a> 
                 <a class="page-link" href="/takvim/">Takvim</a> 
                 <a class="page-link" href="/blogyazilari/">HackYard</a>  
+                <a class="page-link" href="/hackingfalan/">Hacking Falan</a>  
                 <!--{% for my_page in site.pages %} {% if my_page.title %}
                <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a> {% endif %} {% endfor %} -->
             </div>
@@ -30,27 +31,3 @@
 
 </header>
 
-<div class="bread-crumbs">
-    <div class="wrapper">
-        <ul>
-            <a href="/">
-                <li>Anasayfa</li>
-            </a>
-            {% if page.layout == 'post' %}
-            <li class="divider">&#8250;</li>
-            <a href="/blogyazilari/">
-                <li>HackYard</li>
-            </a>
-            {% endif %} {% if page.layout == 'page' %}
-            <li class="divider">&#8250;</li>
-            <a href="/">
-                <li>Sayfalar</li>
-            </a>
-            {% endif %}
-            <li class="divider">&#8250;</li>
-            <a href="{{ my_page.url | relative_url }}">
-                <li>{{page.title}}</li>
-            </a>
-        </ul>
-    </div>
-</div>
