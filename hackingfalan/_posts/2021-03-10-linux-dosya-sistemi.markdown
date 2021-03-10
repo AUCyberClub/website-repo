@@ -28,8 +28,8 @@ bölümleri olabilir. Genel olarak, her bölüm bir dosya sistemi içerir.
 Linux dosya sistemi aşağıdaki bölümleri içerir:
 </p>
 <ul>
-<li>Kök dizin (/)
-<li>Belirli bir veri depolama biçimi (EXT3, EXT4, BTRFS, XFS vb.)
+<li>Kök dizin (/)</li>
+<li>Belirli bir veri depolama biçimi (EXT3, EXT4, BTRFS, XFS vb.)</li>
 <li>Belirli bir dosya sistemine sahip bir bölüm(partition) veya mantıksal
 birim(logical volume).
 </li>
@@ -115,21 +115,21 @@ Linux'taki diğer tüm dizinlere(directory) kök dizinden erişilebilir.
 bileşenleri ayırmak için Windows gibi ters eğik çizgiyi (\) kullanmaz;
 alternatif olarak eğik çizgi (/) kullanır. Örneğin, Windows'ta olduğu gibi,
 veriler C: \Belgelerim\Ornek konumunda depolanabilirken, Linux'ta
-/home/belgelerim/ornek konumunda depolanabilir.
+/home/belgelerim/ornek konumunda depolanabilir.</li>
 <li><strong>Bölüm, Dizinler ve Sürücüler(Partition, Directories, and
 Drives):</strong> Linuxta sürücüler düzenlemek için Windows gibi harfler
 kullanılmaz(Windows->C sürücüsü, D süsürüsü gibi). Linux'ta bir bölüme(patition)
 mi, ağ aygıtına mı yoksa "sıradan" bir dizine ve bir Sürücüye mi hitap
-ettiğimizi söyleyemeyiz.
+ettiğimizi söyleyemeyiz.</li>
 <li><strong>Büyük / Küçük Harfe Duyarlılık(Case Sensitivity):</strong> Linux
 dosya sistemi büyük/küçük harfe duyarlıdır. Küçük ve büyük dosya adlarını
 birbirinden ayırır. Örneğin, Linux'ta test.txt ile Test.txt farklıdır. Bu kural
-aynı zamanda dizinler ve Linux komutları için de geçerlidir.
+aynı zamanda dizinler ve Linux komutları için de geçerlidir.</li>
 <li><strong>Dosya Uzantıları(File Extensions):</strong> Linux'ta bir dosya
 '.txt' uzantısına sahip olabilir, ancak bir dosyanın dosya uzantısına sahip
 olması gerekli değildir. Yeni başlayanlar shell(terminal) ile çalışırken, dosya
 ve dizinleri ayırt etmekte bazı sorunlar yaşayabilir. Grafik dosya yöneticisini
-kullanırsak, bu dosya ve klasörleri sembolize eder.
+kullanırsak, bu dosya ve klasörleri sembolize eder.</li>
 <li><strong>Gizli dosyalar(Hidden files):</strong> Linux standart dosyalar ile
 gizli dosyalar arasında ayrım yapar, çoğunlukla yapılandırma(configuration)
 dosyaları Linux işletim sisteminde gizlidir. Genellikle gizli dosyalara
@@ -476,8 +476,8 @@ başlayacaksınız.
 <h1><strong>KAYNAKLAR</strong></h1>
 <ul>
 <li><a
-href="https://www.javatpoint.com/linux-file-system">https://www.javatpoint.com/linux-file-system</a>
+href="https://www.javatpoint.com/linux-file-system">https://www.javatpoint.com/linux-file-system</a></li>
 <li><a
-href="https://www.tutorialspoint.com/unix/unix-file-system.htm">https://www.tutorialspoint.com/unix/unix-file-system.htm</a>
+href="https://www.tutorialspoint.com/unix/unix-file-system.htm">https://www.tutorialspoint.com/unix/unix-file-system.htm</a></li>
 <li><a
-href="https://www.linux.com/training-tutorials/linux-filesystem-explained/">https://www.linux.com/training-tutorials/linux-filesystem-explained/</a>
+href="https://www.linux.com/training-tutorials/linux-filesystem-explained/">https://www.linux.com/training-tutorials/linux-filesystem-explained/</a></li>
