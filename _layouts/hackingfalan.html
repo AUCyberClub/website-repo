@@ -1,0 +1,54 @@
+---
+layout: default
+---
+
+<h1 class="post-title">Hacking Falan</h1>
+<p>Siber güvenliğe ilgi duyup da nereden başlayacağınızı bilmiyorsanız, sizin için referans olabilecek bir path oluşturuyoruz falan.</p>
+<hr>
+<br>
+
+<article class="post">
+
+    <div class="container">
+        <h3>Intro</h3> {{ content }}
+
+        {% for post in site.categories.intro %}
+        <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        {% endfor %}
+        <br>        <br>
+
+        <hr>
+        <br>
+    </div>
+    <div class="container">
+        <h3>Linux</h3> {{ content }}
+
+        {% for post in site.categories.linux %}
+        <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        {% endfor %}
+        <br>        <br>
+
+        <hr>
+        <br>
+    </div>
+    <div class="container">
+        <h3>Network</h3> {{ content }}
+
+        {% for post in site.categories.network %}
+        <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        {% endfor %}
+        <br>        <br>
+        <hr>
+        <br>
+    </div>
+    <div class="container">
+        <h3>Web</h3> {{ content }}
+
+        {% for post in site.categories.web %}
+        <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        {% endfor %}
+        <br>        <br>
+        <hr>
+        <br>
+    </div>
+</article>
