@@ -2,6 +2,7 @@
 layout: post
 title: Linux Dosya Sistemi
 date: '2021-03-10 22:26:47 +0300'
+author: Kübra Dilara Balcı
 categories: intro
 ---
 <center><h1><strong>LİNUX DOSYA SİSTEMİ</strong></h1></center>

@@ -12,6 +12,19 @@ comments: true
 
   <div class="post-content" itemprop="articleBody">
     {{ content }}
+
+<br>
+<h3>Yazara ait diğer yazılar</h3>
+{% for post in site.posts %}
+{% for author in post.author %}
+    {% if author == post.author %}
+        <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+
+    {% endif %}
+{% endfor %}
+{% endfor %}
   </div>
     {% include disqus_comments.html %}
+
+    
 </article>
