@@ -151,10 +151,8 @@ ReiserFS, XFS, btrfs ve swap gibi birçok dosya sistemi sunar.
 <p>
 Bu dosya sistemlerini birlikte inceleyelim.
 </p>
-<ol>
 <li><strong>Ext, Ext2, Ext3 and Ext4</strong>
 </li>
-</ol>
 <p>
 Dosya sistemi <strong>Ext(Extended File System)</strong> Genişletilmiş Dosya
 Sistemi anlamına gelir. Öncelikle <strong>MINIX OS</strong> için
@@ -173,20 +171,16 @@ görüntüsünü desteklemediği için sunucuları desteklememesidir.
 hızlı dosya sistemidir. SSD (solid-state drive) diskleri için çok uyumlu bir
 seçenektir ve Linux dağıtımında varsayılan dosya sistemidir.
 </p>
-<ol>
 <li><strong>JFS </strong>
 </li>
-</ol>
 <p>
 JFS(Journaled File System) IBM tarafından AIX Unix için geliştirilmiştir. Ext
 dosya sistemine bir alternatiftir. Az kaynakla stabilitenin gerekli olduğu Ext4
 yerine de kullanılabilir. CPU gücü sınırlı olduğunda kullanışlı bir dosya
 sistemidir.
 </p>
-<ol>
 <li><strong>ReiserFS</strong>
 </li>
-</ol>
 <p>
 ReiserFS Ext3 dosya sistemine bir alternatiftir. İyileştirilmiş performansa ve
 geliştirilmiş özelliklere sahiptir. Önceden, ReiserFS SUSE Linux'ta varsayılan
@@ -194,28 +188,22 @@ dosya sistemi olarak kullanılıyordu ama daha sonra bazı politikaları değiş
 Bu nedenle SUSE Ext3'e geri döndü. Bu dosya sistemi, dosya uzantısını dinamik
 olarak destekler ama performansta bazı dezavantajlara sahiptir.
 </p>
-<ol>
 <li><strong>XFS</strong>
 </li>
-</ol>
 <p>
 XFS dosya sistemi paralel I/O işleme için geliştirilen yüksek hızlı JFS olarak
 kabul edildi. NASA yüksek depolama sunucusuyla (300+ Terabyte sunucusu) bu dosya
 sistemini hala kullanıyor.
 </p>
-<ol>
 <li><strong>Btrfs</strong>
 </li>
-</ol>
 <p>
 Btrfs B ağacı dosya sistemini ifade eder. Hata toleransı, onarım sistemi,
 eğlence yönetimi, kapsamlı depolama yapılandırması ve daha fazlası için
 kullanılır. Üretim sistemi için uygun değildir.
 </p>
-<ol>
 <li><strong>Swap</strong>
 </li>
-</ol>
 <p>
 Takas(swap) dosya sistemi, sistem hazırda bekletme(hibernation)
 sırasındayken Linux işletim sisteminde bellek sayfalama(memory paging) için
@@ -303,8 +291,8 @@ sürücülerdir.
 <strong>/media </strong>
 </p>
 <p>
-<strong>/media dizini takıp erişmeye çalıştığınızda harici depolamanın
-otomatik olarak bağlanacağı(mounted) yerdir.</strong> Bu listedeki diğer
+/media dizini takıp erişmeye çalıştığınızda harici depolamanın
+otomatik olarak bağlanacağı(mounted) yerdir.Bu listedeki diğer
 öğelerin çoğunun aksine, /media 1970'lere geri dönmüyor, bunun başlıca nedeni,
 bir bilgisayar çalışırken anında eklenen ve saptalan depolama (pendrives, USB
 sabit diskler, SD kartlar, harici SSD'ler vb.) nispeten yeni bir şey.
