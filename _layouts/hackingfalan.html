@@ -21,33 +21,33 @@ layout: default
         <br>
     </div>
     <div class="container">
-        <h3>Linux</h3> {{ content }}
+        <h3>Linux 101</h3> {{ content }}     
         {% assign posts = site.categories.linux | sort: 'index'  %}
         {% for post in posts %}
         <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a><br>
         {% endfor %}
-        <br>        <br>
+        <br>       
 
         <hr>
         <br>
     </div>
     <div class="container">
         <h3>Network</h3> {{ content }}
-
-        {% for post in site.categories.network %}
+        {% assign posts = site.categories.network | sort: 'index'  %}
+        {% for post in posts %}
         <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a><br>
         {% endfor %}
-        <br>        <br>
+        <br>        
         <hr>
         <br>
     </div>
     <div class="container">
         <h3>Web</h3> {{ content }}
-
-        {% for post in site.categories.web %}
+        {% assign posts = site.categories.web | sort: 'index'  %}
+        {% for post in posts %}
         <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a><br>
         {% endfor %}
-        <br>        <br>
+        <br>       
         <hr>
         <br>
     </div>
