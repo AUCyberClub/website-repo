@@ -4,6 +4,7 @@ title: Linux Nedir/Neden?
 date: '2021-03-10 22:26:47 +0300'
 author: Berkay Çelebi
 categories: linux
+index: 1
 ---
 <center><h1>Linux Nedir/Neden?</h1></center>
 

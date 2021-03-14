@@ -4,7 +4,7 @@ title: Linux Dosya Sistemi
 date: '2021-03-13 22:26:47 +0300'
 author: Kübra Dilara Balcı
 categories: linux
-index: 2
+index: 4
 ---
 <center><h1><strong>LİNUX DOSYA SİSTEMİ</strong></h1></center>
 <p>
