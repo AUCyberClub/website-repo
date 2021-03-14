@@ -4,7 +4,7 @@ title: Alternatif Özgür Yazılımlar
 date: '2021-03-10 22:26:47 +0300'
 author: Kübra Dilara Balcı
 categories: linux
-index: 1
+index: 5
 ---
 
 # **ALTERNATİF ÖZGÜR YAZILIMLAR**

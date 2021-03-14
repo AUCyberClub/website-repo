@@ -4,6 +4,7 @@ title: GNU/Linux ve Özgür Yazılım
 date: '2021-03-11 22:59:47 +0300'
 author: Berkay Çelebi
 categories: linux
+index: 2
 ---
 <center><h1><strong>GNU/Linux ve Özgür Yazılım</strong></h1></center>
 
