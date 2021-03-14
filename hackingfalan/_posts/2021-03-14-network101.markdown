@@ -119,13 +119,43 @@ IP ağlarındaki her bir cihazın sahip olması gereken sanal (yazılımsal) ve 
 
 Bu IP ilk kullanılmaya başlandığında bu sayısal değerin yetersiz kalacağını tahmin edememişler ve IP adreslerini bir takım sınıflara bölerek bol keseden dağıtmışlar.
 
-| Sınıf      |        Adres Aralığı        | Varsayılan Subnet Mask    |
-| -----------| ----------------------------|------------------------   |
-| A          | 1.0.0.0 to 126.255.255.255  |        255.0.0.0          |
-| B          | 128.0.0.0 to 191.255.255.255|       255.255.0.0         |
-| C          | 192.0.0.0 to 223.255.255.255|      255.255.255.0        |
-| D          | 224.0.0.0 to 239.255.255.255|Multicast için ayrılmıştır |
-| E          | 240.0.0.0 to 254.255.255.255|       Experimental        |
+<table border="1" style="text-align:center;">
+  <thead>
+    <tr>
+      <th>Sınıf</th>
+      <th>Adres Aralığı</th>
+      <th>Varsayılan Subnet Mask</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>A</td>
+      <td>1.0.0.0 to 126.255.255.255</td>
+      <td>255.0.0.0</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>128.0.0.0 to 191.255.255.255</td>
+      <td>255.255.0.0</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>192.0.0.0 to 223.255.255.255</td>
+      <td>255.255.255.0</td>
+    </tr>
+    <tr>
+      <td>D</td>
+      <td>224.0.0.0 to 239.255.255.255</td>
+      <td>Multicast için ayrılmıştır</td>
+    </tr>
+    <tr>
+      <td>E</td>
+      <td>240.0.0.0 to 254.255.255.255</td>
+      <td>Experimental</td>
+    </tr>
+  </tbody>
+</table>
+
 
 Tabloda ilk oktedi 0 ve 127 olan IP adreslerini göremiyoruz. 0.0.0.0 varsayılan yönlendirme adresi olarak, 127.0.0.0 ise loopback adresi olarak ayrılmıştır.
 
