@@ -1,9 +1,10 @@
 ---
 layout: post
 title: Linux Dosya Sistemi
-date: '2021-03-10 22:26:47 +0300'
+date: '2021-03-13 22:26:47 +0300'
 author: Kübra Dilara Balcı
-categories: intro
+categories: linux
+index: 2
 ---
 <center><h1><strong>LİNUX DOSYA SİSTEMİ</strong></h1></center>
 <p>
@@ -81,7 +82,7 @@ Linux dosya sistemi, iki parçalı dosya sistemi yazılım uygulama mimarisini
 içerir. Aşağıdaki tabloda gördüğünüz gibi:
 </p>
 <p>
-    <img src="{{ AUCyberClub.github.io }}/hackingfalan/assets/linux-file-system.png" width="" alt="alt_text" title="image_tooltip">
+    <img src="{{ AUCyberClub.github.io }}/hackingfalan/assets/linux-dosya-sistemi/linux-file-system.png" width="" alt="alt_text" title="image_tooltip">
 </p>
 <p>
 Dosya sistemi, dosyalar(files) ve dizinler(directories) gibi dosya sistemi
@@ -100,7 +101,7 @@ sürücüsünün dosya sistemine bir arayüz vermesini gerektirir.
 <h2><strong>Linux Dosya Sistemi Özellikleri</strong></h2>
 <p>
 
-<img src="{{ AUCyberClub.github.io }}/hackingfalan/assets/Dosya_sistemi.png" width="" alt="alt_text" title="image_tooltip">
+<img src="{{ AUCyberClub.github.io }}/hackingfalan/assets/linux-dosya-sistemi/Dosya_sistemi.png" width="" alt="alt_text" title="image_tooltip">
 </p>
 <p>
 Linux'ta dosya sistemi bir ağaç yapısı oluşturur. Tüm dosyalar bir ağaç ve
@@ -146,7 +147,7 @@ ReiserFS, XFS, btrfs ve swap gibi birçok dosya sistemi sunar.
 </p>
 <p>
 
-<img src="{{ AUCyberClub.github.io }}/hackingfalan/assets/linux-file-system2.png" width="" alt="alt_text" title="image_tooltip">
+<img src="{{ AUCyberClub.github.io }}/hackingfalan/assets/linux-dosya-sistemi/linux-file-system2.png" width="" alt="alt_text" title="image_tooltip">
 </p>
 <p>
 Bu dosya sistemlerini birlikte inceleyelim.
@@ -449,7 +450,7 @@ dosyaları ve yazılımı içerir.
 </p>
 <p>
 
-<img src="{{ AUCyberClub.github.io }}/hackingfalan/assets/standard-unix-filesystem-hierarchy.png" width="" alt="alt_text" title="image_tooltip">
+<img src="{{ AUCyberClub.github.io }}/hackingfalan/assets/linux-dosya-sistemi/standard-unix-filesystem-hierarchy.png" width="" alt="alt_text" title="image_tooltip">
 </p>
 <h2><strong>Son Sözler</strong></h2>
 <p>
@@ -461,11 +462,3 @@ bilmelisiniz. Yeterince bilgisi olmayanlar için root(en yetkili kullanıcı)
 tehlikeli olabilir. Ama merak etmeyin alıştıkça daha çok sevmeye
 başlayacaksınız.
 </p>
-<h1><strong>KAYNAKLAR</strong></h1>
-<ul>
-<li><a
-href="https://www.javatpoint.com/linux-file-system">https://www.javatpoint.com/linux-file-system</a></li>
-<li><a
-href="https://www.tutorialspoint.com/unix/unix-file-system.htm">https://www.tutorialspoint.com/unix/unix-file-system.htm</a></li>
-<li><a
-href="https://www.linux.com/training-tutorials/linux-filesystem-explained/">https://www.linux.com/training-tutorials/linux-filesystem-explained/</a></li>

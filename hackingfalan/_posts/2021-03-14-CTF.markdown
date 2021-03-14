@@ -1,0 +1,158 @@
+---
+layout: post
+title: CTF Nedir?
+date: '2021-03-14 22:26:47 +0300'
+author: Kübra Dilara Balcı
+categories: intro
+index: 2
+---
+
+# **CTF**
+
+Siber Güvenlik ile ilgilenmeye başlamışsanız en azından bir kez olsa CTF kelimesini duymuşsunuzdur. Bu yazımızda Siber Güvenlik ile uğraşan bütün insanların her fırsatta dile getirdiği “CTF” konusuna yakından bakacağınız.
+
+
+
+
+
+
+![]({{ AUCyberClub.github.io }}/hackingfalan/assets/ctf/ctf_nedir.jpg)
+
+
+
+## **CTF NEDİR?**
+
+CTF(Capture The Flag) sözcük anlamı ile “bayrağı yakala” Siber Güvenlik alanında düzenlenen uygulamalı ve öğretici bir tür bilgi güvenliği yarışmasıdır. Zorluk derecelerine göre değişen ve katılımcıların çözmek için farklı becerilerini kullanmalarını gerektiren bir dizi zorluktan(challenge) oluşur. Bireysel bir challenge çözüldüğünde, katılımcıya bir “flag” verilir ve puan kazanmak için flagi CTF sunucusuna göndermesi gerekir. CTF yarışmaları belirli bir süre içerisinde yapılır. Belirlenen süre tamamlandığında en çok puanı alan katılımcı/takım CTF kazananı olarak belirlenir.
+
+
+## **CTF Katılımcıları Kimlerdir?**
+
+CTF katılımcıları genellikle güvenlik uzmanları, hackerlar ve öğrencilerden oluşur. Katılımcılar çeşitli challengeları tek başına deneyen yalnız kurtlar olabileceği gibi bir takım olarak rekabetçi bir şekilde en yüksek puanı almaya çalışmak için başkaları ile birlikte çalışabilir. 
+
+
+## **CTF Amacı**
+
+CTF yarışmalarının düzenlenme amacı siber güvenlik alanında teorik bilgiye sahip olan katılımcıların bilgilerini pratiğe dökerek kendilerini test etme imkanı tanımaktır. CTFlerde katılımcılardan hedef sistemi ele geçirmeleri ya da gizlenmiş olan dosyaları bulmaları istenir. Katılımcılar saldırgan bir bakış açısı kullanarak bu sistemlerde tecrübe kazanmış olur.
+
+
+## **CTF Türleri**
+
+CTF yarışmalarında 2 farklı tür vardır.
+
+### **Jeopardy CTF**
+
+
+![]({{ AUCyberClub.github.io }}/hackingfalan/assets/ctfScreenshot_25.jpg)
+
+En yaygın uygulanan CTF çeşididir. Sınırlı bir süre içinde puan ve flag kazanmak için çeşitli kategorilerden farklı challengeları tamamlamayı içerir. Soruların zorluk seviyeleri ve puanları birbirinden farklıdır. Bir seviye çözülmeden diğer seviyeye geçilemez. Genellikle bütün yarışmanın kazananını belirlemek için lider tablosu oluşturulur. 
+
+
+### **Attack - Defense CTF**
+
+​	
+
+İki takımdan oluşur. Bir takım ağı veya sunucuyu savunurken diğer takım ona saldırır. Takımlara sunulan sistemdeki zafiyetleri kapatmaya çalışırken rakip takım açıkların bulmak için uğraşır.
+
+
+## **CTF ve Katılımcıların Özellikleri**
+
+
+
+*   CTF yarışmaları genellikle Hacking Konferansları ya da etkinlikleri  bünyesinde düzenlenir. Online olarak düzenleyen web siteleri de vardır. [https://ctftime.org/](https://ctftime.org/) web sitesinden online güncel CTFlere ulaşabilirisiniz.
+*   Bireysel ya da takım olarak yarışılır.
+*   Başarılı olabilmek için farklı kategorilerde uzmanlığı olan kişilerin takımınızda olması sizin için bir avantajdır.
+*   Yarışmacılardan açık bulma, exploit ve toolkit geliştirme beklenir.
+*   Takım çalışması en önemli etkendir. (Discorda sabahlamak keyiflidir.) 
+*   Özellikle  CTF’e ilk defa katılacaklar için motivasyon çok önemlidir. 
+
+
+## **CTF Kategorileri**
+
+
+
+*   Web
+*   Mobile
+*   Forensics
+*   Crypto (Kriptografi)
+*   Network
+*   Exploiting
+*   Reversing
+*   Steganography (Bilgi Gizleme)
+*   Binary analysis
+
+ 
+
+CTF kategorileri ile ilgili blogumuzda ilerleyen zamanlarda daha detaylı bilgileri sizlerle paylaşacağız.
+
+
+
+*   Bilgi toplama
+*   Port tarama ve IPS atlatma
+*   Network analizi ve saldırıları
+*   Kablosuz ağlara sızma, WPA/WPA-2 kırılması
+*   TCP/IP düzeyinde saldırılar
+*   Paket analizi
+*   Brute force, parola saldırıları ve wordlist
+*   DNS saldırıları
+*   Vulnerability Discovery (Zafiyet tespiti)
+*   Güvenlik duvarı, IDS, IPS, WAF gibi sitemleri aşmak
+*   Exploit geliştirme ve kullanma
+*   CTF süresince ihtiyaç duyulan toolkitlerini geliştirme
+
+	CTF yarışmaların içeriği yukarıdaki maddelerden oluşur.
+
+
+## **CTF’e Nasıl Hazırlanır?**
+
+
+
+*   CTF writeuplarına bakarak (daha önceden yapılan CTFlerin çözümleri genellilkle CTF bittikten sonra katılımcılar tarafından writeup olarak yayınlanır) soruların çözüm yollarını öğrenilebilir. CTF’de çıkabilecek sorulara hazırlık yapabilirsiniz. [https://ctftime.org/writeups](https://ctftime.org/writeups) web sitesinden eski CTFlerdeki challengeların çözümlerini bulabilirsiniz.
+*   CTF kategorilerinden en az birinde ileri seviyede bilgi sahibi olunmalıdır. Diğer kategoriler hakkında da bilgi sahibi olunmalıdır.
+*   Takım çalışması çok önemlidir.
+
+
+### **Kaynaklar**
+
+
+
+*   [https://trailofbits.github.io/ctf/forensics/](https://trailofbits.github.io/ctf/forensics/) web sitesinden tipik CTF challengeları ve senaryoları hakkında ipuçları ve püf noktaları bulabilirsiniz.
+*   [https://github.com/apsdehal/awesome-ctf](https://github.com/apsdehal/awesome-ctf) web sitesinden kapsamlı tool listesi ve daha fazlasını öğrenebilirsiniz.
+*   CTFlerde en çok kullanılan toollar:
+    *   **binwalk:  **dosya analizinde ve dışa aktarılmasında kullanılır.
+    *   **burp suite: **web penetration framework (web sızma testi framework)
+    *   **stegsolve:** gizli metinleri arama için imagelerin üzerindeki çeşitli filtreler geçirir.
+    *   **GDB:** binary debugger
+    *   VE tabiki komut satırı.
+
+Üniversiteler ve şirketler tarafından düzenlenen "resmi" CTFlerin çoğu zaman sınırlı yarışmalardır. Bununla birlikte, uygulama ve öğrenme araçları olarak kullanılabilecek 24/7 çevrimiçi olan birçok CTF vardır. Yeni başlayanlar için bazı web siteleri:
+
+
+
+*   [https://overthewire.org/wargames/](https://overthewire.org/wargames/) : Zorluk seviyesi artarak ilerleyen pwn-style challenge. (bandit serisinden başlayın)
+*   [https://ctflearn.com/](https://ctflearn.com/): Yeni gelenlere yönelik, kullanıcılar tarafından sunulan çeşitli zorlukların bir koleksiyonu
+*   [https://2018game.picoctf.com/](https://2018game.picoctf.com/) : Yıllık zaman sınırlı CTF’i pratik yapmak için kullanabilirsiniz.
+
+
+## **CTF’in Kazanımları Nelerdir?**
+
+
+
+*   **Beceri seviyeniz ne olursa olsun katılın.** **# **Siber güvenlik yarışmalarının gözünü korkutması normaldir, özellikle de hiç katılmadıysanız. Ne kadar çok challenge çözerseniz, özgüveniniz o kadar artar. Bu küçük başarılar size enerji verecek ve sizi bir sonraki aşamaya götürerek giderek karmaşıklaşan zorlukları seçme konusunda motive olmanızı sağlayacaktır.
+*   **Güvenlik açıklarını derinlemesine anlayabilmenizi sağlar.** **# **Bildiğiniz gibi yeni (çok yeni olmayan ama sıklıkla istismar edilen) güvenlik açıklarını okumak bir şeydir, ancak onlarla çalışmak tamamen farklı bir şeylerdir. CTFler güvenlik açıklarıyla oynamak ve içinde bulundukları bağlamı daha iyi anlamak için mükemmel bir fırsat sunar. Güvenlik açıklarından yararlanmanın yarattığı sonuçlar hakkında ne kadar çok şey öğrenirseniz, sistemleri gerçek hayatta güvence altına almakla ilgili kararlar vermeniz için o kadar çok veriye sahip olabilirsiniz.
+*   **Yeni alanlar keşfedip becerilerinizi genişletirsiniz.** **#** CTFler sizi normalde etkileşimde bulunmayacağınız alanlarla uğraşmaya iter. CTF challengelarını çözdüğünüzde, ufkunuzu anında genişletir ve her seferinde bir görev olmak üzere bilgi güvenliği ile ilgili her şeyi daha derinlemesine anlayabilirsiniz. CTFlerde konfor alanınızın dışında kalan sorunları seçmeye çalışın. Bu sayede, bilgi güvenliği deneyiminizi bir sonraki seviyeye taşıyabilirsiniz.
+*   **Uzmanlığınızı test edip bilgilerini geliştirebilirsiniz. #** Bilgi güvenliğinde işler o kadar hızlı değişiyor ki, buna ayak uydurmanın tek yolu pratik yapmak. Yetenekli bir profesyonel olmak için teorik bilgiyi olabildiğince çok pratik deneyimle birleştirmelisiniz. CTFlere katılmak bilgi birikiminizi test etmek ve çalışırken neye, ne kadar çaba harcamaya ihtiyacınız olduğunu keşfetmek için mükemmel bir fırsattır.
+*   **Eleştirel düşünmeyi geliştirir. #** Daha deneyimli bilgisayar korsanlarının(hacker) çalışmasını izlediğinizde onların sadece bilgi güvenliği uzmanları olmadıklarını aynı zamanda mükemmel karar verici olduklarını anlarsınız. Net düşünme ve doğru kararlar alma becerisini geliştirmek, rolü ne olursa olsun bir siber güvenlik uzmanı için paha biçilmezdir. Tüm kaynaklardan gelen verilerle zor durumlarda aramayı yapmak zorunda olan sizsiniz. (örneğin; bir veri ihlali, çünkü bugünlerde bunlardan çok sayıda var)
+*   **Pratik deneyim kazandırır. #** CTF'e katılmak size birden fazla şekilde fayda sağlar. CTF’ten edindiğiniz deneyim size hem teorik bilgilerinizi pratikte uygulayabilmenize yardımcı olur hem de  özgeçmişinize her zaman puan katar. CTF'e katılmak, potansiyel işverenlere meraklı olduğunuzu, kendini sürekli geliştirmeye çalıştığınızı ve becerilerinizi geliştirmeye odaklandığınızı gösterir.
+*   **Yasal yollarla bir sisteme girebilmenize yardımcı olur. #** Bu aynı zamanda CTF'leri bu kadar eğlenceli ve heyecan verici kılan şeydir. Zamanınızı bir sistemin içine girerek geçirebilir ve bunun için puanlar (ve harika ödüller) kazanabilirsiniz! Oyunun kurallarını bilmek size elinizdeki göreve odaklanma özgürlüğü verir. Ayrıca, bir sisteme girmenin ne gerektiğini bilmek, sistemleri ve ağları saldırılara karşı güvence altına almak size düştüğünde saldırganlara karşı size rekabet avantajı sağlar.
+*   **Bilgi güvenlikliği ile ilgilenen diğer insanlarla bir takım oluşturabilirsiniz. #** Siber güvenlik tutkusunu paylaşan insanlar arasında oluşan etkileşimi deneyimleyebilirsiniz. Katılımcılar birbirlerinden bir şeyler öğrenebilir ve birbirlerini tamamlayabilirler. Birden fazla bakış açısı ve arka plan dahil edildiğinde, daha hızlı ilerleyebilirsiniz. Hatta bazılarınız bu süreçte arkadaşlıklar kurabilirsiniz. CTFler, sosyalleşmenin ve potansiyelinizi keşfetmenin harika bir yoludur.
+*   **Ve son olarak ödüller kazabilirsiniz. #** Çoğu CTF deneyimini daha da çekici kılan oldukça güzel ödülleri vardır.
+
+
+## **Son Sözler**
+
+CTF teorik bilgileriniz test etmek için size çok büyük bir fırsat sağlar. Günümüzde birçok Siber Güvenlik şirketi işe alırken CTFleri bir araç olarak kullanıyor. CTF insanların teorik bilgilerinizi test etmenin en hızlı yolu gibi görünüyor. 
+
+CTFlerin en ilginç taraflarından biri de bazen saatlerce bir challenge çözmek için sabahlarsınız ve başarısız olursunuz. CTF bittikten sonra yayımlanan writeuplara bakıp çözemediğiniz o sorunun aslında o kadar da zor olmadığı fark edersiniz(birkaç damla gözyaşı ile birlikte). Böylece siz de sonraki CTFlerde benzeri bir soruyla karşılaştığınızda nasıl bir yöntem uygulamanız gerektiğini öğrenmiş olursunuz. Aynı zamanda bilmediğiniz birçok kategorideki soruları çözmeye çalışırken kendinizi web browserınızda onlarca yeni sekme açmış bir şekilde bulabilirsiniz. Belki o soruyu çözemezsiniz ama açmış olduğunuz onlarca sekmeden yeni bir şeyler öğrenebilirsiniz. 
+
+O zaman kimler CTF’e katılmak ister?
+
