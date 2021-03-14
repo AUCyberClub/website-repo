@@ -22,7 +22,7 @@ Bunları akılda tutarak, her gün bilgisayarlarımızda kullandığımız yazı
 
 
 
-1. **Web tarayıcı(Web browser): Firefox**
+**1. Web tarayıcı(Web browser): Firefox**
 
 Mozilla Vakfı tarafından geliştirilen Firefox web tarayıcısı, 2002'de piyasaya sürülmesinden bu yana web kullanıcılarının temel dayanağı olmuştur.
 
@@ -43,7 +43,7 @@ ulaşabilirsiniz.
 
 
 
-2. **Email: Thunderbird**
+**2. Email: Thunderbird**
 
     	
 
@@ -60,7 +60,7 @@ Ve yine, Firefox gibi Thunderbird Windows 7 veya üstü, OS X ve MacOS 10.9 veya
 
 
 
-3. **Anlık Mesajlaşma(Instant messaging): Pidgin**
+**3. Anlık Mesajlaşma(Instant messaging): Pidgin**
 
 Pidgin, tüm mesajlaşma ihtiyaçları için ücretsiz bir alternatif. Ayrıca eklentilerini kullanarak AIM, Google Talk, ICQ, IRC, Bonjour ve XMPP dahil olmak üzere bir dizi mesajlaşma ağı için destek sunuyor. (Ve burada açık kaynaklı bir tema görüyorsanız bizi affedin.)
 
@@ -76,7 +76,7 @@ En son sürüm MSN, Myspace ve Yahoo sohbeti desteğini bıraktı. Windows ve Li
 
 
 
-4. **Medya Oynatıcısı(Media Player): VLC**
+**4. Medya Oynatıcısı(Media Player): VLC**
 
 VideoLAN Organizasyonu tarafından geliştirilen VLC oynatıcısı, 2001'den beri kullanıcıları için açık kaynak kodlu ideal medya oynatıcıdır.
 
@@ -90,7 +90,7 @@ VLC, Windows, MacOS ve Linux için mevcuttur. Ayrıca Android, iOS, Apple TV ve 
 
 
 
-5. **Metin düzenleyici(Text editor): Notepad ++**
+**5. Metin düzenleyici(Text editor): Notepad ++**
 
 
 
@@ -114,7 +114,7 @@ Ne yazık ki, Notepad ++ yalnızca Windows için kullanılabilir. Buradan [notep
 
 
 
-6. **Ofis paketi(Office suite): LibreOffice**
+**6. Ofis paketi(Office suite): LibreOffice**
 
 
 ![]({{ AUCyberClub.github.io }}/hackingfalan/assets/alternatif-ozgur-yazilim/LibreOffice-logo.jpeg)
@@ -136,7 +136,7 @@ LibreOffice, Windows, MacOS ve Linux triumvirate için mevcuttur. Buradan [libre
 
 
 
-7. **Resim düzenleyici(Image editor): GIMP**
+**7. Resim düzenleyici(Image editor): GIMP**
 
 
 
@@ -162,7 +162,7 @@ Windows, MacOS ve Linux için mevcuttur. Buradan [gimp](https://www.gimp.org/) u
 
 
 
-8. **Antivirus: ClamAV**
+**8. Antivirus: ClamAV**
 
     	
 
@@ -181,7 +181,7 @@ ClamAV, Windows, Mac ve Linux için mevcuttur. Buradan [clamav](https://www.clam
 
 
 
-9. **Parolama Depolayıcı(Password storage): KeePass**
+**9. Parolama Depolayıcı(Password storage): KeePass**
 
 
 
@@ -203,7 +203,7 @@ Bruce Schneier tarafından tasarlanan hem NSA onaylı AES şifreleme standardın
 
 
 
-10. **İşletim Sistemi(Operating system): Ubuntu**
+**10. İşletim Sistemi(Operating system): Ubuntu**
 
 Tamamen açık kaynak kodlu bir işletim sistemi kullanmak istiyorsanız, en iyi seçeneğiniz Windows veya MacOS'a alternatif olarak bir Linux dağıtımını tercih edebilirsiniz. (Yine daha önce yazılarımızda detaylı bir şekilde bahsetmiştik.)
 

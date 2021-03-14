@@ -7,7 +7,7 @@ categories: intro
 index: 2
 ---
 
-# **CTF**
+<center><h1><strong>CTF</strong></h1></center>
 
 Siber Güvenlik ile ilgilenmeye başlamışsanız en azından bir kez olsa CTF kelimesini duymuşsunuzdur. Bu yazımızda Siber Güvenlik ile uğraşan bütün insanların her fırsatta dile getirdiği “CTF” konusuna yakından bakacağınız.
 
@@ -49,7 +49,6 @@ En yaygın uygulanan CTF çeşididir. Sınırlı bir süre içinde puan ve flag 
 
 ### **Attack - Defense CTF**
 
-​	
 
 İki takımdan oluşur. Bir takım ağı veya sunucuyu savunurken diğer takım ona saldırır. Takımlara sunulan sistemdeki zafiyetleri kapatmaya çalışırken rakip takım açıkların bulmak için uğraşır.
 
@@ -137,9 +136,9 @@ CTF kategorileri ile ilgili blogumuzda ilerleyen zamanlarda daha detaylı bilgil
 
 
 
-*   **Beceri seviyeniz ne olursa olsun katılın.** **# **Siber güvenlik yarışmalarının gözünü korkutması normaldir, özellikle de hiç katılmadıysanız. Ne kadar çok challenge çözerseniz, özgüveniniz o kadar artar. Bu küçük başarılar size enerji verecek ve sizi bir sonraki aşamaya götürerek giderek karmaşıklaşan zorlukları seçme konusunda motive olmanızı sağlayacaktır.
-*   **Güvenlik açıklarını derinlemesine anlayabilmenizi sağlar.** **# **Bildiğiniz gibi yeni (çok yeni olmayan ama sıklıkla istismar edilen) güvenlik açıklarını okumak bir şeydir, ancak onlarla çalışmak tamamen farklı bir şeylerdir. CTFler güvenlik açıklarıyla oynamak ve içinde bulundukları bağlamı daha iyi anlamak için mükemmel bir fırsat sunar. Güvenlik açıklarından yararlanmanın yarattığı sonuçlar hakkında ne kadar çok şey öğrenirseniz, sistemleri gerçek hayatta güvence altına almakla ilgili kararlar vermeniz için o kadar çok veriye sahip olabilirsiniz.
-*   **Yeni alanlar keşfedip becerilerinizi genişletirsiniz.** **#** CTFler sizi normalde etkileşimde bulunmayacağınız alanlarla uğraşmaya iter. CTF challengelarını çözdüğünüzde, ufkunuzu anında genişletir ve her seferinde bir görev olmak üzere bilgi güvenliği ile ilgili her şeyi daha derinlemesine anlayabilirsiniz. CTFlerde konfor alanınızın dışında kalan sorunları seçmeye çalışın. Bu sayede, bilgi güvenliği deneyiminizi bir sonraki seviyeye taşıyabilirsiniz.
+*   **Beceri seviyeniz ne olursa olsun katılın. #**Siber güvenlik yarışmalarının gözünü korkutması normaldir, özellikle de hiç katılmadıysanız. Ne kadar çok challenge çözerseniz, özgüveniniz o kadar artar. Bu küçük başarılar size enerji verecek ve sizi bir sonraki aşamaya götürerek giderek karmaşıklaşan zorlukları seçme konusunda motive olmanızı sağlayacaktır.
+*   **Güvenlik açıklarını derinlemesine anlayabilmenizi sağlar. #**Bildiğiniz gibi yeni (çok yeni olmayan ama sıklıkla istismar edilen) güvenlik açıklarını okumak bir şeydir, ancak onlarla çalışmak tamamen farklı bir şeylerdir. CTFler güvenlik açıklarıyla oynamak ve içinde bulundukları bağlamı daha iyi anlamak için mükemmel bir fırsat sunar. Güvenlik açıklarından yararlanmanın yarattığı sonuçlar hakkında ne kadar çok şey öğrenirseniz, sistemleri gerçek hayatta güvence altına almakla ilgili kararlar vermeniz için o kadar çok veriye sahip olabilirsiniz.
+*   **Yeni alanlar keşfedip becerilerinizi genişletirsiniz. #** CTFler sizi normalde etkileşimde bulunmayacağınız alanlarla uğraşmaya iter. CTF challengelarını çözdüğünüzde, ufkunuzu anında genişletir ve her seferinde bir görev olmak üzere bilgi güvenliği ile ilgili her şeyi daha derinlemesine anlayabilirsiniz. CTFlerde konfor alanınızın dışında kalan sorunları seçmeye çalışın. Bu sayede, bilgi güvenliği deneyiminizi bir sonraki seviyeye taşıyabilirsiniz.
 *   **Uzmanlığınızı test edip bilgilerini geliştirebilirsiniz. #** Bilgi güvenliğinde işler o kadar hızlı değişiyor ki, buna ayak uydurmanın tek yolu pratik yapmak. Yetenekli bir profesyonel olmak için teorik bilgiyi olabildiğince çok pratik deneyimle birleştirmelisiniz. CTFlere katılmak bilgi birikiminizi test etmek ve çalışırken neye, ne kadar çaba harcamaya ihtiyacınız olduğunu keşfetmek için mükemmel bir fırsattır.
 *   **Eleştirel düşünmeyi geliştirir. #** Daha deneyimli bilgisayar korsanlarının(hacker) çalışmasını izlediğinizde onların sadece bilgi güvenliği uzmanları olmadıklarını aynı zamanda mükemmel karar verici olduklarını anlarsınız. Net düşünme ve doğru kararlar alma becerisini geliştirmek, rolü ne olursa olsun bir siber güvenlik uzmanı için paha biçilmezdir. Tüm kaynaklardan gelen verilerle zor durumlarda aramayı yapmak zorunda olan sizsiniz. (örneğin; bir veri ihlali, çünkü bugünlerde bunlardan çok sayıda var)
 *   **Pratik deneyim kazandırır. #** CTF'e katılmak size birden fazla şekilde fayda sağlar. CTF’ten edindiğiniz deneyim size hem teorik bilgilerinizi pratikte uygulayabilmenize yardımcı olur hem de  özgeçmişinize her zaman puan katar. CTF'e katılmak, potansiyel işverenlere meraklı olduğunuzu, kendini sürekli geliştirmeye çalıştığınızı ve becerilerinizi geliştirmeye odaklandığınızı gösterir.

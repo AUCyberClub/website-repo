@@ -6,7 +6,7 @@ author: Kübra Dilara Balcı
 categories: intro
 index: 1
 ---
-# **SİBER GÜVENLİK**
+<center><h1><strong>SİBER GÜVENLİK</strong></h1></center>
 
 İnternetin hayatımıza girmesi ile birlikte Siber Güvenlik de bizim için önem kazanmaya başladı. “Siber Güvenlik tam olarak ne? İnternet bize tam olarak nasıl zarar verebilir?” diye düşünüyorsanız doğru yerdesiniz. Bu yazımızda “Siber Güvenlik” konusuna yakından bakacağınız.
 
@@ -23,7 +23,7 @@ Etkili siber güvenlik önlemlerini uygulamak günümüzde özellikle zordur ç�
 
 Başarılı bir siber güvenlik yaklaşımı, bilgisayarlara, ağlara, programlara veya güvende tutmayı düşündüğü verilere yayılmış çok sayıda koruma katmanına sahip olmalıdır. Bir organizasyonda, siber saldırılara karşı etkili bir savunma oluşturmak için insanlar, süreçler ve teknolojinin tümü birbirini tamamlamalıdır. Gelin birlikte bunları tek tek inceleyelim.
 
-**İnsan: **Kullanıcılar olarak biz de kendi güvenliğimizi sağlamak için bazı şeyler yapabiliriz. 
+**İnsan:** Kullanıcılar olarak biz de kendi güvenliğimizi sağlamak için bazı şeyler yapabiliriz. 
 
 
 
@@ -32,9 +32,9 @@ Başarılı bir siber güvenlik yaklaşımı, bilgisayarlara, ağlara, programla
 *   Verilerimi yedekleme gibi temel veri güvenliği ilkelerini anlamalıp bunlara uyabiliriz.
 *   Temel siber güvenlik ilkeleri hakkında daha fazla bilgi edinebiliriz. (Yazımızda bunu detaylarıyla ele alacağız.)
 
-**Süreçler: **Kuruluşlar, hem teşebbüs edilen hem de başarılı siber saldırılarla nasıl başa çıkacaklarına dair bir çerçeveye(framework) sahip olmalıdır. Saygın bir çerçeve size rehberlik edebilir. Bu size saldırıları nasıl belirleyebileceğinizi, sistemleri nasıl koruyabileceğinizi, tehditleri nasıl algılayabileceğinizi ve bunlara nasıl yanıt verebileceğinizi aynı zamanda başarılı saldırılardan nasıl kurtulabileceğinizi açıklar.
+**Süreçler:** Kuruluşlar, hem teşebbüs edilen hem de başarılı siber saldırılarla nasıl başa çıkacaklarına dair bir çerçeveye(framework) sahip olmalıdır. Saygın bir çerçeve size rehberlik edebilir. Bu size saldırıları nasıl belirleyebileceğinizi, sistemleri nasıl koruyabileceğinizi, tehditleri nasıl algılayabileceğinizi ve bunlara nasıl yanıt verebileceğinizi aynı zamanda başarılı saldırılardan nasıl kurtulabileceğinizi açıklar.
 
-**Teknoloji: **Hem kuruluşlara hem de bireylere kendilerini siber saldırılardan korumak için ihtiyaç duydukları bilgisayar güvenlik araçlarını sağlamak için çok önemlidir. Üç ana şey korunmalıdır: 
+**Teknoloji:** Hem kuruluşlara hem de bireylere kendilerini siber saldırılardan korumak için ihtiyaç duydukları bilgisayar güvenlik araçlarını sağlamak için çok önemlidir. Üç ana şey korunmalıdır: 
 
 
 
@@ -47,7 +47,7 @@ Bu şeyleri korumak için kullanılan yaygın teknoloji, yeni nesil güvenlik du
 
 ## **Siber güvenlik neden önemlidir?**
 
-Günümüzün **bağlantılı dünyasında(connected world)**, herkes gelişmiş siber savunma programlarından yararlanmaktadır. Bireysel düzeyde bir siber güvenlik saldırısı kimlik hırsızlığından gasp girişimlerine, aile fotoğrafları gibi önemli verilerin kaybolmasına kadar her şeyle sonuçlanabilir. Herkes elektrik santralleri, hastaneler ve finansal hizmet şirketleri gibi kritik altyapılara güveniyor. Bu tarz kuruluşlara yapılan siber saldırılar sonucunda açığa çıkabilecek önemli verileri düşünün. Bu nedenle, bu ve diğer kuruluşların güvenliğini sağlamak, toplumumuzun işleyişini sürdürmek için çok önemli.
+Günümüzün bağlantı dünyasında herkes gelişmiş siber savunma programlarından yararlanmaktadır. Bireysel düzeyde bir siber güvenlik saldırısı kimlik hırsızlığından gasp girişimlerine, aile fotoğrafları gibi önemli verilerin kaybolmasına kadar her şeyle sonuçlanabilir. Herkes elektrik santralleri, hastaneler ve finansal hizmet şirketleri gibi kritik altyapılara güveniyor. Bu tarz kuruluşlara yapılan siber saldırılar sonucunda açığa çıkabilecek önemli verileri düşünün. Bu nedenle, bu ve diğer kuruluşların güvenliğini sağlamak, toplumumuzun işleyişini sürdürmek için çok önemli.
 
 
 ## **Siber Güvenliğin Alt Alanları**
@@ -62,7 +62,7 @@ Kurumsal varlıklar birden çok farklı sistemden oluştuğundan etkili ve verim
 Uygulama güvenliği, bir kuruluş içinde kullanılan tüm yazılım ve hizmetlerde çeşitli tehditlere karşı farklı savunmaların uygulanmasını içerir. Uygulama kaynaklarına yetkisiz erişim veya uygulama kaynaklarının değiştirilmesi olasılığını en aza indirmek için güvenli uygulama mimarileri tasarlamayı, güvenli kod yazmayı, güçlü veri girişi doğrulamasını, tehdit modellemeyi gibi bazı şeyler gerektirir.
 
 
-### **Kimlik Yönetimi ve Veri Güvenliği (Identity Management and Data Security) **
+### **Kimlik Yönetimi ve Veri Güvenliği (Identity Management and Data Security)**
 
 Kimlik yönetimi, bireylerin bir kuruluş içindeki bilgi sistemlerine kimlik doğrulaması ve yetkilendirmesini sağlayan çerçeveleri(frameworks), süreçleri ve etkinlikleri içerir. Veri güvenliği ise bekleme ve geçiş halindeki verilerin güvenliğini sağlayan güçlü bilgi depolama mekanizmalarının uygulanmasını içerir.
 
@@ -126,19 +126,18 @@ Saldırganlar, hedeflerine karşı sürekli olarak çok sayıda siber saldırı 
 
 ## **Siber Saldırılara Karşı Kendimiz Nasıl Korumalıyız?**
 
-​	
 
 Siber güvenlikten ve olabilecek siber saldırılardan bahsettik. “Ama biz kendimizi bunlardan nasıl koruyacağız? İnternetimizi kapatıp dünya ile ilişkimiz mi keselim yani?” diye düşünüyor olabilirsiniz. Maalesef günümüz internet çağında bu düşünceler pek mümkün değil ama sizin de kendinizi bu tarz siber saldırılardan korumanız için alabileceğiniz bazı güvenlik tedbir mevcut. İşte siber saldırılara karşı alabileceğiniz bazı tedbirler:
 
 
 
-*   **Güçlü parolalar kullanın. **Yapılan en büyük hatalardan biri de aynı parolayı birden çok yerde kullanmak. Parolalarınızı farklı sitelerde tekrar etmemeli ve parolalarınızı düzenli olarak değiştirmelisiniz. Parolanızı olabildiğince karmaşık hale getirmeye çalışın. Bu da en az 10 harf, sayı ve simgeden oluşan bir kombinasyon kullanmak anlamına gelir. Bunun için parola yönetimi uygulamaları kullanabilirisiniz. Parolalarınızı kilit altında tutmanıza yardımcı olabilir.
+*   **Güçlü parolalar kullanın.** Yapılan en büyük hatalardan biri de aynı parolayı birden çok yerde kullanmak. Parolalarınızı farklı sitelerde tekrar etmemeli ve parolalarınızı düzenli olarak değiştirmelisiniz. Parolanızı olabildiğince karmaşık hale getirmeye çalışın. Bu da en az 10 harf, sayı ve simgeden oluşan bir kombinasyon kullanmak anlamına gelir. Bunun için parola yönetimi uygulamaları kullanabilirisiniz. Parolalarınızı kilit altında tutmanıza yardımcı olabilir.
 *   **Yazılımlarınız ve isletim siteminizi güncelleyin.** Yapılan bir diğer büyük hata iste güncellemelerin yapılmaması ya da sürekli ertelenmesi. Güncellemeler genellikle sistemlerdeki açıklamaları kapatmak için yapılır. Bu nedenle sık sık güncellemeleriniz yapmalısınız. Bu özellikle işletim sistemleriniz ve internet güvenlik yazılımınız için önemlidir. Siber suçlular, sisteminize erişim sağlamak için yazılımlardaki sıklıkla bilinen açıkları veya kusurları kullanır. Bu istismarları ve kusurları onarmak bir siber suç hedefi olma olasılığınızı azaltabilir.
 *   **Sosyal medya ayarlarınızı yönetin.** Kişisel ve özel bilgilerinizi olabildiğince kilit altında tutmaya çalışın. Sosyal mühendislik siber suçluları, kişisel bilgilerinizi çoğu zaman sadece birkaç veri noktasıyla elde edebilir, bu nedenle kamuya açık olarak ne kadar az şey paylaşırsanız o kadar iyidir. Örneğin, evcil hayvanınızın adını yazarsanız veya annenizin kızlık soyadını ifşa ederseniz, iki genel güvenlik sorusunun yanıtlarını ifşa edebilirsiniz.
 *   **Ev ağınızı güçlendirin.** Güçlü bir şifreleme parolalarının(encryption password) yanı sıra sanal bir özel ağ ile başlamak iyi bir fikir olabilir. VPN, hedefine ulaşana kadar cihazlarınızdan ayrılan tüm trafiği şifreler. Siber suçlular iletişim hattınızı ele geçirmeyi başarırsa, şifrelenmiş verilerden başka hiçbir şeyi ele geçiremezler. İster kütüphanede, ister kafede, otelde veya havaalanında olsun, halka açık bir Wi-Fi ağınız olduğunda VPN kullanmak iyi bir fikir olabilir.
 *   **Çocuklarınızla internet hakkında konuşun.** Çocuklarınıza iletişim kanallarını kapatmadan internetin kabul edilebilir kullanımını öğretebilirsiniz. Herhangi bir çevrimiçi taciz, takip veya zorbalık yaşıyorlarsa size gelebileceklerini bildiklerinden emin olmalarını sağlayabilirsiniz.
 *   **Büyük güvenlik ihlallerinden haberdar olun.** Bir satıcıyla iş yapıyorsanız veya bir güvenlik ihlalinden etkilenen bir web sitesinde bir hesabınız varsa, bilgisayar korsanlarının hangi bilgilere eriştiğini öğrenin ve parolalarınızı hemen değiştirin.
-*   **Kimlik hırsızlığına karşı kendinizi korumaya yardımcı olacak önlemler alın. **Kimlik hırsızlığı, bir kişi kişisel verilerinizi dolandırıcılık veya aldatma içeren bir şekilde genellikle ekonomik kazanç için haksız bir şekilde elde etmesidir. Peki ama nasıl? Örneğin, internet üzerinden kişisel bilgilerinizi vermeniz için kandırılabilirsiniz veya bir hırsız hesap bilgilerine erişmek için postanızı çalabilir. Bu nedenle kişisel verilerinizi korumak önemlidir. Özellikle halka açık Wi-Fi üzerinden internete erişirken çevrimiçi gönderdiğiniz ve aldığınız verilerin korunmasına yardımcı olmak için VPN ((Virtual Private Network)sanal özel ağın kısaltması) kullanabilirsiniz. 
+*   **Kimlik hırsızlığına karşı kendinizi korumaya yardımcı olacak önlemler alın.** Kimlik hırsızlığı, bir kişi kişisel verilerinizi dolandırıcılık veya aldatma içeren bir şekilde genellikle ekonomik kazanç için haksız bir şekilde elde etmesidir. Peki ama nasıl? Örneğin, internet üzerinden kişisel bilgilerinizi vermeniz için kandırılabilirsiniz veya bir hırsız hesap bilgilerine erişmek için postanızı çalabilir. Bu nedenle kişisel verilerinizi korumak önemlidir. Özellikle halka açık Wi-Fi üzerinden internete erişirken çevrimiçi gönderdiğiniz ve aldığınız verilerin korunmasına yardımcı olmak için VPN ((Virtual Private Network)sanal özel ağın kısaltması) kullanabilirsiniz. 
 *   **Kimlik hırsızlığının her yerde olabileceğini bilin.** Seyahat ederken bile kimliğinizi nasıl koruyacağınızı bilmek akıllıca olabilir. Suçluların özel bilgilerinizi yolda almasını engellemek için yapabileceğiniz pek çok şey var. Bunlar arasında seyahat planlarınızı sosyal medyadan uzak tutmak ve otelinizin Wi-Fi ağı üzerinden internete erişirken bir VPN kullanmak yer alır.
 *   **Eğer siber suç kurbanı olursan ne yapacağınızı bilmelisiniz.** Bir siber suçun kurbanı olduğunuza inanıyorsanız, yerel polisi bu konuda bilgilendirmelisiniz. Suç küçük görünse bile bu önemlidir. Raporunuz yetkililere soruşturmalarında yardımcı olabilir veya suçluların gelecekte diğer insanlardan yararlanmasını engellemeye yardımcı olabilir. Siber suçluların kimliğinizi çaldığını düşünüyorsanız, bunlar dikkate almanız gereken adımlar arasında. 
     *   Dolandırıcılığın gerçekleştiğini bildiğiniz şirketler ve bankalarla iletişime geçin. Örneğin kredi kartınızın bilgileri ele geçirilmişse ilgili bankadan kartınız bloke ettirebilirsiniz.
