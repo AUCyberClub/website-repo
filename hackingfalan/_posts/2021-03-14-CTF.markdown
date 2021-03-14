@@ -117,8 +117,8 @@ CTF kategorileri ile ilgili blogumuzda ilerleyen zamanlarda daha detaylı bilgil
 *   [https://trailofbits.github.io/ctf/forensics/](https://trailofbits.github.io/ctf/forensics/) web sitesinden tipik CTF challengeları ve senaryoları hakkında ipuçları ve püf noktaları bulabilirsiniz.
 *   [https://github.com/apsdehal/awesome-ctf](https://github.com/apsdehal/awesome-ctf) web sitesinden kapsamlı tool listesi ve daha fazlasını öğrenebilirsiniz.
 *   CTFlerde en çok kullanılan toollar:
-    *   **binwalk:  **dosya analizinde ve dışa aktarılmasında kullanılır.
-    *   **burp suite: **web penetration framework (web sızma testi framework)
+    *   **binwalk:** dosya analizinde ve dışa aktarılmasında kullanılır.
+    *   **burp suite:** web penetration framework (web sızma testi framework)
     *   **stegsolve:** gizli metinleri arama için imagelerin üzerindeki çeşitli filtreler geçirir.
     *   **GDB:** binary debugger
     *   VE tabiki komut satırı.
