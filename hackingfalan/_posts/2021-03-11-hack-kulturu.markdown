@@ -4,6 +4,7 @@ title: Hack Kültürü
 date: '2021-03-11 22:23:47 +0300'
 author: Berkay Çelebi
 categories: intro
+index: 1
 ---
 
 <center><h1><strong>Hack Kültürü</strong></h1></center>
