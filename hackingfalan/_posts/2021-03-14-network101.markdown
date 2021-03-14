@@ -1,0 +1,185 @@
+---
+layout: post
+title: Network 101
+date: '2021-03-14 22:26:47 +0300'
+author: Malik Tekin
+categories: network
+index: 1
+---
+
+İletişim:
+* email: malik.tekin@protonmail.com
+* twitter: @0xb23be
+
+# NETWORK 101
+
+Ağ yapıları hakkında temel düzey bir takım bilgiler anlatmaya çalıştığım bir yazı hazırladım. Okuyucu arkadaşım eğer bir eksik, bir yanlış gözüne takılırsa, yukarıda bıraktığım iletişim bilgilerinden bana ulaşırsan beraber düzeltebiliriz. Keyifli okumalar..
+
+## Network (Ağ) Nedir?
+
+Teknolojik gelişmelerin arkasında hemen her zaman o gelişmeye yönelik bir ihtiyaç yatar. Network, Türkçesiyle Ağ, yapıları da, verileri ve donanımları daha az bir maliyetle paylaşabilmek için ortaya çıkmış teknolojilerin meydana getirdiği yapılardır. Mesela bu yapılar henüz oluşturulmadığı zamanlarda çıktısını almak istediğiniz bir dosyayı önce disketinize kaydetmeniz sonrasında da doğrudan bir yazıcıya bağlı olan bilgisayara bu disketi yerleştirmeniz gerekirdi ya da her bilgisayar için bir yazıcı almak durumunda kalırdınız gibi gibi.
+
+**Network, birden fazla bilgisayarın çeşitli protokoller, bunlara uygun donanımlar ve yazılımlar kullanarak birbirleriyle iletişime geçip, aralarında veri paylaşımı yapabilmesiyle ortaya çıkan yapıdır.** şeklinde özetleyebiliriz.
+
+## Intra/Inter Network
+
+Bir ağın tamamen kendi içinde, başka bir ağ ile hiçbir teması olmadan yaptığı faaliyetler INTRA olarak tanımlanabilir. Öte yandan farklı ağların birbirleriyle iletişime geçtiği duruma da INTER diyebiliriz. **Internet, (Interconnected Networks)** isminden de anlaşılacağı üzere tam olarak budur. Dünya üzerinde bambaşka konumlardaki ağlar dahi birbiriyle haberleşebilmektedir. 
+
+## LAN / WLAN / WAN
+
+LAN (**L**ocal **A**rea **N**etwork) ve WAN (**W**ide **A**rea **N**etwork) olmak üzere temelde iki farklı tipte network vardır. 
+
+Yerel alan ağları(LAN) temelde ev, kampüs, iş binaları gibi aynı sınırlı alan içerisinde bulunan cihazların oluşturduğu ağlardır. WLAN (Wireless LAN) ise yerel alan ağlarında cihazların kablo yerine yüksek frekanslı radyo dalgaları ile bağlanması ile oluşur.
+
+Geniş alan ağları(WAN) ise kısaca yerel alan ağlarının bir araya gelerek oluşturdukları çok daha büyük ağlardır. Yine interneti buna güzel bir örnek olarak verebiliriz. Bunun dışında, büyük bir şirketin farklı şehirlerdeki binalarını birbirine bağlaması da buna örnek olarak verilebilir. İki bina için de farklı LAN'lar mevcuttur ve bu ağlar yazının ileriki kısımlarında bahsedilecek olan **router** isimli cihazlar ile birbirine bağlanır. 
+
+## Peki bilgisayarlar birbirleriyle nasıl haberleşir?
+### Ethernet
+Yukarıda da bahsettiğim gibi eskiden cihazlar tek başlarına birbirlerinden habersiz bir şekilde çalışıyordu ve veriyi, depolama donanımları ile bir bilgisayardan diğerine taşımanız gerekiyordu. Bilgisayarlar arasında veri taşımanın daha farklı bir yolu olmalı diye düşünen bir takım insanlar bilgisayarların kendi aralarında bir kablo sayesinde veri aktarımı yapabilmesini sağlayan Ethernet'i geliştirdi.
+
+Ethernet günümüzde sistemler arası iletişimde en çok kullanılan, OSI referans modelinin (sonraki haftlarda bahsedeceğim bir konu) birinci (Fiziksel) ve ikinci (Veri/Bağ) katmanlarında yer alan bir protokoldür.
+
+"Ethernet istasyonları birbirlerine donanım katmanı üzerinden, veri bloklarından oluşan ve ayrı ayrı gönderilip alınan veri paketleri göndererek haberleşir. Ethernet istasyonunun paket gönderme ve alma adreslerini belirleyen 48-bitlik kendine özgü MAC adresleri vardır. " (tr.wikipedia.org/wiki/Ethernet) 
+
+Bu tanımdan şunu anlıyoruz: bilgisayarımızda bu veri iletimini gerçekleştirmek için özelleşmiş bir donanıma ihtiyacımız var. Bu donanımlara Network Interface Card, Network Adapter, Ethernet kartı gibi isimler veriyoruz. Günümüzde düşük maliyette bir donanım olduğu için kullandığımız hemen her bilgisayarda mevcuttur. 
+
+Yine bu tanımdan verilerin "paket" ismini verdiğimiz yapılarla iletildiğini anlıyoruz. Bu bilgi de cepte dursun, yazının devamında ve ilerleyen haftalarda farklı türde paketlere ve içeriklerine değineceğim.
+
+Peki ağdaki diğer cihazlar benim bilgisayarımla nasıl bağlantı kurabiliyor? İşte burada, yine tanımda geçen, MAC ismini verdiğimiz 48-bitlik ve her network adapter'e özel belirlenen bir adres kavramı devreye giriyor.
+
+### MAC (Media Access Control) Adresi
+
+Fiziksel adres olarak da isimlendirilen MAC adresi, network donanımlarının birbirlerinden ayrılmasını ve her bir donanımın tanınmasını, doğru bağlantıların yapılmasını sağlar. Bu yüzden her network adapter'in kendine özel bir MAC adresi vardır. MAC adresi 48-bitten oluştuğu için 2^48 = 281,474,976,710,656 adet birbirinden farklı MAC adresi üretilebilir. 
+
+6 oktetten oluşur ve bunun ilk 3 okteti üreticiyi firmayı gösterir. 16'lık tabanda ve oktetlerin arasına ':' işareti konularak yazılır, "01:AB:23:DC:54:89" gibi. Windows sistemlerde "ipconfig /all" komutu, Linux sistemlerde ise "ifconfig" komutu ile ethernet kartının MAC adresini görebilirsiniz. 
+
+Peki ağdaki diğer bilgisayarlar benim MAC adresimden nasıl haberdar oluyorlar? Burada, ARP adı verilen bir protokol işin içine giriyor.
+
+### IP Adresi ve ARP (Address Resolution Protocol)
+
+ARP, cihazların fiziksel adreslerinin(MAC adresi) IP adresine eşlenmesi için kullanılan bir protokoldür. IP adresi MAC adresinin aksine sanal bir adrestir. Bir ağa bağlandığınızda elle ya da DHCP sunucusundan otomatize bir şekilde cihazınıza atanır. Ağdaki bir cihazı bulmak için IP adresi kullanılır, MAC ise asıl cihazı tanımlayan adrestir. OSI referans modelinde MAC adres ikinci katmanda yer alırken IP adres üçüncü(Network) katmanda yer alır. 
+
+ARP'ın neden önemli olduğunu bir önceki cümleden yola çıkarak anlayabiliriz. Temeldeki ethernet donanımı ikinci katmanda çalışır bu yüzden iletişimde IP adresini değil MAC adresini kullanır. Sonuç olarak IP adresi-MAC adresi çözümlemesi gerekli bir durumdur.
+
+Her cihazda ARP table ya da ARP cache ismi verilen, IP ve MAC adreslerinin eşlendiği, dinamik bir tablo bulunur. Kayıtlar burada bir süre tutulur, ağdaki bir cihazın IP adresi değiştiğinde bu tablo güncellenir vs. Tabii bunun dışında kendiniz elle statik kayıtlar da girebilirsiniz.
+
+Elimizde aynı ağda bulunan A, B, C, D bilgisayarları olsun. A bilgisayarının IP adresi 10.0.0.1, MAC adresi "aa:aa:aa:aa:aa:aa"; B bilgisayarının IP adresi 10.0.0.2, MAC adresi "bb:bb:bb:bb:bb:bb"; C bilgisayarının IP adresi 10.0.0.3, MAC adresi "cc:cc:cc:cc:cc:cc"; D bilgisayarının IP adresi 10.0.0.4, MAC adresi "dd:dd:dd:dd:dd:dd" olsun ve bu bilgisayarların switch adı verilen bir cihaza bağlı olduğunu düşünelim. 
+
+Switchler temelde ikinci katmanda çalışan cihazlardır. Bazı switchlerde bir takım başka özellikler de olabildiği için üçüncü katmanda da çalışabilmektedir. Bu konuya daha sonra değineceğim, bu örnekte temel bir switch cihazından bahsediyoruz. A bilgisayarı D bilgisayarı ile iletişime geçmek istediği zaman önce ARP tablosunda 10.0.0.4 IP adresine karşılık gelen MAC adresini arar. Eğer tablosunda böyle bir kayıt bulamazsa bunun kim olduğunu çözmeye çalışır ve içinde bulunduğu ağdaki tüm cihazlara ulaştırmak üzere(broadcast) bir ARP Request paketi gönderir. Şimdi bu çıkan isteği inceleyelim
+
+![]({{ AUCyberClub.github.io }}/hackingfalan/assets/network101/ARP-packet.jpg)
+
+Görselde bu isteğin içerisinde yer alan başlıkları görüyoruz. A cihazının D cihazına ulaşmak istediği bir senaryoda bu başlıkların hangi değerleri aldığını inceleyelim.
+
+Ethernet Header kısmındaki başlıklarda Sender Address kısmına A cihazı kendi MAC adresini yazarken Target Address kısmına ise "ff:ff:ff:ff:ff:ff" yazar. Bu broadcast yapılacağı yani ağdaki tüm cihazlara bu paketin iletileceği anlamına gelir. 
+
+ARP Packet Header kısmındaki Sender IP Address ve Sender MAC Address başlıkları da aynı şekilde A cihazının IP ve MAC adresi bilgilerini içerir. Bu paketin içerisinde ulaşmak istediği D cihazının IP adresi bilgisini de Target IP Address başlığına yazar ancak ulaşmak istediği D cihazının MAC adresini bilmediği için Target MAC adresi kısmına "00:00:00:00:00:00" yazar. Bunların dışında bunun bir ARP Request paketi olduğu anlaşılsın diye Opcode başlığına da 1 değerini yazar. A bilgisayarını kalabalık bir ortamda "Hey aramızda Maykıl diye birisi var mı?" diye soran bir Coni kişisi olarak düşünebiliriz.
+
+Gönderdiği paket switche ulaşınca switch, Target MAC adresi broadcast değeri olduğu için paketi kendisine bağlı B, C ve D cihazlarına gönderir. Paketi alan cihazlar, isteğin içindeki Target IP adresi değerine bakıp bu paketin kendisi için olup olmadığını kontrol eder. Eğer kendisi için değilse bir cevap üretmez. Bu konuyla alakalı hiçbir şey yapmadan hayatına devam eder. Ancak paket D cihazına ulaştığında, D cihazı bir ARP Reply paketi oluşturur. Sender başlıklarına kendi bilgilerini, Target başlıklarının hepsine de kendisine gelen requestteki A cihazına ait olan Sender bilgilerini yazar ve Opcode başlığındaki değeri 2 yapıp gönderir. Aynı zamanda kendi ARP tablosuna da 10.0.0.1 IP adresinin "aa:aa:aa:aa:aa:aa" MAC adresine sahip cihaza ait olduğunu kaydeder. Reply paketini alan A cihazı da ARP tablosuna 10.0.0.4 IP adresinin "dd:dd:dd:dd:dd:dd" MAC adresin sahip olan cihaza ait olduğunu kaydeder. Bunu da Maykıl'ın Coni'ye "Evet, ben Maykıl" diye karşılık vermesi gibi düşünebilirsiniz. Coni ya da Maykıl kendi aralarında konuşmak istediği zaman artık ortamdaki herkesi tekrar rahatsız etmeyecektir çünkü birbirlerinin nerede olduklarını artık biliyorlar.
+
+Dikkat ederseniz burada Coni, Maykıl'ın gerçekten Maykıl olduğuna dair bir kontrol yapmadı, kimliğine bakmadı mesela. Direkt Maykıl'ın "Evet ben Maykıl" sözüne inandı. Belki de Maykıl aslında Culya'dır, bilemeyiz... Bu durum bilgisayarlar arasındaki iletişimde de tam olarak böyle. Gönderilen paketin içerisindeki bilgi neyse o. 
+
+ARP paketleri yukarıda bahsettiğim gibi otomatize bir şekilde alınıp gönderildiği gibi, istendiğinde bazı araçlar sayesinde (bkz: Scapy) elle oluşturulup gönderilebilir. Yani içindeki başlık bilgilerini istediğimiz şekilde doldurabiliyoruz. Ee tamam da doldurup da napıyoruz?
+
+### MiTM, Türkçesiyle Ortadaki Adam
+
+İsminden de doğrudan anlaşılacağı üzere iki cihazın arasına, ortasına girmeyi, bu sayede birbirleri arasındaki trafiğin araya giren cihazın üzerinden akmasını, bu sayede de trafiği "sniff" etmeyi amaçlayan bir saldırı türü. Bu saldırıyı yapmak için birden farklı yol kullanılıyor, konumuz ARP olduğu için ARP Poisoning (ARP Spoofing olarak da bilinir) saldırısından bahsedeceğim.
+
+Ağımızda yine 10.10.10.10 IP adresine sahip bir A bilgisayarı ve 10.10.10.20 IP adresine sahip bir B bilgisayarımız olsun. Niyeti bozuk arkadaşımızın da bilgisayarı aynı ağın içerisinde 10.10.10.30 IP adresine sahip olsun. A cihazını hedef alan sahte ARP Reply paketleri göndererek A bilgisayarına kendisini B bilgisayarı gibi göstermeye çalışıyor. Bunu için de paket başlıkların içerisinde Target bilgilerine A cihazının IP ve MAC adreslerini girerken Sender bilgilerine ise **10.10.10.20 yani B bilgisayarının IP adresini girerken MAC adresi bilgisi olarak kendi MAC adresini** giriyor. A cihazı da "Hmm tamam o zaman." diyip ARP tablosundaki kaydı düzenliyor. Bu sayede saldırgan ARP tablosunu manipüle etmiş oluyor. Aynısını B cihazı için de yapıyor ve bu sayede A ile B arasındaki trafiği kendi üzerinden geçirebilmiş oluyor.
+
+Genelde, gateway IP adresi ile ağdaki bir bilgisayarın arasına girmek hedeflenir. Gateway IP adresi router üzerindeki bir porta ait olur ve diğer ağlarla iletişim kurabilmek için bir çıkış kapısı görevi görür. Bu saldırıdan zarar görmemenin en bariz yolu trafiğin şifrelenmesidir. Her ne kadar saldırgan araya girip trafiği kendi üzerinden geçirmeyi başarsa da, şifrelenmiş bir trafikte üzerinden geçen paketler onun için pek bir anlam ifade etmeyecektir. Korunma yöntemleri olarak da ağ içerisinde sık kullanılan cihazların adreslerini (gateway IP ve MAC adresi gibi) statik olarak tabloya kaydetmek, paket filtrelemeleri, ağı denetleyen üçüncü parti yazılımlar ya da ara ara ARP tablosunu manuel olarak kontrol etmek sayılabilir.
+
+## Ağ cihazları
+
+### Hub
+
+Ethernet, USB, Coaxial kabloları ile bağlantıyı destekleyen portlara sahip basit bir cihazdır ve OSI modelinde fiziksel katmanda yer alır. Kendisine gelen paketleri anlamaz ve üzerindeki tüm portlara iletir.
+
+### Switch
+
+Switch de hub gibi bir çok porta hatta daha fazla porta sahiptir ancak gelen her paketi tüm portlara göndermek yerine ilgili port ya da portlara teslim eder. Bunu da MAC adreslerini kullanarak yapar. Yerel ağlarda cihazları genellikle switchler kullanarak birbirine bağlarız. OSI katmanında Veri/Bağ katmanında yer alır.
+
+### Router
+
+Hub ve switchlerden daha kompleks yapıya sahiptir. Belirlenen protokoller, kurallar ile birbirinden farklı ağların iletişime geçebilmesini sağlayan cihazlardır. Kendisine gelen paketi gitmek istediği ağa doğru yönlendirir. OSI modelinde üçüncü katman olan network katmanında yer alır. 
+
+### Access Point
+
+Kablosuz bağlantı yapabilen cihazları ağa bağlayabilmek için kullanılır. Gereken frekansta radyo dalgaları yayarken kendisi de kabloyla ağa bağlıdır (mesela routera) ve aradaki iletimi yapmaya yarar. 
+
+## IP Blokları ve Subnetting
+
+Ağları IP adresi adı verdiğimiz sayısal bir değerle tanımlarız. Bu kısımda IP adresi nedir, Network ID'si nedir, Subnet Mask nedir, Private ve Public IP adresleri nedir bunlardan bahsedeceğim.
+
+### IP Adresi (v4)
+
+IP ağlarındaki her bir cihazın sahip olması gereken sanal (yazılımsal) ve sayısal bir değerdir. 4 oktet olmak üzere toplamda 32-bitten oluşur. 2^32 = 4,294,967,296 yani yaklaşık 4.3 milyar tane birbirinden farklı IP adresi üretilebilir. İlk bakışta çok gibi gelebilir ancak dünya nüfusunun 7 milyar olduğunu düşünürsek ve yine hemen herkesin evinde, ofisinde, cebinde, çantasında internete bağlanabilen birçok cihaz olduğunu düşünürsek epey yetersiz kalıyor.
+
+### IP Sınıfları
+
+Bu IP ilk kullanılmaya başlandığında bu sayısal değerin yetersiz kalacağını tahmin edememişler ve IP adreslerini bir takım sınıflara bölerek bol keseden dağıtmışlar.
+
+<table border="1" style="text-align:center;">
+  <thead>
+    <tr>
+      <th>Sınıf</th>
+      <th>Adres Aralığı</th>
+      <th>Varsayılan Subnet Mask</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>A</td>
+      <td>1.0.0.0 to 126.255.255.255</td>
+      <td>255.0.0.0</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>128.0.0.0 to 191.255.255.255</td>
+      <td>255.255.0.0</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>192.0.0.0 to 223.255.255.255</td>
+      <td>255.255.255.0</td>
+    </tr>
+    <tr>
+      <td>D</td>
+      <td>224.0.0.0 to 239.255.255.255</td>
+      <td>Multicast için ayrılmıştır</td>
+    </tr>
+    <tr>
+      <td>E</td>
+      <td>240.0.0.0 to 254.255.255.255</td>
+      <td>Experimental</td>
+    </tr>
+  </tbody>
+</table>
+
+
+Tabloda ilk oktedi 0 ve 127 olan IP adreslerini göremiyoruz. 0.0.0.0 varsayılan yönlendirme adresi olarak, 127.0.0.0 ise loopback adresi olarak ayrılmıştır.
+
+Bu tabloya göre ilk oktedi 113 olan bir IP adresinin A sınıf bir IP adresini işaret ettiğini anlayabiliriz. Ve hemen diyebiliriz ki 255.0.0.0 bir subnet mask'a sahiptir. Ama demesek daha iyi olur. Çünkü demişler ki biz bunları bol keseden dağıttık ama bu böyle olmaz ve sınıf işlerini bırakıp VLSM (Variable Length Subnet Mask) diye bir şeye geçmişler. Ama önce bu subnet mask neymiş bi bakalım.
+
+### Subnet Mask (Alt Ağ Maskesi)
+
+IP adresinin 32-bit 4 oktetten oluştuğundan bahsetmiştim. Eğer bir oktetteki her bitin değerini 1 yaparsanız (11111111), bu değerin onluk tabandaki karşılığı 255 eder. Bu bilgi cepte dursun.
+
+Windows sistemlerde ipconfig, linux sistemlerde ifconfig komutunu yazdığınızda muhtemelen IP adresinizin 192.168 ile başladığını, subnet mask olarak da 255.255.255.0 yazdığını göreceksiniz. Örnek olarak IP adresimizin 192.168.1.2 subnet maskın da 255.255.255.0 olduğunu varsayalım ve subnet mask'ın ne anlama geldiğine bakalım.
+
+İlk paragrafta 255'in ikilik tabanda 8 bitin de 1 olmasına denk geldiğini anlatmıştım. Bu örnekte 3 oktetin de 255 olması IP adresinin ilk 24 bitinin 1 geriye kalan son 8 bitinin ise 0 olduğu anlamına geliyor. 255.255.248.0 olsaydı ilk 21 biti 1 geriye kalan 11 biti 0 olacaktı. 
+
+Peki ne işe yarıyor subnet mask? Bizlere IP adreslerinin hangi ağda bulunduğunu ve o ağda kaç tane cihaz olabileceğini anlatıyor. Şöyle ki, 192.168.1.2 IP adresinin ilk 24 bitine bakarız: 192.168.1.0. Bu bize network ID'sini verir. 192.168.1.0 ağında bulunan bir bilgisayarız diyebiliriz. Aynı ağda olduğumuz bir başka cihazın IP adresi 192.168.1.23 olabilir çünkü ilk 24 biti network IDsi ile aynı ancak IP adresi 192.168.0.1 olan bir cihaz ile aynı ağda olduğumuzu söyleyemeyiz çünkü IP adresi network ID değerimizle uyuşmuyor. Daha iyi anlamak için bu linkteki videoyu izlemenizi şiddetle tavsiye ediyorum (https://youtu.be/XQ3T14SIlV4). 
+
+Subnet mask'ı ifade etmenin daha kısa bir yolu da var. CIDR notation deniyor. Kaç tane bit bir ise '/' karakterinden sonra o değer yazılır. İçinde bulunduğumuz ağı kısaca şöyle yazabiliriz: 192.168.1.0/24
+
+Kaç tane cihaz olduğunu da basit bir formül ile hesaplıyoruz: 2^n - 2
+Buradaki n değeri host biti sayısına eşit oluyor. Host biti ise subnet maskımızdaki sıfır adedine karşılık gelir. Diğer bitler ise network biti olarak adlandırılır. /24lük bir ağda host biti = 8'dir. 2^8 - 2 = 254 eder. yani /24lük bir ağda 254 tane cihaz olabilir. Subnet maskı belirleyen bitlerden sonrasının tamamının sıfır olması network ID'yi tamamının 1 olması ise broadcast IP'yi tanımladığı için bu IP adreslerini cihazlara atayamayız ve bu yüzden - 2 işlemi yapıyoruz. Örneğimizdeki network ID 192.168.1.0, broadcast IP ise 192.168.1.255.
+
+### VLSM (Variable Lenght Subnet Mask)
+
+VLSM için subnet maskleri değişken sayılarda belirleyebilmemize izin veren bir subnet dizayn stratejisi diyebiliriz. Hatırlarsanız IP sınıflarının olduğu tabloda "Varsayılan Subnet Mask" başlığı vardı. VLSM sayesinde varsayılanların dışına çıkıp ne kadar cihazımız varsa o kadarlık bir subnet mask belirleyebiliyoruz.
+
+### Public ve Private IP
+
+Kısıtlı sayıdaki IP adresi miktarını idareli kullanabilmek için böyle bir kullanım geliştirilmiştir. 10.0.0.0-10.255.255.255, 172.16.0.0-172.31.255.255, 192.168.0.0-192.168.255.255 aralıklarındaki IP adresleri Private kullanıma geriye kalan ve özel kullanımlar için ayrılmamış IP adresleri de Public kullanıma ayrılmıştır. Örneğin evde bir internet bağlantınız varken IP adresinizi 192.168li bir şey olarak görürsünüz ancak google'a "what is my ip address" yazıp arattığınızda farklı ve pek aşina olmadığınız bir IP adresi görürsünüz. Çünkü yukarıda belirttiğim IP adresleri sadece yerel ağlarda kullanıma tahsis edilmiştir ve internete bu IP adresi ile çıkamazsınız. Ağınızın bir tane de internete çıkabilmek için Public IP adresine sahip olması gerekir. Bu sayede internete çıkan IP adresi sayısını azaltmış oluyoruz çünkü aynı yerel ağdaki cihazlar farklı Private IP'lere sahipken, internete aynı Public IP adresini kullanarak çıkabiliyor. Bu konuya daha sonraki haftalarda bahsedeceğim NAT konusunda daha ayrıntılı değineceğim.
