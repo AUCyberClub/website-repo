@@ -17,7 +17,7 @@ index: 3
 Çok temel anlamda Linux kerneli kullanan her sistem Linux olarak adlandırılır. Unix işletim sistemi modeli üzerine yazılan Linux kerneli aslında “Von Neumann mimarisi” kavramından beri varolan CPU,Memory sonrasında ise storage’ı yöneten yazılımdır. Burada sadece bilgisayar (PC) gibi düşünülmemeli, akıllı her ev aletleri, router, gömülü elektronik herhangi bir sistem de Linux olabilir. Linux kerneli 1991’de Linus Torvalds tarafından açık kaynak kodlu olarak C temelli tasarlanmıştır. 
 
 
-![]({{ AUCyberClub.github.io }}/hackingfalan/assets/linux-sistemi/220px-NewTux.svg.png)
+![]({{ AUCyberClub.github.io }}/CyberCamp/assets/linux-sistemi/220px-NewTux.svg.png)
 
 Kernelin kodlarına açık kaynak kodlu olduğu için[ bu ](https://github.com/torvalds/linux) linkden bakabile biliriz !  Günümüzde Linux’un PC’de bir sürü distrosu olmasına rağmen pazarda Apple ve Microsoft’un gerisinde olmasına karşın, Linux kerneli; serverlar, android telefonlar, akıllı herhangi bir şey’de en çok kullanan yazılımlardan birisidir.
 
@@ -45,25 +45,25 @@ _Ama PC olmayan diğer ortamlar için tabii ki Linux başı çekiyor, örnek ola
 **Bir Linux Sistemin Bileşenleri, Terminoloji ve Ufaktan Bir Giriş**
 
 
-![]({{ AUCyberClub.github.io }}/hackingfalan/assets/linux-sistemi/linuxuxuxuxuxu.jpg)
+![]({{ AUCyberClub.github.io }}/CyberCamp/assets/linux-sistemi/linuxuxuxuxuxu.jpg)
 
 _Boot Loader:_ Bir bilgisayar ya da gömülü sistemde ilk çalışan kısımdır. Kabaca Storage’daki OS’i yani bu durumda Linux kernelini memory’e getirip çalıştıran programdır.
 
 
-![]({{ AUCyberClub.github.io }}/hackingfalan/assets/linux-sistemi/Untitled-Diagram-215-1.jpg)
+![]({{ AUCyberClub.github.io }}/CyberCamp/assets/linux-sistemi/Untitled-Diagram-215-1.jpg)
 
 _Linux Kernel:_ Yukarıda da bahsettiğimiz gibi bir bilgisayarda CPU ve memory ile ilişkiyi sağlayan kısımdır. OS kısmının iyice detayına girmek isteyenler için:[ https://en.wikipedia.org/wiki/Linux_kernel https://cse.yeditepe.edu.tr/~kserdaroglu/spring2014/cse331/termproject/BOOKS/ProfessionalLinuxKernelArchitecture-WolfgangMauerer.pdf](https://en.wikipedia.org/wiki/Linux_kernel) buraları önerebiliriz fakat pratikte bakarsak en çok kullanılan işletim sistemi Windows’tan farkları, OS’in source kodlarına erişim (bknz:özgür yazılım) ve daha az GUI son kullanıcı için bir takım farklılıktır. Bunun dışında yaklaşım olarak Windows Hybrid kernel kullanırken Linux hatta UNIX-Like sistemler Monolithic yaklaşım kullanırlar, bu fark basitçe Hybrid ya da Microkernel sistemlerde Memory belirli bölgelere ayrılmışken, ki buna user services, kernel services diyebiliriz, adından da anlaşılacağı gibi Monolithic yaklaşımda böyle bir bölünme yapılmaz. ([https://stackoverflow.com/questions/4537850/what-is-difference-between-monolithic-and-micro-kernel](https://stackoverflow.com/questions/4537850/what-is-difference-between-monolithic-and-micro-kernel))
 
 Başka bir farklılık da sisteme herhangi bir device(donanımsal aygıt) eklendiğinde bu bir dizindir. Bilinen tabir ile linux’larda “everything is a file”dır. [EVERYTHING IS A FILE!](https://tldp.org/LDP/Linux-Filesystem-Hierarchy/html/dev.html)
 
 hatta bu device’lar ‘/dev’ dizininde tutulur.
-![]({{ AUCyberClub.github.io }}/hackingfalan/assets/linux-sistemi/7b4a617ac4836902a9986ef5a073221b.png)
+![]({{ AUCyberClub.github.io }}/CyberCamp/assets/linux-sistemi/7b4a617ac4836902a9986ef5a073221b.png)
 
 
 _Daemon:_ Daemon’lar arkada sessizce çalışan background process’lerdir. Tabii ki OS’in her katmanına erişimimiz olduğu için Linux’da daemon yazıp, bunları düzenleyebiliriz. [ detaylar için burası](https://man7.org/linux/man-pages/man7/daemon.7.html)
 
 _Fun-fact: Daemon’lar demon yani şeytan kelimesinin köken olarak eski halidir. Buna karşın insanların Linux veya UNIX’ı satanik dünyayla ilişkilendirmelerinin yanılgı olduğu söylenir [(ki Satanic Ubuntu var)](https://archiveos.org/ubuntu-satanic/). Buna karşın daemon kavramının pagan inanışlarındaki karşılığı tam olarak demon değildir. Ki ironik olarak demon kavramının tam karşılığı Türkçe’deki şeytan da değildir. Bizdeki şeytan kavramı tek ve cehennemin yöneticisi gibi bir şey iken, Batı’da demon aslında yine o “underworld”de yaşayan kötü olan bir topluluktur. Bu kavram karışıklıklarına karşın[ https://en.wikipedia.org/wiki/Daemon_(computing)](https://en.wikipedia.org/wiki/Daemon_(computing)) da okunabileceği gibi  Daemon aslında eksi pagan inanışlarında kötü olarak değil, kişinin kendi özelliğine göre şekillenen bir yapıya sahiptir ve insana hizmet eder. Tam da isimlendirme bu yüzden olacak ki daemon’lar arka planda çalışan OS’in dolayısıyla kullanıcının hizmetkârları gibi tanımla karşımıza çıkıyor._
-![]({{ AUCyberClub.github.io }}/hackingfalan/assets/linux-sistemi/8eaa02a76c32418db83462f6caf1a075.png)
+![]({{ AUCyberClub.github.io }}/CyberCamp/assets/linux-sistemi/8eaa02a76c32418db83462f6caf1a075.png)
 
 <br>
 
@@ -123,7 +123,7 @@ pwd
 
 Açtığımız o komut satırı penceresinin olduğu dizini döndürür.
 
-![]({{ AUCyberClub.github.io }}/hackingfalan/assets/linux-sistemi/pwd.png)
+![]({{ AUCyberClub.github.io }}/CyberCamp/assets/linux-sistemi/pwd.png)
 
 
 
@@ -137,7 +137,7 @@ cd ..
 Yine olduğumuz o terminalde dizinler arası dolaşmamızı sağlar, cd .. ile bir üst dizine gidebiliriz.
 
 
-![]({{ AUCyberClub.github.io }}/hackingfalan/assets/linux-sistemi/cd.png)
+![]({{ AUCyberClub.github.io }}/CyberCamp/assets/linux-sistemi/cd.png)
 
 
 **mkdir (Make Directory)**
@@ -149,7 +149,7 @@ mkdir yeniDizin
 
 Yetkimiz olan yerlerdeki ki aşağıda biraz değineceğiz, yeni dizinler oluşturmamızı sağlar.
 
-![]({{ AUCyberClub.github.io }}/hackingfalan/assets/linux-sistemi/mkdir.png)
+![]({{ AUCyberClub.github.io }}/CyberCamp/assets/linux-sistemi/mkdir.png)
 
 
 **dir** ve **ls**
@@ -162,7 +162,7 @@ ls -C -b
 
 İkisi de açılan terminalin olduğu dizindeki dosyaları ve dizinleri göstermek için kullanılır. dir aslında ls -C -b ‘dir (listele, Column(colon olarak), özel karakterleri “backslash escape” ile göster).
 
-![]({{ AUCyberClub.github.io }}/hackingfalan/assets/linux-sistemi/diririr.png)
+![]({{ AUCyberClub.github.io }}/CyberCamp/assets/linux-sistemi/diririr.png)
 
 
 
@@ -174,7 +174,7 @@ tree
 
 
 Dizinleri computer-science’dan aşina olduğumu veri yapısı ‘tree’ olarak gösterir.
-![]({{ AUCyberClub.github.io }}/hackingfalan/assets/linux-sistemi/treee.png)
+![]({{ AUCyberClub.github.io }}/CyberCamp/assets/linux-sistemi/treee.png)
 
 **rm (remove)**
 
@@ -184,7 +184,7 @@ rm silinecekDosya
 
 
 Bir dosyayı kaldırmak için kullanılır. Dizinleri kaldırmak içinse rm -r (recursive) komutu kullanılabilir.
-![]({{ AUCyberClub.github.io }}/hackingfalan/assets/linux-sistemi/rmm.png)
+![]({{ AUCyberClub.github.io }}/CyberCamp/assets/linux-sistemi/rmm.png)
 
 
 _#root kavramı:_
@@ -199,7 +199,7 @@ sudo -i
 
 Herhangi bir komuttan önce bazen o komutu yapmaya o kullanıcının yetkisi olmayabilir. Bu noktada komutu root olarak kullanmak için başına sudo eklenir. Ya da var olan terminalde sudo -i yazılarak root session’a geçilebilir.
 
-![]({{ AUCyberClub.github.io }}/hackingfalan/assets/linux-sistemi/sudo.png)
+![]({{ AUCyberClub.github.io }}/CyberCamp/assets/linux-sistemi/sudo.png)
 
 **ps (process)**
 
@@ -208,7 +208,7 @@ ps
 ```
 
 Bilgisayarda çalışan process'leri gösterir.
-![]({{ AUCyberClub.github.io }}/hackingfalan/assets/linux-sistemi/ps.png)
+![]({{ AUCyberClub.github.io }}/CyberCamp/assets/linux-sistemi/ps.png)
 
 **pstree (process tree)**
 
@@ -216,7 +216,7 @@ Bilgisayarda çalışan process'leri gösterir.
 pstree -Au
 ```
 
-![]({{ AUCyberClub.github.io }}/hackingfalan/assets/linux-sistemi/pstree.png)
+![]({{ AUCyberClub.github.io }}/CyberCamp/assets/linux-sistemi/pstree.png)
 
 
 Processleri ve birbirleri ile olan ilişkilerini gösterir.

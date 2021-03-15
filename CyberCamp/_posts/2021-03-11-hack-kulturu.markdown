@@ -21,7 +21,7 @@ Bu yazımızda hack ve hack kültürü konularına yakından bakacağız.
 </p>
 
 <p>
-<img src="{{ AUCyberClub.github.io }}/hackingfalan/assets/hack-kulturu/2021-03-11-hack-kulturu-1.jpg" width="" alt="alt_text" title="image_tooltip">
+<img src="{{ AUCyberClub.github.io }}/CyberCamp/assets/hack-kulturu/2021-03-11-hack-kulturu-1.jpg" width="" alt="alt_text" title="image_tooltip">
 </p>
 <h3>Hack/Hacker nedir?</h3>
 <p>
@@ -154,7 +154,7 @@ Bu ilkeler ile yola çıkarak birçok ünlü hacker aktivist(hacktivist) grup or
 <h3>Anonymous</h3>
 <p>
 
-<img src="{{ AUCyberClub.github.io }}/hackingfalan/assets/hack-kulturu/2021-03-11-hack-kulturu-2.png" width="" alt="alt_text" title="image_tooltip">
+<img src="{{ AUCyberClub.github.io }}/CyberCamp/assets/hack-kulturu/2021-03-11-hack-kulturu-2.png" width="" alt="alt_text" title="image_tooltip">
 </p>
 <p>
 Artık neredeyse hepimizin bildiği grupların başında gelen Anonymous, kısaca
@@ -173,7 +173,7 @@ href="https://www.youtube.com/channel/UCA071Pllf2wk-B8Rkwt47bQ">buradan</a>
 <h3>LulzSec</h3>
 <p>
 
-<img src="{{ AUCyberClub.github.io }}/hackingfalan/assets/hack-kulturu/2021-03-11-hack-kulturu-3.jpg" width="" alt="alt_text" title="image_tooltip">
+<img src="{{ AUCyberClub.github.io }}/CyberCamp/assets/hack-kulturu/2021-03-11-hack-kulturu-3.jpg" width="" alt="alt_text" title="image_tooltip">
 </p>
 <p>
 LulzSez , Anonymous ile aynı dönemlerde kurulmuştur.LulzSec kelimesi ise  4chan
@@ -230,7 +230,7 @@ sızıntılarını başlatmıştır.
 <h3>Stuxnet</h3>
 <p>
 
-<img src="{{ AUCyberClub.github.io }}/hackingfalan/assets/hack-kulturu/2021-03-11-hack-kulturu-4.png" width="" alt="alt_text" title="image_tooltip">
+<img src="{{ AUCyberClub.github.io }}/CyberCamp/assets/hack-kulturu/2021-03-11-hack-kulturu-4.png" width="" alt="alt_text" title="image_tooltip">
 </p>
 <p>
 Siber saldırı dendiği zaman birçoğumuzun aklına ilk olarak Stuxnet krizi gelir
@@ -254,7 +254,7 @@ erime tehlikesinin oluşmasına sebep olmuştur.
 <h3>WannaCry</h3>
 <p>
 
-<img src="{{ AUCyberClub.github.io }}/hackingfalan/assets/hack-kulturu/2021-03-11-hack-kulturu-5.png" width="" alt="alt_text" title="image_tooltip">
+<img src="{{ AUCyberClub.github.io }}/CyberCamp/assets/hack-kulturu/2021-03-11-hack-kulturu-5.png" width="" alt="alt_text" title="image_tooltip">
 </p>
 <p>
 	WannaCry da siber güvenlikle bir miktar ilgilenmiş herkesin duymuş olabileceği

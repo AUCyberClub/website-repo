@@ -17,7 +17,7 @@ Bu yazımızda WEB’in nasıl ortaya çıktığını, şimdisini ve geleceğini
 </p>
 <p>
 
-<img src="{{ AUCyberClub.github.io }}/hackingfalan/assets/web-nedir-ne-ise-yarar/2021-03-12-web-nedir-ne-ise-yarar-3.jpg" width="" alt="alt_text" title="image_tooltip">
+<img src="{{ AUCyberClub.github.io }}/CyberCamp/assets/web-nedir-ne-ise-yarar/2021-03-12-web-nedir-ne-ise-yarar-3.jpg" width="" alt="alt_text" title="image_tooltip">
 </p>
 <h3>WWW ve WEB ne demek?</h3>
 <p>
@@ -114,7 +114,7 @@ da bu kalan %95’e göz atalım.
 </p>
 <p>
 
-<img src="{{ AUCyberClub.github.io }}/hackingfalan/assets/web-nedir-ne-ise-yarar/2021-03-12-web-nedir-ne-ise-yarar-1.jpg" width="" alt="alt_text" title="image_tooltip">
+<img src="{{ AUCyberClub.github.io }}/CyberCamp/assets/web-nedir-ne-ise-yarar/2021-03-12-web-nedir-ne-ise-yarar-1.jpg" width="" alt="alt_text" title="image_tooltip">
 </p>
 <h3>Buz Dağının Görünmeyen Kısmı Deep Web</h3>
 <p>
@@ -135,7 +135,7 @@ bu kadar büyük olması pek de şaşırtıcı değil.
 <h3>Dark Web</h3>
 <h3>
 
-<img src="{{ AUCyberClub.github.io }}/hackingfalan/assets/web-nedir-ne-ise-yarar/2021-03-12-web-nedir-ne-ise-yarar-2.jpg" width="" alt="alt_text" title="image_tooltip">
+<img src="{{ AUCyberClub.github.io }}/CyberCamp/assets/web-nedir-ne-ise-yarar/2021-03-12-web-nedir-ne-ise-yarar-2.jpg" width="" alt="alt_text" title="image_tooltip">
 </h3>
 <p>
 Dark Web ise evet, işte yasa dışı işlerin döndüğü yer burası. Dark Web başlı

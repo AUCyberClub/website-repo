@@ -11,7 +11,7 @@ index: 1
 İnternetin hayatımıza girmesi ile birlikte Siber Güvenlik de bizim için önem kazanmaya başladı. “Siber Güvenlik tam olarak ne? İnternet bize tam olarak nasıl zarar verebilir?” diye düşünüyorsanız doğru yerdesiniz. Bu yazımızda “Siber Güvenlik” konusuna yakından bakacağınız.
 
 
-![]({{ AUCyberClub.github.io }}/hackingfalan/assets/siber-guvenlik/Cyber-Security-Importance-1080x675.jpeg)
+![]({{ AUCyberClub.github.io }}/CyberCamp/assets/siber-guvenlik/Cyber-Security-Importance-1080x675.jpeg)
 
 
 

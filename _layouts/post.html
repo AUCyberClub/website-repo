@@ -14,19 +14,16 @@ comments: true
     {{ content }}
 
 <br>
-<!-- <h3>Yazara ait diğer yazılar</h3>
-<h1>{{ post.author }}</h1>
-{% for posta in site.posts %}
-    {% for author in posta.author %}
-    {% if author == posta.author  %}
-        <a href="{{ post.url | relative_url }}">{{ post.title | escape }} </a>
-        <h1>{{ post.author }}</h1>
-        {% break  %}
-    {% endif %}
+{% if page.author%}
+<h3>Yazara ait diğer yazılar</h3>
+    {% for post in site.posts %}
+        {% if page.author == post.author  %}
+        <a href="{{ post.url | relative_url }}">{{ post.title | escape }} </a><br>
+        {% endif %}
     {% endfor %}
-{% endfor %}
-  </div> -->
-    {% include disqus_comments.html %}
+{% endif %}
+  </div>
+{% include disqus_comments.html %}
 
     
 </article>
