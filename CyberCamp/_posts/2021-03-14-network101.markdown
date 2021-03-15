@@ -67,7 +67,7 @@ Elimizde aynı ağda bulunan A, B, C, D bilgisayarları olsun. A bilgisayarını
 
 Switchler temelde ikinci katmanda çalışan cihazlardır. Bazı switchlerde bir takım başka özellikler de olabildiği için üçüncü katmanda da çalışabilmektedir. Bu konuya daha sonra değineceğim, bu örnekte temel bir switch cihazından bahsediyoruz. A bilgisayarı D bilgisayarı ile iletişime geçmek istediği zaman önce ARP tablosunda 10.0.0.4 IP adresine karşılık gelen MAC adresini arar. Eğer tablosunda böyle bir kayıt bulamazsa bunun kim olduğunu çözmeye çalışır ve içinde bulunduğu ağdaki tüm cihazlara ulaştırmak üzere(broadcast) bir ARP Request paketi gönderir. Şimdi bu çıkan isteği inceleyelim
 
-![]({{ AUCyberClub.github.io }}/hackingfalan/assets/network101/ARP-packet.jpg)
+![]({{ AUCyberClub.github.io }}/CyberCamp/assets/network101/ARP-packet.jpg)
 
 Görselde bu isteğin içerisinde yer alan başlıkları görüyoruz. A cihazının D cihazına ulaşmak istediği bir senaryoda bu başlıkların hangi değerleri aldığını inceleyelim.
 

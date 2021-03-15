@@ -10,7 +10,7 @@ index: 2
 
 <h3>Kısaca GNU/Linux nedir?</h3>
 
-<img src="{{ AUCyberClub.github.io }}/hackingfalan/assets/gnu-linux-ozgur-yazilim/2021-03-11-gnu-linux-ozgur-yazilim-4.jpg" width="" alt="alt_text" title="image_tooltip">
+<img src="{{ AUCyberClub.github.io }}/CyberCamp/assets/gnu-linux-ozgur-yazilim/2021-03-11-gnu-linux-ozgur-yazilim-4.jpg" width="" alt="alt_text" title="image_tooltip">
 
 <p>
 	GNU/Linux’un ne olduğunu merak edip kısaca okuyup hemen çıkacaklar için ne
@@ -55,9 +55,9 @@ bilyeler ile çalmak!
 </p>
 <p>
 
-<img src="{{ AUCyberClub.github.io }}/hackingfalan/assets/gnu-linux-ozgur-yazilim/2021-03-11-gnu-linux-ozgur-yazilim-7.jpg" width="" alt="alt_text" title="image_tooltip">
+<img src="{{ AUCyberClub.github.io }}/CyberCamp/assets/gnu-linux-ozgur-yazilim/2021-03-11-gnu-linux-ozgur-yazilim-7.jpg" width="" alt="alt_text" title="image_tooltip">
 
-<img src="{{ AUCyberClub.github.io }}/hackingfalan/assets/gnu-linux-ozgur-yazilim/2021-03-11-gnu-linux-ozgur-yazilim-1.jpg" width="" alt="alt_text" title="image_tooltip">
+<img src="{{ AUCyberClub.github.io }}/CyberCamp/assets/gnu-linux-ozgur-yazilim/2021-03-11-gnu-linux-ozgur-yazilim-1.jpg" width="" alt="alt_text" title="image_tooltip">
 </p>
 <p>
 Modern -elektrikle çalışan, dijital- bilgisayarlar ise çok uzak zamanlarda yoktu
@@ -77,7 +77,7 @@ o meşhur delikli kartları keşfettik.
 </p>
 <p>
 
-<img src="{{ AUCyberClub.github.io }}/hackingfalan/assets/gnu-linux-ozgur-yazilim/2021-03-11-gnu-linux-ozgur-yazilim-2.jpg" width="" alt="alt_text" title="image_tooltip">
+<img src="{{ AUCyberClub.github.io }}/CyberCamp/assets/gnu-linux-ozgur-yazilim/2021-03-11-gnu-linux-ozgur-yazilim-2.jpg" width="" alt="alt_text" title="image_tooltip">
 </p>
 <p>
 Delikli kartlardan sonra ihtiyacımız olan şeyleri programlamak çok daha kolay
@@ -120,7 +120,7 @@ dağıtımlar”</span> başlıklı yazımızı okuyabilirsiniz.
 </p>
 <p>
 
-<img src="{{ AUCyberClub.github.io }}/hackingfalan/assets/gnu-linux-ozgur-yazilim/2021-03-11-gnu-linux-ozgur-yazilim-6.jpg" width="" alt="alt_text" title="image_tooltip">
+<img src="{{ AUCyberClub.github.io }}/CyberCamp/assets/gnu-linux-ozgur-yazilim/2021-03-11-gnu-linux-ozgur-yazilim-6.jpg" width="" alt="alt_text" title="image_tooltip">
 </p>
 <p>
 	İlerleyen yıllar ve bilgisayarların ucuzlaması ile birlikte bilgisayar evlere
@@ -138,7 +138,7 @@ hakkında pek bir fikrimiz yok. İşte burada kurtarıcımız olan Açık Kaynak
 <h4>Ne bu açık kaynak?</h4>
 <p>
 
-<img src="{{ AUCyberClub.github.io }}/hackingfalan/assets/gnu-linux-ozgur-yazilim/2021-03-11-gnu-linux-ozgur-yazilim-8.png" width="" alt="alt_text" title="image_tooltip">
+<img src="{{ AUCyberClub.github.io }}/CyberCamp/assets/gnu-linux-ozgur-yazilim/2021-03-11-gnu-linux-ozgur-yazilim-8.png" width="" alt="alt_text" title="image_tooltip">
 </p>
 <p>
 Öncelikle açık kaynak ne demek bunu bir açıklayalım. Bir programı geliştirirken
@@ -157,7 +157,7 @@ kişinin gördüğü hali ile görebiliriz.
 <h4>Peki ya Özgür Yazılım?</h4>
 <p>
 
-<img src="{{ AUCyberClub.github.io }}/hackingfalan/assets/gnu-linux-ozgur-yazilim/2021-03-11-gnu-linux-ozgur-yazilim-5.jpg" width="" alt="alt_text" title="image_tooltip">
+<img src="{{ AUCyberClub.github.io }}/CyberCamp/assets/gnu-linux-ozgur-yazilim/2021-03-11-gnu-linux-ozgur-yazilim-5.jpg" width="" alt="alt_text" title="image_tooltip">
 </p>
 <p>
 	Özgür yazılım ise bir felsefedir, bakış açısıdır, bir kültürdür.
@@ -206,7 +206,7 @@ yazılımlar?
 <h3>Sonunda GNU/Linux</h3>
 <p>
 
-<img src="{{ AUCyberClub.github.io }}/hackingfalan/assets/gnu-linux-ozgur-yazilim/2021-03-11-gnu-linux-ozgur-yazilim-3.png" width="" alt="alt_text" title="image_tooltip">
+<img src="{{ AUCyberClub.github.io }}/CyberCamp/assets/gnu-linux-ozgur-yazilim/2021-03-11-gnu-linux-ozgur-yazilim-3.png" width="" alt="alt_text" title="image_tooltip">
 </p>
 <p>
 	GNU/Linux dendiği zaman hemen iki isim yanında belirir:

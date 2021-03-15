@@ -8,7 +8,7 @@ index: 1
 ---
 <center><h1>Linux Nedir/Neden?</h1></center>
 
-<img src="{{ AUCyberClub.github.io }}/hackingfalan/assets/linux-nedir-neden/2021-03-12-linux-nedir-neden-2.jpg" width="" alt="alt_text" title="image_tooltip">
+<img src="{{ AUCyberClub.github.io }}/CyberCamp/assets/linux-nedir-neden/2021-03-12-linux-nedir-neden-2.jpg" width="" alt="alt_text" title="image_tooltip">
 
 <p>
 Linux'un ne demek olduğunu ve neden kullanılması gerektiğinden bahsetmeden önce
@@ -47,7 +47,7 @@ iletir ve sonrasında yapmak istediğimiz işlem gerçekleşir.
 </p>
 <p>
 
-<img src="{{ AUCyberClub.github.io }}/hackingfalan/assets/linux-nedir-neden/2021-03-12-linux-nedir-neden-1.png" width="" alt="alt_text" title="image_tooltip">
+<img src="{{ AUCyberClub.github.io }}/CyberCamp/assets/linux-nedir-neden/2021-03-12-linux-nedir-neden-1.png" width="" alt="alt_text" title="image_tooltip">
 </p>
 <p>
 Modern işletim sistemlerinin birçoğu bu mantıkla çalışmaktadır. Örnek olarak en
@@ -106,7 +106,7 @@ kullanmak uzay gemisi kullanmak gibidir.
 </p>
 <p>
 
-<img src="{{ AUCyberClub.github.io }}/hackingfalan/assets/linux-nedir-neden/2021-03-12-linux-nedir-neden-6.jpg" width="" alt="alt_text" title="image_tooltip">
+<img src="{{ AUCyberClub.github.io }}/CyberCamp/assets/linux-nedir-neden/2021-03-12-linux-nedir-neden-6.jpg" width="" alt="alt_text" title="image_tooltip">
 </p>
 <h3>Peki nasıl indireceğim?</h3>
 <p>Eğer bir Linux dağıtımı indirecekseniz öncelikle çekirdeğin tek başına bir
@@ -116,7 +116,7 @@ En popülerlerinden bazıları:</p>
 <h4>Ubuntu</h4>
 <p>
 
-<img src="{{ AUCyberClub.github.io }}/hackingfalan/assets/linux-nedir-neden/2021-03-12-linux-nedir-neden-4.jpg" width="" alt="alt_text" title="image_tooltip">
+<img src="{{ AUCyberClub.github.io }}/CyberCamp/assets/linux-nedir-neden/2021-03-12-linux-nedir-neden-4.jpg" width="" alt="alt_text" title="image_tooltip">
 </p>
 <p>
 Artık duymayan kalmamıştır herhalde. Minimalist bir tasarımla gelen ubuntu, yeni
@@ -127,7 +127,7 @@ gereken(uygulama marketi, kişiselleştirme gibi) her şeyi de beraberinde sunuy
 <h4>Linux Mint</h4>
 <p>
 
-<img src="{{ AUCyberClub.github.io }}/hackingfalan/assets/linux-nedir-neden/2021-03-12-linux-nedir-neden-3.jpg" width="" alt="alt_text" title="image_tooltip">
+<img src="{{ AUCyberClub.github.io }}/CyberCamp/assets/linux-nedir-neden/2021-03-12-linux-nedir-neden-3.jpg" width="" alt="alt_text" title="image_tooltip">
 </p>
 <p>
 	Yine ilk defa Linux işletim sistemini kullanacak olan kullanıcılar için
@@ -137,7 +137,7 @@ sunuyor ve arayüz tecrübesi olarak Windows’a yakın bir deneyim sunuyor
 <h4>Kali Linux</h4>
 <h4>
 
-<img src="{{ AUCyberClub.github.io }}/hackingfalan/assets/linux-nedir-neden/2021-03-12-linux-nedir-neden-7.png" width="" alt="alt_text" title="image_tooltip">
+<img src="{{ AUCyberClub.github.io }}/CyberCamp/assets/linux-nedir-neden/2021-03-12-linux-nedir-neden-7.png" width="" alt="alt_text" title="image_tooltip">
 </h4>
 <p>
 	Siber güvenlik topluluğu olup da Kali Linux’tan bahsetmezsek olmaz. Kali linux
@@ -149,7 +149,7 @@ devam ediyoruz.
 <h4>ParrotOS</h4>
 <h4>
 
-<img src="{{ AUCyberClub.github.io }}/hackingfalan/assets/linux-nedir-neden/2021-03-12-linux-nedir-neden-5.jpg" width="" alt="alt_text" title="image_tooltip">
+<img src="{{ AUCyberClub.github.io }}/CyberCamp/assets/linux-nedir-neden/2021-03-12-linux-nedir-neden-5.jpg" width="" alt="alt_text" title="image_tooltip">
 </h4>
 <p>
 Ve benim favorim, kalbimin fatihi ParrotOS… ParrotOS da aynı Kali gibi ofansif

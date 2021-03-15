@@ -16,7 +16,7 @@ Siber Güvenlik ile ilgilenmeye başlamışsanız en azından bir kez olsa CTF k
 
 
 
-![]({{ AUCyberClub.github.io }}/hackingfalan/assets/ctf/ctf_nedir.jpg)
+![]({{ AUCyberClub.github.io }}/CyberCamp/assets/ctf/ctf_nedir.jpg)
 
 
 
@@ -42,7 +42,7 @@ CTF yarışmalarında 2 farklı tür vardır.
 ### **Jeopardy CTF**
 
 
-![]({{ AUCyberClub.github.io }}/hackingfalan/assets/ctfScreenshot_25.jpg)
+![]({{ AUCyberClub.github.io }}/CyberCamp/assets/ctf/Screenshot_25.jpg)
 
 En yaygın uygulanan CTF çeşididir. Sınırlı bir süre içinde puan ve flag kazanmak için çeşitli kategorilerden farklı challengeları tamamlamayı içerir. Soruların zorluk seviyeleri ve puanları birbirinden farklıdır. Bir seviye çözülmeden diğer seviyeye geçilemez. Genellikle bütün yarışmanın kazananını belirlemek için lider tablosu oluşturulur. 
 

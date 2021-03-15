@@ -82,7 +82,7 @@ Linux dosya sistemi, iki parçalı dosya sistemi yazılım uygulama mimarisini
 içerir. Aşağıdaki tabloda gördüğünüz gibi:
 </p>
 <p>
-    <img src="{{ AUCyberClub.github.io }}/hackingfalan/assets/linux-dosya-sistemi/linux-file-system.png" width="" alt="alt_text" title="image_tooltip">
+    <img src="{{ AUCyberClub.github.io }}/CyberCamp/assets/linux-dosya-sistemi/linux-file-system.png" width="" alt="alt_text" title="image_tooltip">
 </p>
 <p>
 Dosya sistemi, dosyalar(files) ve dizinler(directories) gibi dosya sistemi
@@ -101,7 +101,7 @@ sürücüsünün dosya sistemine bir arayüz vermesini gerektirir.
 <h2><strong>Linux Dosya Sistemi Özellikleri</strong></h2>
 <p>
 
-<img src="{{ AUCyberClub.github.io }}/hackingfalan/assets/linux-dosya-sistemi/Dosya_sistemi.png" width="" alt="alt_text" title="image_tooltip">
+<img src="{{ AUCyberClub.github.io }}/CyberCamp/assets/linux-dosya-sistemi/Dosya_sistemi.png" width="" alt="alt_text" title="image_tooltip">
 </p>
 <p>
 Linux'ta dosya sistemi bir ağaç yapısı oluşturur. Tüm dosyalar bir ağaç ve
@@ -147,7 +147,7 @@ ReiserFS, XFS, btrfs ve swap gibi birçok dosya sistemi sunar.
 </p>
 <p>
 
-<img src="{{ AUCyberClub.github.io }}/hackingfalan/assets/linux-dosya-sistemi/linux-file-system2.png" width="" alt="alt_text" title="image_tooltip">
+<img src="{{ AUCyberClub.github.io }}/CyberCamp/assets/linux-dosya-sistemi/linux-file-system2.png" width="" alt="alt_text" title="image_tooltip">
 </p>
 <p>
 Bu dosya sistemlerini birlikte inceleyelim.
@@ -450,7 +450,7 @@ dosyaları ve yazılımı içerir.
 </p>
 <p>
 
-<img src="{{ AUCyberClub.github.io }}/hackingfalan/assets/linux-dosya-sistemi/standard-unix-filesystem-hierarchy.png" width="" alt="alt_text" title="image_tooltip">
+<img src="{{ AUCyberClub.github.io }}/CyberCamp/assets/linux-dosya-sistemi/standard-unix-filesystem-hierarchy.png" width="" alt="alt_text" title="image_tooltip">
 </p>
 <h2><strong>Son Sözler</strong></h2>
 <p>
