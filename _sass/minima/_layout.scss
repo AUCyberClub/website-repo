@@ -129,7 +129,9 @@
     .menu-icon {
         display: none;
     }
-
+    .mobile-show{
+        display: none;
+    }
     .page-link {
         color: #eee;
         line-height: $base-line-height;
@@ -142,11 +144,13 @@
         position: absolute;
         top: 9px;
         right: $spacing-unit / 2;
-        background-color: $background-color;
+        background-color: #000000;
         border: 1px solid $grey-color-light;
         border-radius: 5px;
         text-align: right;
-
+        .mobile-show{
+            display: block;
+        }
         .menu-icon {
             display: block;
             float: right;
