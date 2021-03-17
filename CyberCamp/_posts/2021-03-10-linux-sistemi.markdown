@@ -67,7 +67,7 @@ _Fun-fact: Daemon’lar demon yani şeytan kelimesinin köken olarak eski halidi
 
 <br>
 
-_Shell_: Kullanıcının komut girdiği ve buna bağlı bir output dönen yapıdır. Adından da anlaşılacağı gibi aslında işletim sisteminin kabuğudur, yani kullanıcı ile iletişim için dıştaki bir katmandır. Günümüzde çoğu Linux bash kullanır. (Bourne Again Shell - okunurken born again’e benzemesi de küçük bir şaka). Burada kavram olarak terminal ile karıştırmamız gerekir. Linux OS’lerde sıkça kullandığımız terminal aslında shell çalıştıran bir GUI’dir.[ ](https://fossbytes.com/difference-between-shell-console-terminal/)
+_Shell_: Kullanıcının komut girdiği ve buna bağlı bir output dönen yapıdır. Adından da anlaşılacağı gibi aslında işletim sisteminin kabuğudur, yani kullanıcı ile iletişim için dıştaki bir katmandır. Günümüzde çoğu Linux bash kullanır. (Bourne Again Shell - okunurken born again’e benzemesi de küçük bir şaka). Burada kavram olarak terminal ile karıştırmamamız gerekir. Linux OS’lerde sıkça kullandığımız terminal aslında shell çalıştıran bir GUI’dir.[ ](https://fossbytes.com/difference-between-shell-console-terminal/)
 
 
 [https://fossbytes.com/difference-between-shell-console-terminal/](https://fossbytes.com/difference-between-shell-console-terminal/)
