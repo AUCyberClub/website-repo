@@ -51,4 +51,14 @@ layout: default
         <hr>
         <br>
     </div>
+       <div class="container">
+        <h3>Blockchain</h3> {{ content }}
+        {% assign posts = site.categories.blockchain | sort: 'index'  %}
+        {% for post in posts %}
+        <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a><br>
+        {% endfor %}
+        <br>       
+        <hr>
+        <br>
+    </div>
 </article>
