@@ -61,4 +61,14 @@ layout: default
         <hr>
         <br>
     </div>
+    <div class="container">
+        <h3>Steganografi</h3> {{ content }}
+        {% assign posts = site.categories.steganografi | sort: 'index'  %}
+        {% for post in posts %}
+        <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a><br>
+        {% endfor %}
+        <br>       
+        <hr>
+        <br>
+    </div>
 </article>
