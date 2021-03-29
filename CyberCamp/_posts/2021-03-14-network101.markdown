@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Network 101
+title: Network 101 - LAN/WAN - Ethernet - MAC - IP - ARP - MiTM
 date: '2021-03-14 22:26:47 +0300'
 author: Malik Tekin
 categories: network
@@ -9,7 +9,7 @@ index: 1
 
 İletişim:
 * email: malik.tekin@protonmail.com
-* twitter: @0xb23be
+* twitter: [@0xb23be](https://twitter.com/0xb23be)
 
 # NETWORK 101
 
