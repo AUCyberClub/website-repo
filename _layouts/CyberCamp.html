@@ -32,7 +32,7 @@ layout: default
         <br>
     </div>
     <div class="container">
-        <h3>Network</h3> {{ content }}
+        <h3>Network 101</h3> {{ content }}
         {% assign posts = site.categories.network | sort: 'index'  %}
         {% for post in posts %}
         <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a><br>
