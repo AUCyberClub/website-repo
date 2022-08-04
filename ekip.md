@@ -120,3 +120,6 @@ Sümeyye Kutlu
 
 [Zeliha Bektaş](https://tr.linkedin.com/in/zeliha-bekta%C5%9F-99bbb8ba?trk=prof-samename-name)
  - **Kurucu Üye**
+
+[Mücahit Kurtlar](https://www.linkedin.com/in/mucahitkurtlar/)
+ - [HackKaradeniz Write-up](https://www.aucyberclub.org/cozumler/2022/07/29/hackkaradeniz.html) 
