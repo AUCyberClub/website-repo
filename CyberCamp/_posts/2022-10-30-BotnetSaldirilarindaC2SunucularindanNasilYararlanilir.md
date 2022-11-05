@@ -1,10 +1,10 @@
 ---
-title: Botnet Saldırılarında C2 Sunucularından Nasıl Yararlanılır?
-updated: 2022-11-05 10:43:23Z
-created: 2022-11-05 10:42:06Z
-latitude: 40.89965100
-longitude: 29.19364900
-altitude: 0.0000
+layout: Botnet Saldırılarında C2 Sunucularından Nasıl Yararlanılır?
+title: Siber Güvenlik 101
+date: '2022-10-30 22:26:47 +0300'
+author: İsmail Başaran
+categories: intro
+index: 4
 ---
 
 Komut ve kontrol (Command and Control/C2) saldırısı, ele geçirilmiş ana bilgisayar ile saldırganın sunucusu arasında gizli bir kanal oluşturmak için kullanılan kötü amaçlı yazılım saldırılarının bir bileşenidir. Bu tür saldırılarda saldırganın sunucusuna genellikle Komut ve Kontrol Sunucusu, C2 sunucusu veya C&C sunucusu denir. Daha fazla bilgi için “Komut ve Kontrol Sunucusu (Command and Control Server/C2) Nedir?” yazımızı inceleyebilirsiniz.

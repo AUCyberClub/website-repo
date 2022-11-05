@@ -1,8 +1,10 @@
 ---
-layout: post
-title: Komut ve Kontrol Sunucusu (Command and Control Server/C2) Nedir?
-date: '2022-10-30 15:50:00 +0300'
-categories: makaleler
+layout: Komut ve Kontrol Sunucusu (Command and Control Server/C2) Nedir?
+title: Siber Güvenlik 101
+date: '2022-10-30 22:26:47 +0300'
+author: İsmail Başaran
+categories: intro
+index: 5
 ---
 
 Komut ve kontrol (Command and Control/C2) saldırısı, ele geçirilmiş ana bilgisayar ile saldırganın sunucusu arasında gizli bir kanal oluşturmak için kullanılan kötü amaçlı yazılım saldırılarının bir bileşenidir. Bu tür saldırılarda saldırganın sunucusuna genellikle Komut ve Kontrol Sunucusu, C2 sunucusu veya C&C sunucusu denir. Saldırı sunucusu, kurbanın bilgisayarında farklı türde kötü amaçlı faaliyetler gerçekleştirmek için oluşturulan arka kapıdan yararlanır. DNS (alan isimlendirme sistemi) tünellemesi ile veri sızdırma bu faaliyetlere örnek verilebilir.
