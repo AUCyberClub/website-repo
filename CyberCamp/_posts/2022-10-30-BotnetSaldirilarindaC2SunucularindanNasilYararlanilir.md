@@ -1,6 +1,6 @@
 ---
-layout: Botnet Saldırılarında C2 Sunucularından Nasıl Yararlanılır?
-title: Siber Güvenlik 101
+layout: post
+title: Botnet Saldırılarında C2 Sunucularından Nasıl Yararlanılır?
 date: '2022-10-30 22:26:47 +0300'
 author: İsmail Başaran
 categories: intro

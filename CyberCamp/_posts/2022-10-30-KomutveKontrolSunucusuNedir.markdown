@@ -1,6 +1,6 @@
 ---
-layout: Komut ve Kontrol Sunucusu (Command and Control Server/C2) Nedir?
-title: Siber Güvenlik 101
+layout: post
+title: Komut ve Kontrol Sunucusu (Command and Control Server/C2) Nedir?
 date: '2022-10-30 22:26:47 +0300'
 author: İsmail Başaran
 categories: intro
