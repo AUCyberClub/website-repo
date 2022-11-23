@@ -1,9 +1,8 @@
 ---
-updated: 2022-11-21 13:33:33Z
-created: 2022-11-20 15:52:31Z
-latitude: 39.93336350
-longitude: 32.85974190
-altitude: 0.0000
+layout: post
+title: MetaTwo CTF Write-Up
+date: '2022-11-22 13:00:00 +0300'
+categories: cozumler
 ---
 
 MetaTwo CTF Write-Up
