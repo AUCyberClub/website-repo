@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MetaTwo CTF Write-Up
-date: '2022-21-11 +0300'
+date: '2022-21-11 13:00:00 +0300'
 author: Eren İşlek
 categories: cozumler
 ---
