@@ -1,8 +1,7 @@
 ---
 layout: post
 title: MetaTwo CTF Write-Up
-date: '2022-21-11 13:00:00 +0300'
-author: Eren İşlek
+date: '2022-11-21 13:00:00 +0300'
 categories: cozumler
 ---
 
@@ -111,3 +110,5 @@ Daha sonra home klasörümüze baktığımızda .passpie isimli bir klasör bulu
 Bu elde ettiğimiz şifre passpie'ın şifresi. Bu şifreyi kullanarak passpie'daki kayıtlı kullanıcı giriş bilgilerini elde ediyoruz. Sonra bu şifreyi kullanarak root kullanıcısına giriş yapıp root flagimizi alıyoruz.
 
 <img src="/assets/img/MetaTwoHackTheBoxCTFWriteup/378902ba001aca78892db89b2be2f4cc.png" alt="378902ba001aca78892db89b2be2f4cc.png" width="1500" height="auto" > <img src="/assets/img/MetaTwoHackTheBoxCTFWriteup/6e99989eb38bec4b03e93749f03b07c8.png" alt="6e99989eb38bec4b03e93749f03b07c8.png" width="1500" height="auto" >
+
+Eren İşler
