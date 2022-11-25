@@ -10,7 +10,7 @@ layout: default
 <article class="post">
     
     <div class="container">
-        <h3>Intro</h3> {{ content }}
+        <h3>Intro ve Terminoloji</h3> {{ content }}
         {% assign posts = site.categories.intro | sort: 'index'  %}
         {% for post in posts %}
         <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a><br> 
@@ -44,6 +44,15 @@ layout: default
     <div class="container">
         <h3>Web</h3> {{ content }}
         {% assign posts = site.categories.web | sort: 'index'  %}
+        {% for post in posts %}
+        <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a><br>
+        {% endfor %}
+        <br>       
+        <hr>
+        <br>
+    <div class="container">
+        <h3>Malware</h3> {{ content }}
+        {% assign posts = site.categories.malware | sort: 'index'  %}
         {% for post in posts %}
         <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a><br>
         {% endfor %}

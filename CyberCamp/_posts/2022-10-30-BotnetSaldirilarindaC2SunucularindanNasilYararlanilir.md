@@ -7,7 +7,7 @@ categories: intro
 index: 4
 ---
 
-Komut ve kontrol (Command and Control/C2) saldırısı, ele geçirilmiş ana bilgisayar ile saldırganın sunucusu arasında gizli bir kanal oluşturmak için kullanılan kötü amaçlı yazılım saldırılarının bir bileşenidir. Bu tür saldırılarda saldırganın sunucusuna genellikle Komut ve Kontrol Sunucusu, C2 sunucusu veya C&C sunucusu denir. Daha fazla bilgi için “Komut ve Kontrol Sunucusu (Command and Control Server/C2) Nedir?” yazımızı inceleyebilirsiniz.
+Komut ve kontrol (Command and Control/C2) saldırısı, ele geçirilmiş ana bilgisayar ile saldırganın sunucusu arasında gizli bir kanal oluşturmak için kullanılan kötü amaçlı yazılım saldırılarının bir bileşenidir. Bu tür saldırılarda saldırganın sunucusuna genellikle Komut ve Kontrol Sunucusu, C2 sunucusu veya C&C sunucusu denir. Daha fazla bilgi için [“Komut ve Kontrol Sunucusu (Command and Control Server/C2) Nedir?”](https://www.aucyberclub.org/cybercamp/intro/2022/10/30/KomutveKontrolSunucusuNedir.html) yazımızı inceleyebilirsiniz.
 
 **C2 Saldırılarında Kullanılan Modeller**
 
