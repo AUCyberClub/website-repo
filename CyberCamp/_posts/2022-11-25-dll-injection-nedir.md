@@ -37,23 +37,23 @@ Yukarıdaki resimde gösterildiği gibi, target.exe içine kötü amaçlı DLL e
 
 ![](/CyberCamp/assets/dll-injection-nedir/image2.png)
 
-İlk olarak, başlatıcı olarak adlandıracağımız kötü amaçlı yazılım, mevcut çalışma dizinini almak için [GetCurrentDirectory](https://docs.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-getcurrentdirectoryhttps:/)’yi ve mal.dll’in yolunu hazırlamak için [lstrcatA](https://learn.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-lstrcatahttps:/)’i kullanır.
+İlk olarak, başlatıcı olarak adlandıracağımız kötü amaçlı yazılım, mevcut çalışma dizinini almak için [GetCurrentDirectory](https://docs.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-getcurrentdirectory)’yi ve mal.dll’in yolunu hazırlamak için [lstrcatA](https://learn.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-lstrcata)’i kullanır.
 
 **-Hedef işlemin PID’sini (işlem kimliğini) alma**
 
 ![](/CyberCamp/assets/dll-injection-nedir/image3.png)
 
-Bir sonraki adım target.exe’nin process ID’sini almaktır. [EnumProcesses](https://learn.microsoft.com/en-us/windows/win32/api/psapi/nf-psapi-enumprocesseshttps:/) isimli fonksiyon sistemde her bir process objesinin process tanımlayıcısını alıp bunları bir dizide depolar, daha sonra *launcher* bu listede gezip “target.exe”yi bulana kadar karşılaştırma yapar ve “target.exe”ye atanmış doğru PID’yi bulana kadar döngüyü tekrar eder.
+Bir sonraki adım target.exe’nin process ID’sini almaktır. [EnumProcesses](https://learn.microsoft.com/en-us/windows/win32/api/psapi/nf-psapi-enumprocesses) isimli fonksiyon sistemde her bir process objesinin process tanımlayıcısını alıp bunları bir dizide depolar, daha sonra *launcher* bu listede gezip “target.exe”yi bulana kadar karşılaştırma yapar ve “target.exe”ye atanmış doğru PID’yi bulana kadar döngüyü tekrar eder.
 
 **-target.exe’ye ulaşmak için tanıtıcı edinme**
 
 PID alındıktan sonra, bu PID, target.exe’ye bir tanıtıcı elde etmek için [OpenProcess](https://docs.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-openprocess) işlevine parametre olarak kullanılabilir.
 
-**-target.exe [sanal adres alanı](https://learn.microsoft.com/en-us/windows-hardware/drivers/gettingstarted/virtual-address-spaceshttps:/) içinde bellek ayırma**
+**-target.exe [sanal adres alanı](https://learn.microsoft.com/en-us/windows-hardware/drivers/gettingstarted/virtual-address-spaces) içinde bellek ayırma**
 
 ![](/CyberCamp/assets/dll-injection-nedir/image4.png)
 
-[VirtualAllocEx](https://docs.microsoft.com/en-us/windows/win32/api/memoryapi/nf-memoryapi-virtualallocexhttps:/)- Bu işlev, önceki adımdan alınan tanıtıcı kullanarak target.exe içindeki belleği ayırır.
+[VirtualAllocEx](https://docs.microsoft.com/en-us/windows/win32/api/memoryapi/nf-memoryapi-virtualallocex)- Bu işlev, önceki adımdan alınan tanıtıcı kullanarak target.exe içindeki belleği ayırır.
 
 **-Yeni oluşturulan belleğe mal.dll’in tam yolunu yazma**
 
@@ -69,7 +69,7 @@ Yukarıdaki örnek, DLL injection yöntemlerinden biridir ancak enjeksiyon farkl
 
 ### Sources:
 
-* [Whatis DLL Injection?](https://vvelitkn.com/malware%20analysis/What-is-DLL-Injection/)
+* [What is DLL Injection?](https://vvelitkn.com/malware%20analysis/What-is-DLL-Injection/)
 * [Preet Kamal’s DLL Injection Article](https://medium.com/malware-autopsy/dll-injection-f4b512cacaf4)
 * [Windows API Documantation](https://learn.microsoft.com/en-us/windows/win32/api/)
 * [Further Information of DLL Injection by cocomelonc](https://cocomelonc.github.io/tutorial/2021/09/20/malware-injection-2.html)
