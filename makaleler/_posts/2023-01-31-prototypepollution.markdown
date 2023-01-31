@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Prototype Pollution
-date: '2023-01-31 23:17:00 +0300'
+date: '2023-01-31 11:17:00 +0300'
 categories: makaleler
 ---
 # Prototype Pollution
