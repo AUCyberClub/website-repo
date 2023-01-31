@@ -230,9 +230,9 @@ Bu yazıda Türkçe literatür ve kaynaklarda pek karşılaşmadığım Prototyp
 
 kaynaklar:
 
-[Client-side prototype pollution | Web Security AcademyPrototype pollution is a JavaScript vulnerability that enables an attacker to add arbitrary properties to global…portswigger.net](https://portswigger.net/web-security/prototype-pollution)
+[Client-side prototype pollution-Web Security Academy](https://portswigger.net/web-security/prototype-pollution)
 
-[NodeJS - __proto__ & prototype PollutionChecklist - Local Windows Privilege Escalationbook.hacktricks.xyz](https://book.hacktricks.xyz/pentesting-web/deserialization/nodejs-proto-prototype-pollution)
+["NodeJS.hacktricks.xyz](https://book.hacktricks.xyz/pentesting-web/deserialization/nodejs-proto-prototype-pollution)
 
 [Prototype Pollution to RCEprocess is spawned with some method from child_process (like fork or spawn or others) it calls the method…book.hacktricks.xyz](https://book.hacktricks.xyz/pentesting-web/deserialization/nodejs-proto-prototype-pollution/prototype-pollution-to-rce)
 
@@ -242,7 +242,7 @@ kaynaklar:
 
 [Exploiting Prototype PollutionsIntroduction:medium.com](https://medium.com/@zub3r.infosec/exploiting-prototype-pollutions-220f188438b2)
 
-https://github.com/HoLyVieR/prototype-pollution-nsec18/blob/master/paper/JavaScript_prototype_pollution_attack_in_NodeJS.pdf
+(https://github.com/HoLyVieR/prototype-pollution-nsec18/blob/master/paper/JavaScript_prototype_pollution_attack_in_NodeJS.pdf)
 
 ---
 **[Can ÖZTAŞ](https://www.linkedin.com/in/can-oztas/)**
