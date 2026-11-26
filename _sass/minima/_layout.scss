@@ -36,6 +36,7 @@
 .header-home {
     height: auto;
     position: relative;
+    z-index: auto; /* cancel the z-index:999 inherited from .site-header so the nav menu can overlay the hero */
     background:
         radial-gradient(900px 420px at 50% -120px, rgba(23, 194, 118, .22), transparent 70%),
         radial-gradient(700px 360px at 85% 0, rgba(34, 211, 238, .14), transparent 65%),
@@ -184,31 +185,46 @@
     .trigger { display: flex; align-items: center; gap: 4px; }
 
     .page-link {
+        position: relative;
         color: var(--dark-muted);
         font-size: 14.5px;
         font-weight: 500;
-        padding: 8px 12px;
-        border-radius: 8px;
+        padding: 8px 12px 10px;
         line-height: 1;
-        transition: color 150ms ease, background 150ms ease;
+        transition: color 150ms ease;
 
+        &::after {
+            content: "";
+            position: absolute;
+            left: 12px;
+            right: 12px;
+            bottom: 2px;
+            height: 2px;
+            background: var(--accent);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 260ms ease;
+        }
         &:hover {
             color: #fff;
-            background: rgba(255, 255, 255, .07);
             text-decoration: none !important;
         }
+        &:hover::after { transform: scaleX(1); }
         &:not(:last-child) { margin-right: 2px; }
     }
 
     @include media-query($on-palm) {
-        /* hamburger pinned to the right */
+        /* keep the toggle hard against the right edge */
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
         .menu-icon {
             display: flex;
             align-items: center;
             justify-content: center;
             width: 44px;
             height: 40px;
-            margin-left: auto;
             cursor: pointer;
             color: var(--dark-text);
             border-radius: 8px;
@@ -217,13 +233,14 @@
             > svg { display: block; }
         }
 
-        /* full-width dropdown that spans the page below the header */
+        /* full-width dropdown fixed below the header, above the hero/content */
         .trigger {
-            position: absolute;
+            position: fixed;
             left: 0;
             right: 0;
-            top: 100%;
+            top: 64px;
             width: 100%;
+            z-index: 1500;
             flex-direction: column;
             align-items: stretch;
             gap: 0;
@@ -247,6 +264,7 @@
             margin: 0 !important;
             border-bottom: 1px solid rgba(255, 255, 255, .06);
 
+            &::after { content: none; }
             &:hover { background: rgba(255, 255, 255, .06); }
         }
     }
