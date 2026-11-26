@@ -88,6 +88,7 @@ ol, p, pre, ul {
  * Images
  */
 img { max-width: 100%; vertical-align: middle; }
+iframe { max-width: 100%; }
 figure > img { display: block; }
 figcaption { font-size: $small-font-size; color: var(--text-muted); }
 
