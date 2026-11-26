@@ -47,9 +47,10 @@ layout: default
         {% for post in posts %}
         <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a><br>
         {% endfor %}
-        <br>       
+        <br>
         <hr>
         <br>
+    </div>
     <div class="container">
         <h3>Malware</h3> {{ content }}
         {% assign posts = site.categories.malware | sort: 'index'  %}
