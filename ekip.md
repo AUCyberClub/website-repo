@@ -72,7 +72,7 @@ Ankara University Cyber Club topluluk üyelerinin alfabetik sıra ile isimlerini
  - [AlexCTF'17 CR1 Solution](https://www.aucyberclub.org/blog/2017/02/12/alexctfcr1writeup.html) 
  - [AlexCTF'17 RE1 Solution](https://www.aucyberclub.org/blog/2017/02/12/alexctfcr1writeup.html) 
 
-İrem Çağla Yıldırım 
+[   İrem Çağla Yıldırım] 
  - **Kurucu Üye**
  - [ABD Seçimlerindeki Rus Faaliyetleri ve Amaçları çevirisi](https://www.aucyberclub.org/blog/2017/02/15/abdsecimlerindekirusfaaliyetleri.html) 
 
@@ -80,7 +80,7 @@ Ankara University Cyber Club topluluk üyelerinin alfabetik sıra ile isimlerini
  - [ABD Seçimlerindeki Rus Faaliyetleri ve Amaçları çevirisi](https://www.aucyberclub.org/blog/2017/02/15/abdsecimlerindekirusfaaliyetleri.html) 
  - [Çin Halk Cumhuriyeti Siber Güvenlik Bildirgesi çevirisi](https://www.aucyberclub.org/blog/2017/02/15/cinsiberguvenlikbildirgesi.html) 
 
-Kaan Ezder
+[Kaan Ezder]
  - **Kurucu Üye**	
  - [Genel Hatlarıyla Kriptografi ve Kuantum Kriptografiye Giriş](https://www.aucyberclub.org/blog/2017/02/16/kuantumkriptografi.html) 
 
@@ -107,7 +107,7 @@ Kaan Ezder
 [Sena Kudu](https://twitter.com/SenaKudu)
  - [Whatsapp ve Arka Kapının İlişkisi çevirisi](https://www.aucyberclub.org/blog/2017/02/15/whatsapparkakapiiliskisi.html) 
 
-Sümeyye Kutlu
+[Sümeyye Kutlu]
  - **Kurucu Üye**
  - [Rusya, Birleşik Devletler Ve Siber Diplomasi, Kapılar Açılıyor çevirisi](https://www.aucyberclub.org/blog/2017/03/06/rusya_usa_siber_diplomasi.html) 
 

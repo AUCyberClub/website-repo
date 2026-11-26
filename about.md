@@ -23,13 +23,10 @@ CanYouPwnMe (1) - [Website](https://ctf.canyoupwn.me)
 
 **Yönetim Ekibimiz:**<br />
 
-Mücahit Emin Karadağ <br>
-Hüseyin Erdem <br>
-Talha Eryaşar <br>
-Engin Demirbilek <br>
-Tevfik Süha Dorgut <br>
-Ezgi Aydoğan <br>
-Behçet Şentürk <br>
-Aytuna Kandemir <br>
-Timuçin Kaptan <br>
-Mahmut Sami Karaca <br>
+Ömer Opan <br>
+Zeynep Sıla Orsa <br>
+Taha Çetin <br>
+Mustafa Öztürk <br>
+Haluk Baran Akbulut <br>
+Selahattin Duman <br>
+Görkem Sezgi Yılmaz <br>
