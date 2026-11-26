@@ -1,182 +1,198 @@
 /**
- * Reset some basic elements
+ * Modern design tokens
+ * Yön: koyu/neon hero + açık, okunaklı içerik
  */
-blockquote,
-body,
-dd,
-dl,
-figure,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-hr,
-ol,
-p,
-pre,
-ul {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+:root {
+    /* Light content surfaces */
+    --bg: #f5f7fb;
+    --surface: #ffffff;
+    --surface-2: #eef2f8;
+    --border: #e4e9f2;
+    --text: #0f172a;
+    --text-soft: #334155;
+    --text-muted: #64748b;
+
+    /* Dark hero / header / footer */
+    --dark: #0b1020;
+    --dark-2: #0e152e;
+    --dark-text: #e6edf3;
+    --dark-muted: #93a4c4;
+
+    /* Accents */
+    --accent: #17c276;      /* terminal green */
+    --accent-strong: #0fae68;
+    --accent-cyan: #22d3ee;
+    --neon: #39ff14;
+
+    --radius: 14px;
+    --radius-sm: 10px;
+    --shadow: 0 12px 34px -14px rgba(15, 23, 42, .22);
+    --shadow-soft: 0 4px 14px -6px rgba(15, 23, 42, .14);
+    --ring: 0 0 0 3px rgba(23, 194, 118, .22);
+
+    --sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --mono: 'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+/**
+ * Reset
+ */
+blockquote, body, dd, dl, figure,
+h1, h2, h3, h4, h5, h6,
+hr, ol, p, pre, ul {
     margin: 0;
     padding: 0;
 }
-/**
- * Basic styling
- */
-@import url( 'https://fonts.googleapis.com/css?family=Ubuntu');
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
 
 body {
-    font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
-    color: $text-color;
-    background-color: $background-color;
+    font-family: var(--sans);
+    font-size: $base-font-size;
+    line-height: 1.65;
+    font-weight: 400;
+    color: var(--text);
+    background-color: var(--bg);
     -webkit-text-size-adjust: 100%;
-    -webkit-font-feature-settings: "kern" 1;
-    -moz-font-feature-settings: "kern" 1;
-    -o-font-feature-settings: "kern" 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     font-feature-settings: "kern" 1;
     font-kerning: normal;
-    font-family: "Ubuntu", sans-serif !important;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
+
+.page-content { flex: 1 0 auto; }
+
+::selection {
+    background: rgba(23, 194, 118, .25);
+    color: var(--text);
+}
+
 /**
- * Set `margin-bottom` to maintain vertical rhythm
+ * Vertical rhythm
  */
 %vertical-rhythm,
-blockquote,
-dl,
-figure,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-ol,
-p,
-pre,
-ul {
+blockquote, dl, figure,
+h1, h2, h3, h4, h5, h6,
+ol, p, pre, ul {
     margin-bottom: $spacing-unit / 2;
 }
+
 /**
  * Images
  */
-img {
-    max-width: 100%;
-    vertical-align: middle;
-}
-/**
- * Figures
- */
-figure > img {
-    display: block;
-}
+img { max-width: 100%; vertical-align: middle; }
+figure > img { display: block; }
+figcaption { font-size: $small-font-size; color: var(--text-muted); }
 
-figcaption {
-    font-size: $small-font-size;
-}
 /**
  * Lists
  */
-ol,
-ul {
-    margin-left: $spacing-unit;
-}
+ol, ul { margin-left: $spacing-unit; }
+li > ol, li > ul { margin-bottom: 0; }
 
-li {
-     > ol,
-    > ul {
-        margin-bottom: 0;
-    }
-}
 /**
  * Headings
  */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: $base-font-weight;
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    line-height: 1.25;
+    color: var(--text);
+    letter-spacing: -0.01em;
 }
+
 /**
  * Links
  */
 a {
-    color: #4c7358;
+    color: var(--accent-strong);
     text-decoration: none !important;
+    transition: color 150ms ease;
 
-    &:visited {
-        color: #4c7358;
-    }
-
-    &:hover {
-        color: #4c7358;
-        text-decoration: underline;
-    }
+    &:visited { color: var(--accent-strong); }
+    &:hover { color: var(--accent); text-decoration: underline !important; }
 }
+
 /**
  * Blockquotes
  */
 blockquote {
-    color: $grey-color;
-    border-left: 4px solid $grey-color-light;
-    padding-left: $spacing-unit / 2;
+    color: var(--text-soft);
+    border-left: 4px solid var(--accent);
+    background: var(--surface-2);
+    padding: $spacing-unit / 2;
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
     font-size: 18px;
-    letter-spacing: -1px;
     font-style: italic;
 
-    > :last-child {
-        margin-bottom: 0;
-    }
+    > :last-child { margin-bottom: 0; }
 }
+
 /**
- * Code formatting
+ * Code
  */
-code,
-pre {
-    font-size: 15px;
-    border: 1px solid $grey-color-light;
-    border-radius: 3px;
-    background-color: #fafafa;
+code, pre {
+    font-family: var(--mono);
+    font-size: 14px;
+    border-radius: var(--radius-sm);
+    background-color: #0d1326;
+    color: #e6edf3;
+    border: 1px solid #1b2440;
 }
 
 code {
-    padding: 1px 5px;
+    padding: 2px 7px;
+    color: #a9f0cf;
+    background: rgba(23, 194, 118, .1);
+    border: 1px solid rgba(23, 194, 118, .25);
 }
 
-p {
-    padding-bottom: 10px;
-}
+p { margin-bottom: $spacing-unit / 2; }
 
 pre {
-    padding: 8px 12px;
+    padding: 16px 18px;
     margin-bottom: 25px;
     overflow-x: auto;
+    line-height: 1.55;
+    box-shadow: var(--shadow-soft);
 
     > code {
         border: 0;
-        padding-right: 0;
-        padding-left: 0;
+        padding: 0;
+        background: transparent;
+        color: inherit;
     }
 }
+
+hr {
+    border: 0;
+    height: 1px;
+    background: var(--border);
+    margin: $spacing-unit 0;
+}
+
 /**
  * Wrapper
  */
 .wrapper {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-    max-width: calc(#{$content-width} - (#{$spacing-unit} * 2));
+    max-width: 1080px;
     margin-right: auto;
     margin-left: auto;
     padding-right: $spacing-unit;
     padding-left: $spacing-unit;
     @extend %clearfix;
-    @include media-query($on-laptop) {
-        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-        max-width: calc(#{$content-width} - (#{$spacing-unit}));
+    @include media-query($on-palm) {
         padding-right: $spacing-unit / 2;
         padding-left: $spacing-unit / 2;
     }
 }
+
 /**
  * Clearfix
  */
@@ -185,14 +201,24 @@ pre {
     display: table;
     clear: both;
 }
+
 /**
  * Icons
  */
 .icon > svg {
     display: inline-block;
     vertical-align: middle;
-
-    path {
-        fill: $grey-color;
-    }
+    path { fill: var(--text-muted); }
 }
+
+/**
+ * Custom scrollbar
+ */
+::-webkit-scrollbar { width: 11px; height: 11px; }
+::-webkit-scrollbar-track { background: var(--surface-2); }
+::-webkit-scrollbar-thumb {
+    background: #c3ccdb;
+    border-radius: 20px;
+    border: 3px solid var(--surface-2);
+}
+::-webkit-scrollbar-thumb:hover { background: var(--accent); }
