@@ -231,6 +231,9 @@
         align-items: center;
 
         .menu-icon {
+            position: absolute;
+            top: 12px;
+            right: 15px;
             display: flex;
             align-items: center;
             justify-content: center;
