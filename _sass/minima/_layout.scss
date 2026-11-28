@@ -33,6 +33,17 @@
 /**
  * Hero (home only)
  */
+/* On mobile, drop the header's backdrop-filter: it makes the header a
+   containing block that traps/clips the fixed dropdown menu. A solid bg
+   keeps the same look while letting the menu overlay freely. */
+@include media-query($on-palm) {
+    .site-header {
+        background: var(--dark);
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+    }
+}
+
 .header-home {
     height: auto;
     position: relative;
